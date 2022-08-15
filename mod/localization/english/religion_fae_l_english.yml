@@ -1,0 +1,105 @@
+﻿l_english:
+ fae_religion:0 "Fae Court"
+ fae_religion_adj:0 "Fae"
+ fae_religion_adherent:0 "Faerie"
+ fae_religion_adherent_plural:0 "Faeries"
+ fae_religion_desc:0 "The fae court are those who believe and follow those who have come from the fae wilds."
+ 
+ fae_court:0 "Fae Court"
+ fae_court_adj:0 "Fae"
+ fae_court_adherent:0 "Faerie"
+ fae_court_adherent_plural:0 "Faeries"
+ fae_court_desc:0 "The fae court are those who believe and follow those who have come from the fae wilds."
+
+ fae_high_god_name:0 "Titania"
+ fae_high_god_name_possessive:0 "Titania's"
+ fae_high_god_name_alternate:0 "$fae_high_god_name$"
+ fae_high_god_name_alternate_possessive:0 "$fae_high_god_name_possessive$"
+ 
+ fae_creator_god_name:0 "Oberon"
+ fae_creator_god_name_possessive:0 "Oberon's"
+ 
+ fae_health_god_name:0 "Skerrit"
+ fae_health_god_name_possessive:0 "Skerrit's"
+ 
+ fae_fertility_god_name:0 "Verenestra"
+ fae_fertility_god_name_possessive:0 "Verenestra's"
+ 
+ fae_wealth_god_name:0 "Damh"
+ fae_wealth_god_name_possessive:0 "Damh's"
+ 
+ fae_household_god_name:0 "Fionnghuala"
+ fae_household_god_name_possessive:0 "Fionnghuala's"
+ 
+ fae_fate_god_name:0 "Caoimhin"
+ fae_fate_god_name_possessive:0 "Caoimhin's"
+ 
+ fae_knowledge_god_name:0 "Emmantiensien"
+ fae_knowledge_god_name_possessive:0 "Emmantiensien's"
+ 
+ fae_war_god_name:0 "Eachthighern"
+ fae_war_god_name_possessive:0 "Eachthighern's"
+ 
+ fae_trickster_god_name:0 "Sqeulaiche"
+ fae_trickster_god_name_possessive:0 "Sqeulaiche's"
+ 
+ fae_night_god_name:0 "Nintra Siotta"
+ fae_night_god_name_possessive:0 "Nintra's"
+
+ fae_water_god_name:0 "$fae_night_god_name$"
+ fae_water_god_name_possessive:0 "$fae_night_god_name_possessive$"
+
+ fae_death_god_name:0 "$fae_night_god_name$"
+ fae_death_god_name_possessive:0 "$fae_night_god_name_possessive$"
+ 
+ fae_witch_god_name:0 "$fae_high_god_name$"
+ fae_witch_god_name_possessive:0 "$fae_high_god_name_possessive$"
+ 
+ fae_good_god_nathair:0 "Nathair Sgiathach"
+
+ fae_devil_name:0 "Queen of Air and Darkness"
+ fae_devil_name_possessive:0 "Queen of Air and Darkness'"
+
+ religion_the_powers:0 "the powers"
+ religion_the_fae:0 "the fae"
+ 
+ fae_house_of_worship:0 "circle"
+ fae_house_of_worship_2:0 "$fae_house_of_worship$"
+ fae_house_of_worship_3:0 "$fae_house_of_worship$"
+ 
+ fae_religious_symbol:0 "great wheel"
+ fae_religious_symbol_2:0 "$fae_religious_symbol$"
+ fae_religious_symbol_3:0 "$fae_religious_symbol$"
+ 
+ fae_religious_text:0 "sacred stories"
+ fae_religious_text_2:0 "ancient legends"
+ fae_religious_text_3:0 "old myths"
+ 
+ fae_religious_head_title:0 "Queen"
+ fae_religious_head_title_name:0 "Court"
+ 
+ fae_devotee_male:0 "courtier"
+ fae_devotee_male_plural:0 "courtiers"
+ fae_devotee_female:0 "$fae_devotee_male$"
+ fae_devotee_female_plural:0 "$fae_devotee_male_plural$"
+ fae_devotee_neuter:0 "$fae_devotee_male$"
+ fae_devotee_neuter_plural:0 "$fae_devotee_male_plural$"
+ 
+ fae_priest:0 "speaker"
+ council_fae_priest:0 "Speaker"
+ fae_priest_plural:0 "speakers"
+ 
+ fae_divine_realm:0 "Seelie Court"
+ fae_divine_realm_2:0 "$fae_divine_realm$"
+ fae_divine_realm_3:0 "$fae_divine_realm$"
+ 
+ fae_positive_afterlife:0 "the Feywilds"
+ fae_positive_afterlife_2:0 "$fae_positive_afterlife$"
+ fae_positive_afterlife_3:0 "$fae_positive_afterlife$"
+ 
+ fae_negative_afterlife:0 "Unseelie Court"
+ fae_negative_afterlife_2:0 "$fae_negative_afterlife$"
+ fae_negative_afterlife_3:0 "$fae_negative_afterlife$"
+ 
+ holy_order_knights_of_the_court:0 "Knights of Queen Titania's Court"
+ 

@@ -1,0 +1,16 @@
+﻿l_english:
+ holy_site_prague_fae_name:0 "Titania's Forest"
+ holy_site_prague_fae_effect_name:0 "From [holy_site|E] #weak ($holy_site_prague_fae_name$)#!"
+ holy_site_prague_fae_effects:0 "County Conversion Speed: #P +20%#!"
+ 
+ holy_site_albret_fae_name:0 "Summer Court"
+ holy_site_albret_fae_effect_name:0 "From [holy_site|E] #weak ($holy_site_albret_fae_name$)#!"
+ 
+ holy_site_northumberland_fae_name:0 "Fall Court"
+ holy_site_northumberland_fae_effect_name:0 "From [holy_site|E] #weak ($holy_site_northumberland_fae_name$)#!"
+ 
+ holy_site_siauliai_fae_name:0 "Winter Court"
+ holy_site_siauliai_fae_effect_name:0 "From [holy_site|E] #weak ($holy_site_siauliai_fae_name$)#!"
+ 
+ holy_site_torda_fae_name:0 "Spring Court"
+ holy_site_torda_fae_effect_name:0 "From [holy_site|E] #weak ($holy_site_torda_fae_name$)#!"

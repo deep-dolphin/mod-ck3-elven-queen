@@ -1,0 +1,54 @@
+tradition_fae_isolationism = {
+    category = societal
+
+    layers = {
+        0 = learning
+        1 = western
+        4 = fae_forest.dds
+    }
+
+    is_shown = {
+        always = no
+    }
+
+    can_pick = {
+        custom_tooltip = {
+			text = no_isolationism_regression_desc
+			always = no
+		}
+    }
+
+    parameters = {
+        close_family_better_councillors = yes
+        close_family_better_court_positions = yes
+        courtiers_less_likely_to_leave_same_culture_court = yes
+		ai_doesnt_marry_outside_culture = yes
+		cultural_house_personal_scheme_success_chance = yes
+		dislikes_marrying_outside_of_culture = yes
+    }
+
+    culture_modifier = {
+		cultural_acceptance_gain_mult = -0.5
+	}
+
+    character_modifier = {
+		close_relative_opinion = 25
+        same_culture_opinion = 25
+        diplomatic_range_mult = -0.5
+		different_culture_opinion = -50
+	}
+
+    cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = { value = 0 }
+}

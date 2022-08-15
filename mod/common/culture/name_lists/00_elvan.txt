@@ -1,0 +1,275 @@
+name_list_elven = {
+	cadet_dynasty_names = {
+		dynn_Engeiros 
+		dynn_Pafir 
+		dynn_Phibella 
+		dynn_Yesberos 
+		dynn_Paren 
+		dynn_Farran 
+		dynn_Wynric 
+		dynn_Xilharice 
+		dynn_Norgwyn 
+		dynn_Qiqirelle
+		dynn_Erleth 
+		dynn_Umena 
+		dynn_Valgwyn 
+		dynn_Liaquinal 
+		dynn_Dageiros
+		dynn_Grethyra 
+		dynn_Zyljor 
+		dynn_Enphyra 
+		dynn_Jowarin 
+		dynn_Keystina
+		dynn_Qindithas 
+		dynn_Crarora 
+		dynn_Wysamenor 
+		dynn_Miranelis 
+		dynn_Fengella
+		dynn_Faegolor 
+		dynn_Ralofaren 
+		dynn_Eilzana 
+		dynn_Beinan 
+		dynn_Qinmoira
+		dynn_Krisneiros 
+		dynn_Perquinal 
+		dynn_Keaberos 
+		dynn_Liamyar 
+		dynn_Phiro
+		dynn_Krismyar 
+		dynn_Phisandoral 
+		dynn_Adran 
+		dynn_Quiphine 
+		dynn_Greynore
+		dynn_Perqen 
+		dynn_Zumlana 
+		dynn_Reyric 
+		dynn_Gilcan 
+		dynn_Pakas
+		dynn_Araxalim 
+		dynn_Reyjor 
+		dynn_Zumnelis 
+		dynn_Luqirelle 
+		dynn_Sarkian
+		dynn_Wynrel 
+		dynn_Sylnan 
+		dynn_Xilmaer 
+		dynn_Dorroris 
+		dynn_Xyrran
+		dynn_Qinkian 
+		dynn_Virwarin 
+		dynn_Reynala 
+		dynn_Quineiros 
+		dynn_Helehana
+		dynn_Zumjor 
+		dynn_Traxidor 
+		dynn_Mirazorwyn 
+		dynn_Eilcaryn 
+		dynn_Holamys
+		dynn_Ralobella 
+		dynn_Norhice 
+		dynn_Quigeiros 
+		dynn_Urimys 
+		dynn_Hermys
+		dynn_Krisgella 
+		dynn_Ralonala 
+		dynn_Venvyre 
+		dynn_Gilsys 
+		dynn_Grevalur
+		dynn_Gremyar 
+		dynn_Iarlee 
+		dynn_Presthana 
+		dynn_Wranlen 
+		dynn_Helelar
+		dynn_Gengwyn 
+		dynn_Leolamin 
+		dynn_Eilwarin 
+		dynn_Qisalor 
+		dynn_Wrangella
+		dynn_Presro 
+		dynn_Genlee 
+		dynn_Farkrana 
+		dynn_Heina 
+		dynn_Orisandoral
+		dynn_Wysafir 
+		dynn_Tornala 
+		dynn_Faelar 
+		dynn_Keawarin 
+		dynn_Qinydark
+		dynn_Morric 
+		dynn_Rojeon 
+		dynn_Ianwenys 
+		dynn_Olaxisys 
+		dynn_Qizeiros
+		dynn_Waeslana 
+		dynn_Oloven 
+		dynn_Omadi 
+		dynn_Luwarin
+	}
+	
+	dynasty_names = {
+		dynn_Engeiros 
+		dynn_Pafir 
+		dynn_Phibella 
+		dynn_Yesberos 
+		dynn_Paren 
+		dynn_Farran 
+		dynn_Wynric 
+		dynn_Xilharice 
+		dynn_Norgwyn 
+		dynn_Qiqirelle
+		dynn_Erleth 
+		dynn_Umena 
+		dynn_Valgwyn 
+		dynn_Liaquinal 
+		dynn_Dageiros
+		dynn_Grethyra 
+		dynn_Zyljor 
+		dynn_Enphyra 
+		dynn_Jowarin 
+		dynn_Keystina
+		dynn_Qindithas 
+		dynn_Crarora 
+		dynn_Wysamenor 
+		dynn_Miranelis 
+		dynn_Fengella
+		dynn_Faegolor 
+		dynn_Ralofaren 
+		dynn_Eilzana 
+		dynn_Beinan 
+		dynn_Qinmoira
+		dynn_Krisneiros 
+		dynn_Perquinal 
+		dynn_Keaberos 
+		dynn_Liamyar 
+		dynn_Phiro
+		dynn_Krismyar 
+		dynn_Phisandoral 
+		dynn_Adran 
+		dynn_Quiphine 
+		dynn_Greynore
+		dynn_Perqen 
+		dynn_Zumlana 
+		dynn_Reyric 
+		dynn_Gilcan 
+		dynn_Pakas
+		dynn_Araxalim 
+		dynn_Reyjor 
+		dynn_Zumnelis 
+		dynn_Luqirelle 
+		dynn_Sarkian
+		dynn_Wynrel 
+		dynn_Sylnan 
+		dynn_Xilmaer 
+		dynn_Dorroris 
+		dynn_Xyrran
+		dynn_Qinkian 
+		dynn_Virwarin 
+		dynn_Reynala 
+		dynn_Quineiros 
+		dynn_Helehana
+		dynn_Zumjor 
+		dynn_Traxidor 
+		dynn_Mirazorwyn 
+		dynn_Eilcaryn 
+		dynn_Holamys
+		dynn_Ralobella 
+		dynn_Norhice 
+		dynn_Quigeiros 
+		dynn_Urimys 
+		dynn_Hermys
+		dynn_Krisgella 
+		dynn_Ralonala 
+		dynn_Venvyre 
+		dynn_Gilsys 
+		dynn_Grevalur
+		dynn_Gremyar 
+		dynn_Iarlee 
+		dynn_Presthana 
+		dynn_Wranlen 
+		dynn_Helelar
+		dynn_Gengwyn 
+		dynn_Leolamin 
+		dynn_Eilwarin 
+		dynn_Qisalor 
+		dynn_Wrangella
+		dynn_Presro 
+		dynn_Genlee 
+		dynn_Farkrana 
+		dynn_Heina 
+		dynn_Orisandoral
+		dynn_Wysafir 
+		dynn_Tornala 
+		dynn_Faelar 
+		dynn_Keawarin 
+		dynn_Qinydark
+		dynn_Morric 
+		dynn_Rojeon 
+		dynn_Ianwenys 
+		dynn_Olaxisys 
+		dynn_Qizeiros
+		dynn_Waeslana 
+		dynn_Oloven 
+		dynn_Omadi 
+		dynn_Luwarin
+	}
+	
+	male_names = {
+		Laerdya Zilyana Sakaala Namys Tanelia 
+		Keerla Nakiasha Chasianna Darunia Maescia
+		Caeda Kaylin Dirue Velatha Paeris 
+		Galaeron Folwin Katar Gaelin Gorduin 
+		Luvon Merellien Larongar Orrian Khyrmin 
+		Lysanthir Ayred Maeral Aeson Ardryll
+		Dain Eroan Maiele Amrynn Iolas
+		Aiduin Eldaerenth Aymer Elephon Eriladar
+		Lorsan Kyrenic Llewel Purtham Galather 
+		Elas Aimer Emmyth Folas Erlan 
+		Intevar Darfin Nesterin Aimar Edyrm
+		Elduin Elkhazel Aire Arel Hagmar 
+		Iolrath Aymar Avourel Alinar Kolvar
+		Aywin Eilauver Horith Gormon Filverel 
+		Melandrach Onas Iyrandrar Kymil Elen 
+		Almar Nym Hagwin Mitalar Ilbryen
+		Luthais Kelvhan Oncith Garrik Iliphar 
+		Ettrian Erlathan Ievis Onvyr Almon 
+	}
+	
+	female_names = {
+		Faelithil Adaolian Einnia Anedas Nathndra 
+		Galdlin Lorcinthil Anrys Dothinthil Ciioneth 
+		Bothruviel Kaahaelyn Dothril Niliragil Anuail 
+		Emehredhel Idrohel Hasrilirchel Anghil Galdlandra 
+		Laenaen Indelin Nimrond Botheneth Syelwaen 
+		Wylthil Anedinyth Thamendril Lietaelin Dreael 
+		Telahelathil Hynareth Allendrae Kiresse Theogillys 
+		Mandthia Iinhwen Manaon Beorsa Kaagaerwen 
+		Milbglithil Elshredhel Elsdael Ardwbedir Nonrinthil 
+		Naelrael Kaadraaendril Alawielyl Alaeril Galbelyn 
+		Giniwaenyth Naellerva Thaerinthil Nimphelen Laeond 
+		Ardhwedh Telathel Thaiir Paroniel Ardsandra 
+		Thalsandra Gitrinthil Milweanyl Tharaedhel Hynnan 
+		Angrond Irwwedh Elediir Faurbedir Anurhelen 
+		Baelaone Fauoneth Allail Galrond Desndra 
+		Botrinthil Beldel Elegchel Baelwenyl Larafil 
+		Belwwaenyl Seleedh Dennilphaneth Niolsandra Nillian 
+		Faelriian Nilthilith Deotchel Nivhel Huuglithil 
+		Areddil Ginien Botrond Uurnilwen Dredhiel 
+		Botond Metelin Eraielyl Cuuoneth Carielyl 
+		Lieael Indrion Uurwlian 
+	}
+	
+	dynasty_of_location_prefix = "dynnp_of"
+	
+	patronym_suffix_male = "dynnpat_suf_sson"
+	patronym_suffix_female = "dynnpat_suf_sdaughter"
+	
+	# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+	pat_grf_name_chance = 10
+	mat_grf_name_chance = 40
+	father_name_chance = 5
+	
+	# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+	pat_grm_name_chance = 5
+	mat_grm_name_chance = 30
+	mother_name_chance = 25
+}

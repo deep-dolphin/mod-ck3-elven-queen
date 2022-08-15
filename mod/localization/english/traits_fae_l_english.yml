@@ -1,0 +1,8 @@
+﻿l_english:
+ trait_Fae_queen:0 "Queen of the Fae"
+ trait_Fae_queen_desc:0 "This character is the queen of the fae, forever beautiful and young."
+ trait_Fae_queen_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is the queen and progenitor of the fae."
+ 
+ trait_Fae_blood:0 "Fae Blooded"
+ trait_Fae_blood_desc:0 "This character has the blood of the fae, much more powerful than an ordinary human."
+ trait_Fae_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a powerful fae."

@@ -1,0 +1,38 @@
+namespace = fae_birth
+
+#On_birth:Child of Fae gains proper trait at birth.
+fae_birth.0001 = {
+	type = character_event
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+				exists = mother
+				mother = {
+					OR = {
+						has_trait = fae_queen
+						has_trait = fae_blood
+					}
+				}
+			}
+			AND = {
+				exists = scope:real_father
+				scope:real_father = {
+					OR = {
+						has_trait = fae_queen
+						has_trait = fae_blood
+					}
+				}
+			}
+		}
+		NOR = {
+			has_trait = fae_queen
+			has_trait = fae_blood
+		}
+	}
+	
+	immediate = {
+		add_trait = fae_blood
+	}
+}

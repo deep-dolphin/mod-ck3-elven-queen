@@ -1,0 +1,56 @@
+prague_fae = {
+	county = c_praha
+	barony = b_beroun
+	
+	character_modifier = {
+		name = holy_site_prague_fae_effect_name
+		monthly_piety_gain_mult = 0.25
+		learning_per_piety_level = 1
+	}
+}
+
+albret_fae = {
+	county = c_albret
+	
+	character_modifier = {
+		name = holy_site_albret_fae_effect_name
+		attraction_opinion = 10
+		fertility = 0.25
+		health = 1
+		diplomacy_per_piety_level = 1
+	}
+}
+
+northumberland_fae = {
+	county = c_northumberland
+	barony = b_lindisfarne
+	
+	character_modifier = {
+		name = holy_site_northumberland_fae_effect_name
+		hostile_scheme_power_mult = 0.25
+		personal_scheme_power_mult = 0.25
+		intrigue_per_piety_level = 1
+	}
+}
+
+siauliai_fae = {
+	county = c_siauliai
+	
+	character_modifier = {
+		name = holy_site_siauliai_fae_effect_name
+		knight_effectiveness_mult = 0.5
+		martial_per_piety_level = 1
+		prowess_per_piety_level = 5
+	}
+}
+
+torda_fae = {
+	county = c_torda
+	
+	character_modifier = {
+		name = holy_site_torda_fae_effect_name
+		army_maintenance_mult = -0.25
+		domain_tax_same_faith_mult = 0.25
+		stewardship_per_piety_level = 1
+	}
+}

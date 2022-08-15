@@ -1,0 +1,93 @@
+fae_queen = {
+	name = "Queen of the Fae"
+	can_have_children = yes
+
+	physical = yes
+	genetic = no
+	good = yes
+	
+	birth = 0
+	random_creation = 0
+	
+	health = 10
+	negate_health_penalty_add = 10
+	fertility = -0.20
+	inbreeding_chance = -10.0
+	
+	immortal = yes
+	immortal_age = 16
+	no_prowess_loss_from_age = yes
+	
+	diplomacy = 35
+	stewardship = 35
+	martial = 35
+	intrigue = 35
+	learning = 35
+	prowess = 50
+	
+	monthly_dynasty_prestige = 25
+	monthly_prestige = 5
+	monthly_piety = 5
+
+	same_faith_opinion = 15
+	attraction_opinion = 50
+	different_faith_opinion = -100
+    dread_baseline_add = 50
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 200
+
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = trait_Fae_queen_desc
+            }
+            desc = trait_Fae_queen_character_desc
+        }
+    }
+}
+
+fae_blood = {
+	name = "Fae Blood"
+	can_have_children = yes
+
+    physical = yes
+	genetic = no
+    good = yes
+	
+	birth = 0
+	random_creation = 0
+
+	fertility = -0.20
+	health = 0.5
+	inbreeding_chance = -1.0
+	life_expectancy = 50
+
+    same_opinion = 15
+	attraction_opinion = 15
+	
+	diplomacy = 25
+	stewardship = 25
+	martial = 25
+	intrigue = 25
+	learning = 25
+	prowess = 25
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 50
+
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = trait_Fae_blood_desc
+            }
+            desc = trait_Fae_blood_character_desc
+        }
+    }
+}

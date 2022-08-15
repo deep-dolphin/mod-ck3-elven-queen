@@ -1,0 +1,34 @@
+﻿l_english:
+ sylvan:0 "Sylvan"
+ sylvan_prefix:0 "Sylvan"
+ sylvan_collective_noun:0 "Sylvan"
+ 
+ name_list_elven:0 "Elven"
+ 
+ language_elvish_name:0 "Elvish"
+ 
+ # Cultural Heritage
+ heritage_fae_name:0 "Faerie"
+ heritage_fae_collective_noun:0 "Faeries"
+ 
+ # Cultural Title Changes
+ baron_feudal_male_sylvan:0 "Baro"
+ baron_feudal_female_sylvan:0 "Baronissa"
+ barony_feudal_sylvan:0 "Castrum"
+ count_feudal_male_sylvan:0 "Comes"
+ count_feudal_female_sylvan:0 "Comitissa"
+ county_feudal_sylvan:0 "County"
+ duke_feudal_male_sylvan:0 "Dux"
+ duke_feudal_female_sylvan:0 "Ducissa"
+ duchy_feudal_sylvan:0 "Duchy"
+ king_feudal_male_sylvan:0 "Rex"
+ king_feudal_female_sylvan:0 "Regina"
+ kingdom_feudal_sylvan:0 "Regnum"
+ emperor_feudal_male_sylvan:0 "Imperator"
+ emperor_feudal_female_sylvan:0 "Imperatrix"
+ empire_feudal_sylvan:0 "Imperium"
+
+ # Cultural Traditions
+ tradition_fae_isolationism_name:0 "Elven Isolationism"
+ tradition_fae_isolationism_desc:0 "Having spent a millenium isolated from the rest of the world, traditional Elves continue to remain extremely distrustful of any other culture. Traditionally Elves are often closely bonded to their family members and will often work harder to positions of important to their family."
+ no_fae_isolationism_regression_desc:0 "Returning to the traditional isolationism of the Fae would be illogical for such an entrenched nation!"

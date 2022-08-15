@@ -1,0 +1,239 @@
+fae_religion = {
+	family = rf_pagan
+	graphical_faith = pagan_gfx
+
+	pagan_roots = yes
+
+	doctrine = pagan_hostility_doctrine
+
+	#Main Group
+	doctrine = doctrine_temporal_head
+	doctrine = doctrine_gender_female_dominated
+	doctrine = doctrine_pluralism_fundamentalist
+	doctrine = doctrine_theocracy_lay_clergy
+
+	#Marriage
+	doctrine = doctrine_monogamy
+	doctrine = doctrine_divorce_disallowed
+	doctrine = doctrine_bastardry_all
+	doctrine = doctrine_consanguinity_unrestricted
+
+	#Crimes
+	doctrine = doctrine_homosexuality_accepted
+	doctrine = doctrine_adultery_men_crime
+	doctrine = doctrine_adultery_women_crime
+	doctrine = doctrine_kinslaying_any_dynasty_member_crime
+	doctrine = doctrine_deviancy_accepted
+	doctrine = doctrine_witchcraft_accepted
+
+	#Clerical Functions
+	doctrine = doctrine_clerical_function_alms_and_pacification
+	doctrine = doctrine_clerical_gender_female
+	doctrine = doctrine_clerical_marriage_allowed
+	doctrine = doctrine_clerical_succession_temporal_appointment
+
+	traits = {
+		virtues = { brave gregarious compassionate fae_queen fae_blood }
+		sins = { sadistic callous craven }
+	}
+
+	custom_faith_icons = {
+		custom_faith_1 custom_faith_2 custom_faith_3 custom_faith_4 custom_faith_5 custom_faith_6 custom_faith_7 custom_faith_8 custom_faith_9 custom_faith_10 dualism_custom_1 zoroastrian_custom_1 zoroastrian_custom_2 buddhism_custom_1 buddhism_custom_2 buddhism_custom_3 buddhism_custom_4 taoism_custom_1 yazidi_custom_1 sunni_custom_2 sunni_custom_3 sunni_custom_4 muhakkima_1 muhakkima_2 muhakkima_4 muhakkima_5 muhakkima_6 judaism_custom_1 custom_faith_fp1_fenrir custom_faith_fp1_irminsul custom_faith_fp1_jormungandr custom_faith_fp1_odins_ravens custom_faith_fp1_runestone_moon custom_faith_fp1_thors_hammer custom_faith_fp1_valknut custom_faith_fp1_yggdrasil
+	}
+
+	holy_order_names = {
+		{ name = holy_order_knights_of_the_court }
+		{ name = holy_order_guardians_of_divinerealm }
+		{ name = holy_order_faithful_of_highgod }
+	}
+
+	holy_order_maa = { knights_titania }
+	
+	reserved_male_names = { Patumal Omanan Farydark Theris Heijor Farceran Yelmaer Yinzeiros Trakian Glyncan }
+	reserved_female_names = { Gilcyne Ulavaris Oriynore Lialeth Josys Presna Liabella Eilthana Tormys Adthyra }
+
+	localization = {
+		#HighGod
+		HighGodName = fae_high_god_name
+		HighGodName2 = fae_high_god_name
+		HighGodNamePossessive = fae_high_god_name_possessive
+		HighGodNameSheHe = CHARACTER_SHEHE_SHE
+		HighGodHerselfHimself = CHARACTER_HERSELF
+		HighGodHerHis = CHARACTER_HERHIS_HER
+		HighGodNameAlternate = fae_high_god_name_alternate
+		HighGodNameAlternatePossessive = fae_high_god_name_alternate_possessive
+
+		#Creator
+		CreatorName = fae_creator_god_name
+		CreatorNamePossessive = fae_creator_god_name_possessive
+		CreatorSheHe = CHARACTER_SHEHE_HE
+		CreatorHerHis = CHARACTER_HERHIS_HIS
+		CreatorHerHim = CHARACTER_HERHIM_HIM
+
+		#HealthGod
+		HealthGodName = fae_health_god_name
+		HealthGodNamePossessive = fae_health_god_name_possessive
+		HealthGodSheHe = CHARACTER_SHEHE_HE
+		HealthGodHerHis = CHARACTER_HERHIS_HIS
+		HealthGodHerHim = CHARACTER_HERHIM_HIM
+		
+		#FertilityGod
+		FertilityGodName = fae_fertility_god_name
+		FertilityGodNamePossessive = fae_fertility_god_name_possessive
+		FertilityGodSheHe = CHARACTER_SHEHE_SHE
+		FertilityGodHerHis = CHARACTER_HERHIS_HER
+		FertilityGodHerHim = CHARACTER_HERHIM_HER
+
+		#WealthGod
+		WealthGodName = fae_wealth_god_name
+		WealthGodNamePossessive = fae_wealth_god_name_possessive
+		WealthGodSheHe = CHARACTER_SHEHE_HE
+		WealthGodHerHis = CHARACTER_HERHIS_HIS
+		WealthGodHerHim = CHARACTER_HERHIM_HIM
+
+		#HouseholdGod
+		HouseholdGodName = fae_household_god_name
+		HouseholdGodNamePossessive = fae_household_god_name_possessive
+		HouseholdGodSheHe = CHARACTER_SHEHE_SHE
+		HouseholdGodHerHis = CHARACTER_HERHIS_HER
+		HouseholdGodHerHim = CHARACTER_HERHIM_HER
+
+		#FateGod
+		FateGodName = fae_fate_god_name
+		FateGodNamePossessive = fae_fate_god_name_possessive
+		FateGodSheHe = CHARACTER_SHEHE_HE
+		FateGodHerHis = CHARACTER_HERHIS_HIS
+		FateGodHerHim = CHARACTER_HERHIM_HIM
+
+		#KnowledgeGod
+		KnowledgeGodName = fae_knowledge_god_name
+		KnowledgeGodNamePossessive = fae_knowledge_god_name_possessive
+		KnowledgeGodSheHe = CHARACTER_SHEHE_HE
+		KnowledgeGodHerHis = CHARACTER_HERHIS_HIS
+		KnowledgeGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WarGod
+		WarGodName = fae_war_god_name
+		WarGodNamePossessive = fae_war_god_name_possessive
+		WarGodSheHe = CHARACTER_SHEHE_HE
+		WarGodHerHis = CHARACTER_HERHIS_HIS
+		WarGodHerHim = CHARACTER_HERHIM_HIM
+
+		#TricksterGod
+		TricksterGodName = fae_trickster_god_name
+		TricksterGodNamePossessive = fae_trickster_god_name_possessive
+		TricksterGodSheHe = CHARACTER_SHEHE_HE
+		TricksterGodHerHis = CHARACTER_HERHIS_HIS
+		TricksterGodHerHim = CHARACTER_HERHIM_HIM
+
+		#NightGod
+		NightGodName = fae_night_god_name
+		NightGodNamePossessive = fae_night_god_name_possessive
+		NightGodSheHe = CHARACTER_SHEHE_HE
+		NightGodHerHis = CHARACTER_HERHIS_HIS
+		NightGodHerHim = CHARACTER_HERHIM_HIM
+
+		#WaterGod
+		WaterGodName = fae_water_god_name
+		WaterGodNamePossessive = fae_water_god_name_possessive
+		WaterGodSheHe = CHARACTER_SHEHE_THEY
+		WaterGodHerHis = CHARACTER_HERHIS_THEIR
+		WaterGodHerHim = CHARACTER_HERHIM_THEM
+
+		#DeathGod
+		DeathDeityName = fae_death_god_name
+		DeathDeityNamePossessive = fae_death_god_name_possessive
+		DeathDeitySheHe = CHARACTER_SHEHE_SHE
+		DeathDeityHerHis = CHARACTER_HERSHIS_HERS
+
+		#WitchGod
+		WitchGodName = fae_witch_god_name
+		WitchGodNamePossessive = fae_witch_god_name_possessive
+		WitchGodSheHe = CHARACTER_SHEHE_HE
+		WitchGodHerHim = CHARACTER_HERHIM_HER
+		WitchGodMistressMaster = mistress
+		WitchGodMotherFather = mother
+		WitchGodHerHis = CHARACTER_HERHIS_HER
+
+		PantheonTerm = religion_the_fae
+		PantheonTerm2 = religion_the_gods
+		PantheonTerm3 = religion_the_powers
+		PantheonTermHasHave = pantheon_term_have
+		
+		GoodGodNames = {
+			fae_good_god_nathair
+			fae_high_god_name fae_creator_god_name fae_health_god_name fae_fertility_god_name fae_household_god_name fae_fate_god_name fae_knowledge_god_name fae_war_god_name fae_trickster_god_name 
+		}
+		
+		DevilName = fae_devil_name
+		DevilNamePossessive = fae_devil_name_possessive
+		DevilSheHe = CHARACTER_SHEHE_HE
+		DevilHerHis = CHARACTER_HERHIS_HIS
+		DevilHerselfHimself = CHARACTER_HIMSELF
+		
+		EvilGodNames = {
+			fae_devil_name fae_night_god_name
+		}
+		
+		HouseOfWorship = fae_house_of_worship
+		HouseOfWorship2 = fae_house_of_worship_2
+		HouseOfWorship3 = fae_house_of_worship_3
+		HouseOfWorshipPlural = fae_religious_text
+		ReligiousSymbol = fae_religious_symbol
+		ReligiousSymbol2 = fae_religious_symbol_2
+		ReligiousSymbol3 = fae_religious_symbol_3
+		ReligiousText = fae_religious_text
+		ReligiousText2 = fae_religious_text_2
+		ReligiousText3 = fae_religious_text_3
+		ReligiousHeadName = fae_religious_head_title
+		ReligiousHeadTitleName = fae_religious_head_title_name
+		DevoteeMale = fae_devotee_male
+		DevoteeMalePlural = fae_devotee_male_plural
+		DevoteeFemale = fae_devotee_female
+		DevoteeFemalePlural = fae_devotee_female_plural
+		DevoteeNeuter = fae_devotee_neuter
+		DevoteeNeuterPlural = fae_devotee_neuter_plural
+		PriestMale = fae_priest
+		PriestMalePlural = fae_priest_plural
+		PriestFemale = fae_priest
+		PriestFemalePlural = fae_priest_plural
+		PriestNeuter = fae_priest
+		PriestNeuterPlural = fae_priest_plural
+		AltPriestTermPlural = fae_priest_plural
+		BishopMale = fae_priest
+		BishopMalePlural = fae_priest_plural
+		BishopFemale = fae_priest
+		BishopFemalePlural = fae_priest_plural
+		BishopNeuter = fae_priest
+		BishopNeuterPlural = fae_priest_plural
+		DivineRealm = fae_divine_realm
+		DivineRealm2 = fae_divine_realm_2
+		DivineRealm3 = fae_divine_realm_3
+		PositiveAfterLife = fae_positive_afterlife
+		PositiveAfterLife2 = fae_positive_afterlife_2
+		PositiveAfterLife3 = fae_positive_afterlife_3
+		NegativeAfterLife = fae_negative_afterlife
+		NegativeAfterLife2 = fae_negative_afterlife_2
+		NegativeAfterLife3 = fae_negative_afterlife_3
+
+		GHWName = ghw_great_holy_war
+		GHWNamePlural = ghw_great_holy_wars
+	}
+	
+	faiths = {
+		fae_court = {
+			color = green_light
+			icon = fae_court
+			
+			holy_site = prague_fae
+			holy_site = albret_fae
+			holy_site = northumberland_fae
+			holy_site = siauliai_fae
+			holy_site = torda_fae
+
+			doctrine = tenet_divine_marriage
+			doctrine = tenet_mendicant_preachers
+			doctrine = tenet_sanctity_of_nature
+		}
+	}
+}
