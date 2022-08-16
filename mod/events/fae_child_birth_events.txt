@@ -1,6 +1,6 @@
 namespace = fae_birth
 
-#On_birth:Child of Fae gains proper trait at birth.
+# On_birth: Child of Fae gains proper trait at birth.
 fae_birth.0001 = {
 	type = character_event
 	hidden = yes
