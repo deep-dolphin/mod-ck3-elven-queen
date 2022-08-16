@@ -1,0 +1,23 @@
+namespace = fae_death
+
+fae_death.0001 = {
+    type = character_event
+    hidden = yes
+
+    trigger = {
+        AND = {
+            exists = primary_heir
+            primary_heir = {
+                has_trait = fae_blood
+            }
+            has_trait = fae_queen
+        }
+	}
+	
+	immediate = {
+        primary_heir = {
+            remove_trait = fae_blood
+            add_trait = fae_queen
+        }
+	}
+}
