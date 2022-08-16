@@ -1,0 +1,15 @@
+#elector_voting_pattern_circumstances_fae_elective_modifier = {
+#	modifier = {
+#		desc = tooltip_fae_elector_vote_female
+#		NOR = {
+#			this = scope:holder
+#			this = scope:candidate
+#		}
+#		scope:candidate = { 
+#           is_female = yes
+#        }
+#		add = {
+#			value = 25
+#		}
+#	}
+#}

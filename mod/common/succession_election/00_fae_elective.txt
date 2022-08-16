@@ -1,8 +1,8 @@
-fae_elective = { #Thing
+fae_elective = { # Faerie Circle
 	elector_vote_strength = {
 		base = 0
-		modifier = { #Each voter is the "representative" of all the free men living in his domain. The larger the domain, the more voting power he has.
-			desc = tooltip_scandinavian_elective_development
+		modifier = { # Each voter is the "representative" of all the fae living in her domain. The larger the domain, the more voting power she has.
+			desc = tooltip_fae_elective_development
 			is_landed = yes
 			domain_size >= 1
 			any_held_title = {
@@ -16,34 +16,29 @@ fae_elective = { #Thing
 						tier = tier_county
 						development_level > 0
 						target_is_de_jure_liege_or_above = scope:title
+                        culture = {
+                            has_cultural_pillar = heritage_fae
+                        }
+                        faith = root.faith
 					}
 					add = {
 						value = this.development_level
-						if = {
-							limit = {
-								NOT = { this.faith = root.faith }
-							}
-							divide = 2
-						}
-						if = {
-							limit = {
-								NOT = { this.culture = { has_same_culture_heritage = root.culture } }
-							}
-							divide = 2
-						}
 						min = 1
 					}
 				}
 			}
 		}
 		modifier = { #Further boost/reduction is given depending on capital county's opinion.
-			desc = tooltip_scandinavian_elective_capital_opinion
+			desc = tooltip_fae_elective_capital_opinion
 			is_landed = yes
 			exists = capital_county
 			OR = {
 				capital_county.county_opinion <= -5
 				capital_county.county_opinion >= 5
 			}
+            capital_county.culture = {
+                has_cultural_pillar = heritage_fae
+            }
 			add = {
 				value = capital_county.county_opinion
 				multiply = 0.2
@@ -57,9 +52,10 @@ fae_elective = { #Thing
 		add = {
 			type = title_dejure_vassals
 			limit = {
-				target_is_liege_or_above = scope:holder #All de jure vassals, no matter the tier, sub-vassals included.
+				target_is_liege_or_above = scope:holder # All de jure vassals, no matter the tier, sub-vassals included.
 				is_ruler = yes
 				is_landed = yes
+                has_trait = fae_blood
 				exists = capital_county
 				highest_held_title_tier > tier_county #Counts and barons excluded.
 				domain_size >= 1
@@ -82,7 +78,7 @@ fae_elective = { #Thing
 
 		##########################	Elector voting patterns (circumstances)	##########################
 		elector_voting_pattern_circumstances_feudal_elective_modifier = yes
-		elector_voting_pattern_circumstances_scandinavian_elective_modifier = yes
+        #elector_voting_pattern_circumstances_fae_elective_modifier = yes
 
 		##########################	Elector voting patterns (prestige/piety)	##########################
 		elector_voting_pattern_prestige_piety_feudal_elective_modifier = yes
@@ -99,6 +95,7 @@ fae_elective = { #Thing
         add = {
 			type = title_dejure_vassals
 			limit = {
+                has_trait = fae_blood
 				is_vassal_of = scope:holder #Only Powerful, direct, de jure vassals are potential candidates.
 				is_powerful_vassal = yes
 				feudal_elective_potential_landed_candidate_trigger = yes
@@ -107,12 +104,14 @@ fae_elective = { #Thing
 		add = {
 			type = title_claimants
 			limit = {
+                has_trait = fae_blood
 				feudal_elective_potential_landless_claimant_candidate_trigger = yes
 			}
 		}
 		add = {
 			type = holder_close_or_extended_family
 			limit = {
+                has_trait = fae_blood
 				is_child_of = scope:holder #Only the children of the current holder.
 				feudal_elective_potential_landless_dynastic_candidate_trigger = yes
 			}

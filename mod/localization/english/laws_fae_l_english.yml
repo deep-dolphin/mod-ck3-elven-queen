@@ -1,4 +1,13 @@
 ﻿l_english:
  fae_succession_law:0 "Fae Elective"
  fae_succession_law_subname:0 "Faerie Circle"
- fae_succession_law_effects:0 "The [ruler|E] and all [de_jure|E] [vassals|E] (except Barons) can nominate a [title_heir|E] amongst the ruler's [extended_family|E] and any available [claimants|E]. [voting_power|E] in this [succession_law|E] is influenced by the [elector|E]'s total [domain|E] [county_development|E] and [capital|E] [county_opinion|E]."
+ fae_succession_law_effects:0 "The [ruler|E] and all [de_jure|E] [vassals|E] (except Counts & Barons) can nominate a [title_heir|E] amongst the ruler's children, any available [claimants|E], and powerful vassals. [voting_power|E] in this [succession_law|E] is influenced by the [elector|E]'s total [domain|E] [county_development|E] and [capital|E] [county_opinion|E]."
+
+ fae_elective_candidates:0 "Children, Claimants, and Vassals"
+ fae_elective_candidates_tooltip:0 "In order to be a valid Candidate of the $fae_succession_law_subname$, a character must fulfill one of the following conditions:\n$EFFECT_LIST_BULLET$Be a Fae blooded legitimate child of the ruler\n$EFFECT_LIST_BULLET$Be a Fae blooded [claimant|E] to the title\n$EFFECT_LIST_BULLET$Be a Fae blooded [powerful_vassal|E] of the title"
+ fae_elective_electors:0 "$feudal_elective_electors$"
+ fae_elective_electors_tooltip:0 "In order to be a valid [elector|E] of the $fae_succession_law_subname$, a [vassal|E] must fulfill all the following conditions:\n$EFFECT_LIST_BULLET$Be a [de_jure|E] [vassal|E] of the title\n$EFFECT_LIST_BULLET$Have a higher tier title than [count|E]\n$EFFECT_LIST_BULLET$Be Fae blooded"
+
+ tooltip_fae_elective_development:0 "Total [development|E] of same [faith|E] and fae [heritage|E]: $VALUE|=+0$"
+ tooltip_fae_elective_capital_opinion:0 "Capital [county_opinion|E]: $VALUE|=+0$"
+ #tooltip_fae_elector_vote_female:0 "[candidate.GetSheHe|U] is female: $VALUE|=+0$"scandinavian_elective_succession_law
