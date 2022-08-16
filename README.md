@@ -1,5 +1,5 @@
 # Elven Queen Mod
-A mod for Crusader Kings III that adds elves and related mechanics.
+A mod for Crusader Kings III that adds elves and related mechanics. Allows you to cheat without explicitly cheating!
 
 A recommended char is included here: [link](/customCharAndCOA/customCharDNA.txt)
 
