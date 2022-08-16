@@ -9,8 +9,8 @@ fae_queen = {
 	birth = 0
 	random_creation = 0
 	
-	health = 10
-	negate_health_penalty_add = 10
+	health = 2.0
+	negate_health_penalty_add = 2.0
 	fertility = -0.20
 	inbreeding_chance = -10.0
 	
@@ -18,20 +18,20 @@ fae_queen = {
 	immortal_age = 16
 	no_prowess_loss_from_age = yes
 	
-	diplomacy = 35
-	stewardship = 35
-	martial = 35
-	intrigue = 35
-	learning = 35
-	prowess = 50
+	diplomacy = 10
+	stewardship = 10
+	martial = 10
+	intrigue = 10
+	learning = 10
+	prowess = 10
 	
-	monthly_dynasty_prestige = 25
-	monthly_prestige = 5
-	monthly_piety = 5
+	monthly_dynasty_prestige = 10
+	monthly_prestige = 2
+	monthly_piety = 2
 
 	same_faith_opinion = 15
-	attraction_opinion = 50
-	different_faith_opinion = -100
+	attraction_opinion = 25
+	different_faith_opinion = -50
     dread_baseline_add = 50
 	
 	shown_in_ruler_designer = yes
@@ -69,12 +69,12 @@ fae_blood = {
     same_opinion = 15
 	attraction_opinion = 15
 	
-	diplomacy = 25
-	stewardship = 25
-	martial = 25
-	intrigue = 25
-	learning = 25
-	prowess = 25
+	diplomacy = 5
+	stewardship = 5
+	martial = 5
+	intrigue = 5
+	learning = 5
+	prowess = 5
 	
 	shown_in_ruler_designer = yes
 	ruler_designer_cost = 50

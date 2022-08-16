@@ -1,0 +1,174 @@
+tradition_fae_isolationism = {
+    category = societal
+
+    layers = {
+        0 = learning
+        1 = western
+        4 = fae_forest.dds
+    }
+
+    is_shown = {
+        has_cultural_pillar = heritage_fae
+    }
+
+    can_pick = {
+        custom_tooltip = {
+			text = no_fae_isolationism_regression_desc
+			scope:character = {
+				OR = {
+					has_trait = paranoid
+					has_trait = fae_queen
+				}
+            }
+		}
+    }
+
+    parameters = {
+        close_family_better_councillors = yes
+        close_family_better_court_positions = yes
+        courtiers_less_likely_to_leave_same_culture_court = yes
+		ai_doesnt_marry_outside_culture = yes
+		cultural_house_personal_scheme_success_chance = yes
+		dislikes_marrying_outside_of_culture = yes
+    }
+
+    culture_modifier = {
+		cultural_acceptance_gain_mult = -0.5
+	}
+
+    character_modifier = {
+		close_relative_opinion = 25
+        same_culture_opinion = 25
+        diplomatic_range_mult = -0.5
+		different_culture_opinion = -50
+	}
+
+    cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_in_list = { list = traits this = flag:ethos_communal }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							has_trait = fae_queen
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = not_fae_queen_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = { value = 0 }
+}
+
+tradition_fae_inheritance = {
+    category = realm
+
+    layers = {
+        0 = learning
+        1 = western
+        4 = laurel.dds
+    }
+
+    is_shown = {
+        has_cultural_pillar = heritage_fae
+    }
+
+    can_pick = {
+        custom_tooltip = {
+			text = no_fae_inheritance_desc
+			scope:character = {
+				OR = {
+					has_trait = fae_blood
+					has_trait = fae_queen
+				}
+            }
+		}
+    }
+
+    parameters = {
+        fae_succession_enabled = yes
+		same_faith_inheritance_only = yes
+        female_only_inheritance = yes
+        female_preference_inheritance = yes
+    }
+
+    character_modifier = {
+		opinion_of_female_rulers = 15
+        opinion_of_male_rulers = -15
+		opinion_of_different_faith = -15
+		ai_zeal = 30
+	}
+
+    cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_spiritual_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							has_trait = fae_queen
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = not_fae_queen_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						is_female = yes
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+}

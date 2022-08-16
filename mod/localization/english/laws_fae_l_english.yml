@@ -1,0 +1,4 @@
+﻿l_english:
+ fae_succession_law:0 "Fae Elective"
+ fae_succession_law_subname:0 "Faerie Circle"
+ fae_succession_law_effects:0 "The [ruler|E] and all [de_jure|E] [vassals|E] (except Barons) can nominate a [title_heir|E] amongst the ruler's [extended_family|E] and any available [claimants|E]. [voting_power|E] in this [succession_law|E] is influenced by the [elector|E]'s total [domain|E] [county_development|E] and [capital|E] [county_opinion|E]."

@@ -31,4 +31,11 @@
  # Cultural Traditions
  tradition_fae_isolationism_name:0 "Elven Isolationism"
  tradition_fae_isolationism_desc:0 "Having spent a millenium isolated from the rest of the world, traditional Elves continue to remain extremely distrustful of any other culture. Traditionally Elves are often closely bonded to their family members and will often work harder to positions of important to their family."
- no_fae_isolationism_regression_desc:0 "Returning to the traditional isolationism of the Fae would be illogical for such an entrenched nation!"
+ no_fae_isolationism_regression_desc:0 "Unless you're truly paranoid, you have no reason to return to such an extreme isolationism!"
+
+ tradition_fae_inheritance_name:0 "Faerie Circles"
+ tradition_fae_inheritance_desc:0 "The Fae would form a circle of peers who would choose which daughter would inherit as queen of the Fae."
+ no_fae_inheritance_desc:0 "Unless you're a pureblooded Fae, you have no authority to claim a new circle!"
+
+ not_fae_queen_desc:0 "You are not the queen of the Fae"
+ culture_parameter_fae_succession_enabled:0 "Can enact the #high $fae_succession_law$#! [succession_law|E]"

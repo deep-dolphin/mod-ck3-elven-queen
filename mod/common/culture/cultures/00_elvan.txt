@@ -7,10 +7,9 @@ sylvan = {
 	martial_custom = martial_custom_female_only
 	traditions = {
 		tradition_fae_isolationism
-		tradition_female_only_inheritance
+		tradition_fae_inheritance
 		tradition_sorcerous_metallurgy
 		tradition_life_is_just_a_joke
-		tradition_faith_bound
 	}
 
 	name_list = name_list_elven
