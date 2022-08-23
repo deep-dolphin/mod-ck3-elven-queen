@@ -1,0 +1,7 @@
+fae_fervor_increase = {
+    trigger = {
+        has_flag = prague_fae_fervor_bonus
+    }
+
+    value = 10.0
+}

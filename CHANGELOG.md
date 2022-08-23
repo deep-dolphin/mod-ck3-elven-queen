@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Name list for feudal/clan realms and churches
+- Fervor bonus for central holy site
 
 ### Changed
 - Elven name lists to be more consistent
