@@ -1,0 +1,140 @@
+# Cultural title flavor
+baron_feudal_male_roman = {
+	type = character
+	gender = male
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+baron_feudal_female_roman = {
+	type = character
+	gender = female
+	special = holder
+	tier = barony
+	priority = 7
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+barony_feudal_roman = {
+	type = title
+	tier = barony
+	priority = 7
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+
+count_feudal_male_sylvan = {
+	type = character
+	gender = male
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+count_feudal_female_sylvan = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 18
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+county_feudal_sylvan = {
+	type = title
+	tier = county
+	priority = 18
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+
+duke_feudal_male_sylvan = {
+	type = character
+	gender = male
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+duke_feudal_female_sylvan = {
+	type = character
+	gender = female
+	special = holder
+	tier = duchy
+	priority = 27
+	governments = { feudal_government clan_government }
+	heritages = { heritage_fae }
+}
+duchy_feudal_sylvan = {
+	type = title
+	tier = duchy
+	priority = 27
+	governments = { feudal_government clan_government }
+	heritages = { heritage_fae }
+}
+
+king_feudal_male_sylvan = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government clan_government }
+    heritages = { heritage_fae }
+}
+king_feudal_female_sylvan = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government clan_government }
+	heritages = { heritage_fae }
+}
+kingdom_feudal_sylvan = {
+	type = title
+	tier = kingdom
+	priority = 47
+	governments = { feudal_government clan_government }
+	heritages = { heritage_fae }
+}
+
+emperor_feudal_male_sylvan = {
+	type = character
+	gender = male
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government clan_government }
+	heritages = { heritage_fae }
+}
+emperor_feudal_female_sylvan = {
+	type = character
+	gender = female
+	special = holder
+	tier = empire
+	priority = 102
+	governments = { feudal_government clan_government }
+	heritages = { heritage_fae }
+}
+empire_feudal_sylvan = {
+	type = title
+	tier = empire
+	priority = 102
+	governments = { feudal_government clan_government }
+	heritages = { heritage_fae }
+}
+
+# Religious title flavor
+barony_theocracy_fae_religion = {
+    type = title
+    tier = barony
+    top_liege = no
+    priority = 7
+    holding = church_holding
+    religions = { fae_religion }
+}

@@ -10,23 +10,6 @@
  # Cultural Heritage
  heritage_fae_name:0 "Faerie"
  heritage_fae_collective_noun:0 "Faeries"
- 
- # Cultural Title Changes
- baron_feudal_male_sylvan:0 "Baro"
- baron_feudal_female_sylvan:0 "Baronissa"
- barony_feudal_sylvan:0 "Castrum"
- count_feudal_male_sylvan:0 "Comes"
- count_feudal_female_sylvan:0 "Comitissa"
- county_feudal_sylvan:0 "County"
- duke_feudal_male_sylvan:0 "Dux"
- duke_feudal_female_sylvan:0 "Ducissa"
- duchy_feudal_sylvan:0 "Duchy"
- king_feudal_male_sylvan:0 "Rex"
- king_feudal_female_sylvan:0 "Regina"
- kingdom_feudal_sylvan:0 "Regnum"
- emperor_feudal_male_sylvan:0 "Imperator"
- emperor_feudal_female_sylvan:0 "Imperatrix"
- empire_feudal_sylvan:0 "Imperium"
 
  # Cultural Traditions
  tradition_fae_isolationism_name:0 "Elven Isolationism"
