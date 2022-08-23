@@ -49,8 +49,8 @@ fae_religion = {
 
 	holy_order_maa = { knights_titania }
 	
-	reserved_male_names = { Patumal Omanan Farydark Theris Heijor Farceran Yelmaer Yinzeiros Trakian Glyncan }
-	reserved_female_names = { Gilcyne Ulavaris Oriynore Lialeth Josys Presna Liabella Eilthana Tormys Adthyra }
+	reserved_male_names = { fae_creator_god_name fae_health_god_name fae_wealth_god_name fae_fate_god_name fae_knowledge_god_name fae_war_god_name fae_trickster_god_name }
+	reserved_female_names = { fae_high_god_name fae_fertility_god_name fae_household_god_name }
 
 	localization = {
 		#HighGod
@@ -129,16 +129,16 @@ fae_religion = {
 		#NightGod
 		NightGodName = fae_night_god_name
 		NightGodNamePossessive = fae_night_god_name_possessive
-		NightGodSheHe = CHARACTER_SHEHE_HE
-		NightGodHerHis = CHARACTER_HERHIS_HIS
-		NightGodHerHim = CHARACTER_HERHIM_HIM
+		NightGodSheHe = CHARACTER_SHEHE_SHE
+		NightGodHerHis = CHARACTER_HERHIS_HER
+		NightGodHerHim = CHARACTER_HERHIM_HER
 
 		#WaterGod
 		WaterGodName = fae_water_god_name
 		WaterGodNamePossessive = fae_water_god_name_possessive
-		WaterGodSheHe = CHARACTER_SHEHE_THEY
-		WaterGodHerHis = CHARACTER_HERHIS_THEIR
-		WaterGodHerHim = CHARACTER_HERHIM_THEM
+		WaterGodSheHe = CHARACTER_SHEHE_SHE
+		WaterGodHerHis = CHARACTER_HERHIS_HER
+		WaterGodHerHim = CHARACTER_HERHIM_HER
 
 		#DeathGod
 		DeathDeityName = fae_death_god_name
@@ -149,7 +149,7 @@ fae_religion = {
 		#WitchGod
 		WitchGodName = fae_witch_god_name
 		WitchGodNamePossessive = fae_witch_god_name_possessive
-		WitchGodSheHe = CHARACTER_SHEHE_HE
+		WitchGodSheHe = CHARACTER_SHEHE_SHE
 		WitchGodHerHim = CHARACTER_HERHIM_HER
 		WitchGodMistressMaster = mistress
 		WitchGodMotherFather = mother

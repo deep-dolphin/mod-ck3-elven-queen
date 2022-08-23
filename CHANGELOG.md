@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Updated elven name lists to be more consistent
+- Updated fae religion name lists to include god names
 
 ## [0.0.1] - 2022-08-22
 ### Added
