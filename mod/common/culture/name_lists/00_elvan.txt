@@ -1,261 +1,134 @@
 name_list_elven = {
 	cadet_dynasty_names = {
-		dynn_Engeiros 
-		dynn_Pafir 
-		dynn_Phibella 
-		dynn_Yesberos 
-		dynn_Paren 
-		dynn_Farran 
-		dynn_Wynric 
-		dynn_Xilharice 
-		dynn_Norgwyn 
-		dynn_Qiqirelle
-		dynn_Erleth 
-		dynn_Umena 
-		dynn_Valgwyn 
-		dynn_Liaquinal 
-		dynn_Dageiros
-		dynn_Grethyra 
-		dynn_Zyljor 
-		dynn_Enphyra 
-		dynn_Jowarin 
-		dynn_Keystina
-		dynn_Qindithas 
-		dynn_Crarora 
-		dynn_Wysamenor 
-		dynn_Miranelis 
-		dynn_Fengella
-		dynn_Faegolor 
-		dynn_Ralofaren 
-		dynn_Eilzana 
-		dynn_Beinan 
-		dynn_Qinmoira
-		dynn_Krisneiros 
-		dynn_Perquinal 
-		dynn_Keaberos 
-		dynn_Liamyar 
-		dynn_Phiro
-		dynn_Krismyar 
-		dynn_Phisandoral 
-		dynn_Adran 
-		dynn_Quiphine 
-		dynn_Greynore
-		dynn_Perqen 
-		dynn_Zumlana 
-		dynn_Reyric 
-		dynn_Gilcan 
-		dynn_Pakas
-		dynn_Araxalim 
-		dynn_Reyjor 
-		dynn_Zumnelis 
-		dynn_Luqirelle 
-		dynn_Sarkian
-		dynn_Wynrel 
-		dynn_Sylnan 
-		dynn_Xilmaer 
-		dynn_Dorroris 
-		dynn_Xyrran
-		dynn_Qinkian 
-		dynn_Virwarin 
-		dynn_Reynala 
-		dynn_Quineiros 
-		dynn_Helehana
-		dynn_Zumjor 
-		dynn_Traxidor 
-		dynn_Mirazorwyn 
-		dynn_Eilcaryn 
-		dynn_Holamys
-		dynn_Ralobella 
-		dynn_Norhice 
-		dynn_Quigeiros 
-		dynn_Urimys 
-		dynn_Hermys
-		dynn_Krisgella 
-		dynn_Ralonala 
-		dynn_Venvyre 
-		dynn_Gilsys 
-		dynn_Grevalur
-		dynn_Gremyar 
-		dynn_Iarlee 
-		dynn_Presthana 
-		dynn_Wranlen 
-		dynn_Helelar
-		dynn_Gengwyn 
-		dynn_Leolamin 
-		dynn_Eilwarin 
-		dynn_Qisalor 
-		dynn_Wrangella
-		dynn_Presro 
-		dynn_Genlee 
-		dynn_Farkrana 
-		dynn_Heina 
-		dynn_Orisandoral
-		dynn_Wysafir 
-		dynn_Tornala 
-		dynn_Faelar 
-		dynn_Keawarin 
-		dynn_Qinydark
-		dynn_Morric 
-		dynn_Rojeon 
-		dynn_Ianwenys 
-		dynn_Olaxisys 
-		dynn_Qizeiros
-		dynn_Waeslana 
-		dynn_Oloven 
-		dynn_Omadi 
-		dynn_Luwarin
+		dynn_Aloro
+		dynn_Amakiir
+		dynn_Amastacia
+		dynn_Ariessus
+		dynn_Arnuanna
+		dynn_Berevan
+		dynn_Caerdonel
+		dynn_Caphaxath
+		dynn_Casilltenirra
+		dynn_Cithreth
+		dynn_Dalanthan
+		dynn_Eathalena
+		dynn_Erenaeth
+		dynn_Ethanasath
+		dynn_Fasharash
+		dynn_Firahel
+		dynn_Floshem
+		dynn_Galanodel
+		dynn_Goltorah
+		dynn_Hanali
+		dynn_Holimion
+		dynn_Horineth
+		dynn_Iathrana
+		dynn_Ilphelkiir
+		dynn_Iranapha
+		dynn_Koehlanna
+		dynn_Lathalas
+		dynn_Liadon
+		dynn_Meliamne
+		dynn_Mellerelel
+		dynn_Mystralath
+		dynn_Nailo
+		dynn_Netyoive
+		dynn_Ofandrus
+		dynn_Ostoroth
+		dynn_Othronus
+		dynn_Qualanthri
+		dynn_Raethran
+		dynn_Rothenel
+		dynn_Selevarun
+		dynn_Siannodel
+		dynn_Suithrasas
+		dynn_Sylvaranth
+		dynn_Teinithra
+		dynn_Tiltathana
+		dynn_Wasanthi
+		dynn_Withrethin
+		dynn_Xiloscient
+		dynn_Xistsrith
+		dynn_Yaeldrin
 	}
 	
 	dynasty_names = {
-		dynn_Engeiros 
-		dynn_Pafir 
-		dynn_Phibella 
-		dynn_Yesberos 
-		dynn_Paren 
-		dynn_Farran 
-		dynn_Wynric 
-		dynn_Xilharice 
-		dynn_Norgwyn 
-		dynn_Qiqirelle
-		dynn_Erleth 
-		dynn_Umena 
-		dynn_Valgwyn 
-		dynn_Liaquinal 
-		dynn_Dageiros
-		dynn_Grethyra 
-		dynn_Zyljor 
-		dynn_Enphyra 
-		dynn_Jowarin 
-		dynn_Keystina
-		dynn_Qindithas 
-		dynn_Crarora 
-		dynn_Wysamenor 
-		dynn_Miranelis 
-		dynn_Fengella
-		dynn_Faegolor 
-		dynn_Ralofaren 
-		dynn_Eilzana 
-		dynn_Beinan 
-		dynn_Qinmoira
-		dynn_Krisneiros 
-		dynn_Perquinal 
-		dynn_Keaberos 
-		dynn_Liamyar 
-		dynn_Phiro
-		dynn_Krismyar 
-		dynn_Phisandoral 
-		dynn_Adran 
-		dynn_Quiphine 
-		dynn_Greynore
-		dynn_Perqen 
-		dynn_Zumlana 
-		dynn_Reyric 
-		dynn_Gilcan 
-		dynn_Pakas
-		dynn_Araxalim 
-		dynn_Reyjor 
-		dynn_Zumnelis 
-		dynn_Luqirelle 
-		dynn_Sarkian
-		dynn_Wynrel 
-		dynn_Sylnan 
-		dynn_Xilmaer 
-		dynn_Dorroris 
-		dynn_Xyrran
-		dynn_Qinkian 
-		dynn_Virwarin 
-		dynn_Reynala 
-		dynn_Quineiros 
-		dynn_Helehana
-		dynn_Zumjor 
-		dynn_Traxidor 
-		dynn_Mirazorwyn 
-		dynn_Eilcaryn 
-		dynn_Holamys
-		dynn_Ralobella 
-		dynn_Norhice 
-		dynn_Quigeiros 
-		dynn_Urimys 
-		dynn_Hermys
-		dynn_Krisgella 
-		dynn_Ralonala 
-		dynn_Venvyre 
-		dynn_Gilsys 
-		dynn_Grevalur
-		dynn_Gremyar 
-		dynn_Iarlee 
-		dynn_Presthana 
-		dynn_Wranlen 
-		dynn_Helelar
-		dynn_Gengwyn 
-		dynn_Leolamin 
-		dynn_Eilwarin 
-		dynn_Qisalor 
-		dynn_Wrangella
-		dynn_Presro 
-		dynn_Genlee 
-		dynn_Farkrana 
-		dynn_Heina 
-		dynn_Orisandoral
-		dynn_Wysafir 
-		dynn_Tornala 
-		dynn_Faelar 
-		dynn_Keawarin 
-		dynn_Qinydark
-		dynn_Morric 
-		dynn_Rojeon 
-		dynn_Ianwenys 
-		dynn_Olaxisys 
-		dynn_Qizeiros
-		dynn_Waeslana 
-		dynn_Oloven 
-		dynn_Omadi 
-		dynn_Luwarin
+		dynn_Aloro
+		dynn_Amakiir
+		dynn_Amastacia
+		dynn_Ariessus
+		dynn_Arnuanna
+		dynn_Berevan
+		dynn_Caerdonel
+		dynn_Caphaxath
+		dynn_Casilltenirra
+		dynn_Cithreth
+		dynn_Dalanthan
+		dynn_Eathalena
+		dynn_Erenaeth
+		dynn_Ethanasath
+		dynn_Fasharash
+		dynn_Firahel
+		dynn_Floshem
+		dynn_Galanodel
+		dynn_Goltorah
+		dynn_Hanali
+		dynn_Holimion
+		dynn_Horineth
+		dynn_Iathrana
+		dynn_Ilphelkiir
+		dynn_Iranapha
+		dynn_Koehlanna
+		dynn_Lathalas
+		dynn_Liadon
+		dynn_Meliamne
+		dynn_Mellerelel
+		dynn_Mystralath
+		dynn_Nailo
+		dynn_Netyoive
+		dynn_Ofandrus
+		dynn_Ostoroth
+		dynn_Othronus
+		dynn_Qualanthri
+		dynn_Raethran
+		dynn_Rothenel
+		dynn_Selevarun
+		dynn_Siannodel
+		dynn_Suithrasas
+		dynn_Sylvaranth
+		dynn_Teinithra
+		dynn_Tiltathana
+		dynn_Wasanthi
+		dynn_Withrethin
+		dynn_Xiloscient
+		dynn_Xistsrith
+		dynn_Yaeldrin
 	}
 	
 	male_names = {
-		Laerdya Zilyana Sakaala Namys Tanelia 
-		Keerla Nakiasha Chasianna Darunia Maescia
-		Caeda Kaylin Dirue Velatha Paeris 
-		Galaeron Folwin Katar Gaelin Gorduin 
-		Luvon Merellien Larongar Orrian Khyrmin 
-		Lysanthir Ayred Maeral Aeson Ardryll
-		Dain Eroan Maiele Amrynn Iolas
-		Aiduin Eldaerenth Aymer Elephon Eriladar
-		Lorsan Kyrenic Llewel Purtham Galather 
-		Elas Aimer Emmyth Folas Erlan 
-		Intevar Darfin Nesterin Aimar Edyrm
-		Elduin Elkhazel Aire Arel Hagmar 
-		Iolrath Aymar Avourel Alinar Kolvar
-		Aywin Eilauver Horith Gormon Filverel 
-		Melandrach Onas Iyrandrar Kymil Elen 
-		Almar Nym Hagwin Mitalar Ilbryen
-		Luthais Kelvhan Oncith Garrik Iliphar 
-		Ettrian Erlathan Ievis Onvyr Almon 
+		fae_Adran fae_Aelar fae_Aerdeth fae_Ahvain fae_Aramil
+		fae_Arannis fae_Aust fae_Azaki fae_Beiro fae_Berrian
+		fae_Caeldrim fae_Carric fae_Dayereth fae_Dreali fae_Efferil
+		fae_Eiravel fae_Enialis fae_Erdan fae_Erevan fae_Fivin
+		fae_Galinndan fae_Gennal fae_Hadarai fae_Halimath fae_Heian
+		fae_Himo fae_Immeral fae_Ivellios fae_Korfel fae_Lamlis
+		fae_Laucian fae_Lucan fae_Mindartis fae_Naal fae_Nutae
+		fae_Paelias fae_Peren fae_Quarion fae_Riardon fae_Rolen
+		fae_Soveliss fae_Suhnae fae_Thamior fae_Tharivol fae_Theren
+		fae_Theriatis fae_Thervan fae_Uthemar fae_Vanuath fae_Varis
 	}
 	
 	female_names = {
-		Faelithil Adaolian Einnia Anedas Nathndra 
-		Galdlin Lorcinthil Anrys Dothinthil Ciioneth 
-		Bothruviel Kaahaelyn Dothril Niliragil Anuail 
-		Emehredhel Idrohel Hasrilirchel Anghil Galdlandra 
-		Laenaen Indelin Nimrond Botheneth Syelwaen 
-		Wylthil Anedinyth Thamendril Lietaelin Dreael 
-		Telahelathil Hynareth Allendrae Kiresse Theogillys 
-		Mandthia Iinhwen Manaon Beorsa Kaagaerwen 
-		Milbglithil Elshredhel Elsdael Ardwbedir Nonrinthil 
-		Naelrael Kaadraaendril Alawielyl Alaeril Galbelyn 
-		Giniwaenyth Naellerva Thaerinthil Nimphelen Laeond 
-		Ardhwedh Telathel Thaiir Paroniel Ardsandra 
-		Thalsandra Gitrinthil Milweanyl Tharaedhel Hynnan 
-		Angrond Irwwedh Elediir Faurbedir Anurhelen 
-		Baelaone Fauoneth Allail Galrond Desndra 
-		Botrinthil Beldel Elegchel Baelwenyl Larafil 
-		Belwwaenyl Seleedh Dennilphaneth Niolsandra Nillian 
-		Faelriian Nilthilith Deotchel Nivhel Huuglithil 
-		Areddil Ginien Botrond Uurnilwen Dredhiel 
-		Botond Metelin Eraielyl Cuuoneth Carielyl 
-		Lieael Indrion Uurwlian 
+		fae_Adrie fae_Ahinar fae_Althaea fae_Anastrianna fae_Andraste
+		fae_Antinua fae_Arara fae_Baelitae fae_Bethrynna fae_Birel
+		fae_Caelynn fae_Chaedi fae_Claira fae_Dara fae_Drusilia
+		fae_Elama fae_Enna fae_Faral fae_Felosial fae_Hatae
+		fae_Ielenia fae_Ilanis fae_Irann fae_Jarsali fae_Jelenneth
+		fae_Keyleth fae_Leshanna fae_Lia fae_Maiathah fae_Malquis
+		fae_Meriele fae_Mialee fae_Myathethil fae_Naivara fae_Quelenna
+		fae_Quillathe fae_Ridaro fae_Sariel fae_Shanairla fae_Shava
+		fae_Silaqui fae_Sumnes fae_Theirastra fae_Thiala fae_Tiaathque
+		fae_Traulam fae_Vadania fae_Valanthe fae_Valna fae_Xanaphia
 	}
 	
 	dynasty_of_location_prefix = "dynnp_of"
