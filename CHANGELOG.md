@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.0.1] - 2014-05-31
+## [0.0.1] - 2022-08-22
 ### Added
 - "Elven" culture with custom traditions and pillars (language and heritage)
 - "Fae" religion with custom holy sites
