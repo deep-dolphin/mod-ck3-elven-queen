@@ -8,6 +8,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Name list for feudal/clan realms and churches
 - Fervor bonus for central holy site
+- Fae metallurgy tradition
+- Fae professional army tradition
+- Specialized fae men at arms
 
 ### Changed
 - Elven name lists to be more consistent
