@@ -1,17 +1,17 @@
 knights_holy_titania = {
 	type = heavy_infantry
 	
-	damage = 50
-	toughness = 55
-	pursuit = 10
-	screen = 15
+	damage = 200
+	toughness = 125
+	pursuit = 15
+	screen = 30
 	
 	can_recruit = { always = no }
 	
 	terrain_bonus = {
 		hills = { toughness = 25 }
-		forest = { damage = 50 toughness = 50 }
-		taiga = { damage = 50 toughness = 50 }
+		forest = { damage = 75 toughness = 50 }
+		taiga = { damage = 75 toughness = 50 }
 	}
 	
 	counters = {
@@ -25,26 +25,26 @@ knights_holy_titania = {
 	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
-	stack = 100
+	stack = 50
 	icon = heavy_infantry
 }
 
 knights_titania = {
 	type = heavy_infantry
 	
-	damage = 35
-	toughness = 25
+	damage = 80
+	toughness = 45
 	pursuit = 0
-	screen = 0
+	screen = 15
 	
 	can_recruit = { 
 		culture = { has_cultural_parameter = unlock_maa_knights_fae }
 	}
 	
 	terrain_bonus = {
-		hills = { toughness = 10 }
-		forest = { damage = 30 toughness = 20 }
-		taiga = { damage = 20 toughness = 10 }
+		hills = { damage = 10 toughness = 10 }
+		forest = { damage = 35 toughness = 40 }
+		taiga = { damage = 35 toughness = 40 }
 	}
 	
 	counters = {
@@ -57,15 +57,15 @@ knights_titania = {
 	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
-	stack = 100
+	stack = 50
 	icon = heavy_infantry
 }
 
 pikemen_fae = {
 	type = pikemen
 	
-	damage = 25
-	toughness = 35
+	damage = 50
+	toughness = 75
 	pursuit = 0
 	screen = 0
 	
@@ -74,9 +74,9 @@ pikemen_fae = {
 	}
 	
 	terrain_bonus = {
-		hills = { toughness = 10 }
-		forest = { damage = 20 toughness = 30 }
-		taiga = { damage = 15 toughness = 20 }
+		hills = { toughness = 35 }
+		forest = { damage = 25 toughness = 50 }
+		taiga = { damage = 25 toughness = 50 }
 	}
 	
 	counters = {
@@ -91,16 +91,16 @@ pikemen_fae = {
 	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
-	stack = 100
+	stack = 50
 	icon = pikemen
 }
 
 archers_fae = {
 	type = archers
 	
-	damage = 55
-	toughness = 35
-	pursuit = 50
+	damage = 125
+	toughness = 25
+	pursuit = 25
 	screen = 0
 	
 	can_recruit = { 
@@ -108,9 +108,9 @@ archers_fae = {
 	}
 	
 	terrain_bonus = {
-		hills = { damage = 10 toughness = 10 }
-		forest = { damage = 30 toughness = 25 }
-		taiga = { damage = 25 toughness = 20 }
+		hills = { damage = 25 toughness = 10 }
+		forest = { damage = 50 toughness = 25 }
+		taiga = { damage = 50 toughness = 25 }
 	}
 	
 	counters = {
@@ -118,13 +118,13 @@ archers_fae = {
 		skirmishers = 2
 		pikemen = 1
 		heavy_infantry = 1
-		archer_cavalry = 0.5
+		archer_cavalry = 1
 	}
 	
 	buy_cost = { gold = heavy_infantry_recruitment_cost }
 	low_maintenance_cost = { gold = heavy_infantry_low_maint_cost }
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
-	stack = 100
+	stack = 50
 	icon = bowmen
 }
