@@ -172,3 +172,180 @@ tradition_fae_inheritance = {
 		}
 	}
 }
+
+tradition_fae_metallurgy = {
+    category = ritual
+
+    layers = {
+        0 = learning
+        1 = western
+        4 = tools.dds
+    }
+
+    is_shown = {
+        has_cultural_pillar = heritage_fae
+    }
+
+    can_pick = {
+        custom_tooltip = {
+			text = no_fae_inheritance_desc
+			scope:character = {
+				OR = {
+					has_trait = fae_blood
+					has_trait = fae_queen
+				}
+            }
+		}
+    }
+
+    parameters = {
+        unlock_maa_knights_fae = yes
+		unlock_maa_pikemen_fae = yes
+		unlock_maa_archers_fae = yes
+		more_expensive_weapon_inspiration = yes
+		improved_weapon_inspiration = yes
+		building_barracks_piety_bonuses = yes
+    }
+
+    character_modifier = {
+		prowess_per_piety_level = 10
+	}
+
+    cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_communal }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_spiritual_or_communal_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							has_trait = fae_queen
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = not_fae_queen_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						is_female = yes
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+}
+
+tradition_fae_army = {
+    category = combat
+
+    layers = {
+        0 = martial
+        1 = western
+        4 = soldiers.dds
+    }
+
+    is_shown = {
+        has_cultural_pillar = heritage_fae
+    }
+
+    can_pick = {
+        custom_tooltip = {
+			text = no_fae_inheritance_desc
+			scope:character = {
+				OR = {
+					has_trait = fae_blood
+					has_trait = fae_queen
+				}
+            }
+		}
+    }
+
+    character_modifier = {
+		levy_size = -1.0
+		men_at_arms_recruitment_cost = 1.0
+		men_at_arms_maintenance = -0.5
+		men_at_arms_cap = 10
+		men_at_arms_limit = 20
+		knight_effectiveness_mult = 1.0
+		knight_limit = 25
+	}
+
+    cost = {
+		prestige = {
+			add = {
+				value = tradition_base_cost
+				desc = BASE
+				format = "BASE_VALUE_FORMAT"
+			}
+			if = {
+				limit = {
+					NOR = {
+						any_in_list = { list = traits this = flag:ethos_bellicose }
+						any_in_list = { list = traits this = flag:ethos_spiritual }
+					}
+				}
+				add = {
+					value = tradition_incompatible_ethos_penalty
+					desc = not_bellicose_or_spiritual_desc
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						scope:character = {
+							has_trait = fae_queen
+						}
+					}
+				}
+				add = {
+					value = tradition_unfulfilled_criteria_penalty
+					desc = not_fae_queen_desc
+				}
+			}
+			
+			multiply = tradition_replacement_cost_if_relevant
+		}
+	}
+	
+	ai_will_do = {
+		value = 100
+		if = {
+			limit = {
+				NOT = {
+					scope:character = {
+						is_female = yes
+					}
+				}
+			}
+			multiply = 0
+		}
+	}
+}

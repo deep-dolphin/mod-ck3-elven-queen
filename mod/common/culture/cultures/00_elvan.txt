@@ -8,8 +8,8 @@ sylvan = {
 	traditions = {
 		tradition_fae_isolationism
 		tradition_fae_inheritance
-		tradition_sorcerous_metallurgy
-		tradition_life_is_just_a_joke
+		tradition_fae_metallurgy
+		tradition_fae_army
 	}
 
 	name_list = name_list_elven

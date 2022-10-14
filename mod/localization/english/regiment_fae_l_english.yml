@@ -1,2 +1,12 @@
 ﻿l_english:
+ knights_holy_titania:0 "Holy Titania's Knights"
+ knights_holy_titania_flavor:0 "These sanctified knights are even more deadly as their enchanted steel cuts through enemy armor like butter."
+
  knights_titania:0 "Titania's Knights"
+ knights_titania_flavor:0 "Terrors of the battlefield, these knights are shock troops who use enchanted fae steel to bring pure death to their enemies."
+
+ pikemen_fae:0 "Oberon's Guard"
+ pikemen_fae_flavor:0 "Stalwart guards of the forest, these pikemen use enchanted fae steel to empower their heavy armor and pikes."
+
+ archers_fae:0 "Sisters of Verenestra"
+ archers_fae_flavor:0 "All female followers of Verenestra, these archers use arrows tipped with enchanted fae steel."

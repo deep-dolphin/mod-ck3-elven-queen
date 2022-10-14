@@ -20,5 +20,17 @@
  tradition_fae_inheritance_desc:0 "The Fae would form a circle of peers who would choose which daughter would inherit as queen of the Fae."
  no_fae_inheritance_desc:0 "Unless you're a pureblooded Fae, you have no authority to claim a new circle!"
 
+ tradition_fae_metallurgy_name:0 "Faerie Metallurgy"
+ tradition_fae_metallurgy_desc:0 "The Fae empower their weapons with special magic from their realm."
+ no_fae_metallurgy_desc:0 "Unless you're a pureblooded Fae, you cannot use any of their magic!"
+
+ culture_parameter_unlock_maa_knights_fae:0 "Can recruit [GetMaA('knights_titania').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_pikemen_fae:0 "Can recruit [GetMaA('pikemen_fae').GetName] as [men_at_arms|E]"
+ culture_parameter_unlock_maa_archers_fae:0 "Can recruit [GetMaA('archers_fae').GetName] as [men_at_arms|E]"
+
+ tradition_fae_army_name:0 "Elven Professionalism"
+ tradition_fae_army_desc:0 "The Elves use practically no levies and instead a fully professional army. This makes their armies some of the best in the world, but at a great cost."
+ no_fae_army_desc:0 "Unless you're a pureblooded Fae, it's unlikely you'll be able to convince your ministers to take up this radical form of military!"
+
  not_fae_queen_desc:0 "You are not the queen of the Fae"
  culture_parameter_fae_succession_enabled:0 "Can enact the #high $fae_succession_law$#! [succession_law|E]"
