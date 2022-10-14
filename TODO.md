@@ -3,7 +3,6 @@ All notable actionable items to be done on this project will be listed here.
 
 ## Possible Ideas
 - "Fae" government type
-- Custom government type titles (e.g. alternative for "King/Queen") tied to culture
 - Fae elective modifiers based on fae queen/blood
 - Advanced inheritance/levels of fae blood (maybe matrilineally only, maybe demi-elves if blood is too distant)
 - Dark elves based on those who fall to a "dark" side (maybe those who lose an election, maybe if realm is unstable due to queen's death/return)
@@ -12,7 +11,6 @@ All notable actionable items to be done on this project will be listed here.
 - Longer chain for return event
 - Chain for becoming fae queen when human player
 - Elven kingdom/empire custom title
-- Men at arms for elven culture
 - More custom cultural traditions
 - Custom religious doctrines
 
