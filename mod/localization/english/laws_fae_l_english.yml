@@ -11,3 +11,21 @@
  tooltip_fae_elective_development:0 "Total [development|E] of same [faith|E] and fae [heritage|E]: $VALUE|=+0$"
  tooltip_fae_elective_capital_opinion:0 "Capital [county_opinion|E]: $VALUE|=+0$"
  #tooltip_fae_elector_vote_female:0 "[candidate.GetSheHe|U] is female: $VALUE|=+0$"scandinavian_elective_succession_law
+
+ fae_authority:0 "Fae Centralization"
+ fae_authority_0:0 "Complete Decentralization"
+ fae_authority_0_effects:0 "$EFFECT_LIST_BULLET$[vassals|E] cannot wage [war|E] against other Vassals unless they use a [hook|E] on their [liege|E]\n$EFFECT_LIST_BULLET$[titles|E] can be revoked\n$EFFECT_LIST_BULLET$[vassals|E] can be retracted\n$EFFECT_LIST_BULLET$All Vassals who refuse Title revocation or Vassal retraction are considered [criminals|E]\n$EFFECT_LIST_BULLET$Vassals' [titles|E] cannot be inherited by Characters outside the [realm|E]\n"
+ fae_authority_1:0 "Low Centralization"
+ fae_authority_1_effects:0 "$EFFECT_LIST_BULLET$Rulers can change between available Partition [succession_laws|E]\n$EFFECT_LIST_BULLET$Rulers can change between all available [succession_laws|E]"
+ fae_authority_2:0 "High Centralization"
+ fae_authority_2_effects:0 "$EFFECT_LIST_BULLET$[vassals|E] cannot wage any [war|E] unless they use a [hook|E] on their [liege|E]"
+ fae_authority_3:0 "Complete Centralization"
+ fae_authority_3_effects:0 "$EFFECT_LIST_BULLET$Rulers can designate their [heir|E]"
+
+ FAE_AUTHORITY_IS_ON_COOLDOWN:0 "You recently changed Fae Centralization. Can be changed again after [GetCurrentDateWithDiff( GetVarTimeRemaining( CHARACTER.MakeScope, 'fae_authority_cooldown') )]"
+ NO_ADJACENT_FAE_AUTHORITY:0 "You can only move centralization up or down one step at a time"
+
+ fae_authority_0_effects_not_in_prev:0 "#weak Bureaucrats are spread throughout the realm, with each area managing itself. This means the apparatus of state can support many more vassals, but taxation is much less efficient.#!"
+ fae_authority_1_effects_not_in_prev:0 ""
+ fae_authority_2_effects_not_in_prev:0 ""
+ fae_authority_3_effects_not_in_prev:0 ""

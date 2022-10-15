@@ -1,0 +1,10 @@
+realm_law_use_crown_authority = {
+    AND = {
+        realm_law_use_tribal_authority = no
+        realm_law_use_fae_authority = no
+    }
+}
+
+realm_law_use_fae_authority = {
+    has_government = fae_government
+}

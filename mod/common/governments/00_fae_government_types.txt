@@ -1,0 +1,22 @@
+fae_government = {
+    primary_holding = city_holding
+    valid_holdings = { church_holding castle_holding }
+    required_county_holdings = { church_holding city_holding }
+
+    primary_heritages = { heritage_fae }
+    preferred_religions = { fae_religion }
+
+    create_cadet_branches = yes
+	rulers_should_have_dynasty = yes
+	dynasty_named_realms = yes
+	royal_court = yes
+
+    vassal_contract = {
+		fae_government_taxes
+		war_declaration_rights
+		council_rights
+		title_revocation_rights
+	}
+
+	color = hsv{ 0.39 0.93 0.20 }
+}

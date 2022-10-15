@@ -1,0 +1,5 @@
+fae_government_tax_contribution_mult = {
+    decimals = 0
+    prefix = MOD_GOLD_PREFIX
+    percent = yes
+}

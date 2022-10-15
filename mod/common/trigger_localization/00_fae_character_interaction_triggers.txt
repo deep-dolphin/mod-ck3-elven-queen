@@ -1,0 +1,7 @@
+has_fae_authority_cooldown = {
+    first_not = FAE_AUTHORITY_IS_ON_COOLDOWN
+}
+
+has_no_adjacent_fae_authority = {
+    first_not = NO_ADJACENT_FAE_AUTHORITY
+}

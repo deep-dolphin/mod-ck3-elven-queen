@@ -1,0 +1,209 @@
+@fae_authority_cooldown_years = 50
+@fae_authority_prestige_cost = 500
+@fae_authority_gold_cost = 1000
+
+fae_authority = {
+	default = fae_authority_0
+	cumulative = yes
+	flag = realm_law
+	
+	fae_authority_0 = {
+		modifier = {
+			direct_vassal_opinion = 20
+            vassal_limit = 50
+            fae_government_tax_contribution_mult = -0.5
+		}
+
+        flag = vassal_internal_wars_banned
+        flag = title_revocation_allowed
+		flag = vassal_retraction_allowed
+        flag = vassal_refusal_is_treason
+        flag = titles_cannot_leave_realm_on_succession # Hardcoded flag
+
+		can_keep = { realm_law_use_fae_authority = yes }
+
+        can_pass = {
+            custom_description = {
+                text = "has_no_adjacent_fae_authority"
+                has_realm_law = fae_authority_1
+            }
+			custom_description = {
+				subject = root
+				text = "has_fae_authority_cooldown"
+				NOT = {
+					has_variable = fae_authority_cooldown
+				}
+			}
+        }
+
+        pass_cost = {
+            prestige = @fae_authority_prestige_cost
+            gold = @fae_authority_gold_cost
+        }
+
+        on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+            
+			# Set regular cooldown.
+			set_variable = {
+				name = fae_authority_cooldown
+				years = @fae_authority_cooldown_years
+			}
+		}
+	}
+	
+	fae_authority_1 = {
+		modifier = {
+			direct_vassal_opinion = -5
+			vassal_limit = -25
+            fae_government_tax_contribution_mult = 0.25
+		}
+
+        flag = can_change_partition_succession_laws
+		flag = can_change_succession_laws
+
+		can_keep = { realm_law_use_fae_authority = yes }
+
+		can_pass = {
+			custom_description = {
+                text = "has_no_adjacent_fae_authority"
+                OR = {
+                    has_realm_law = fae_authority_2
+                    has_realm_law = fae_authority_0
+                }
+            }
+			custom_description = {
+				subject = root
+				text = "has_fae_authority_cooldown"
+				NOT = {
+					has_variable = fae_authority_cooldown
+				}
+			}
+		}
+		
+		pass_cost = {
+            prestige = @fae_authority_prestige_cost
+            gold = @fae_authority_gold_cost
+        }
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+
+			# Set regular cooldown.
+			set_variable = {
+				name = fae_authority_cooldown
+				years = @fae_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = fae_authority_0 }
+				value = 1
+			}
+		}
+	}
+	
+	fae_authority_2 = {
+		modifier = {
+			direct_vassal_opinion = -5
+            vassal_limit = -25
+			fae_government_tax_contribution_mult = 0.25
+		}
+		
+        flag = vassal_all_wars_banned
+
+		can_keep = { realm_law_use_fae_authority = yes }
+
+		can_pass = {
+            custom_description = {
+                text = "has_no_adjacent_fae_authority"
+                OR = {
+                    has_realm_law = fae_authority_3
+                    has_realm_law = fae_authority_1
+                }
+            }
+			custom_description = {
+				subject = root
+				text = "has_fae_authority_cooldown"
+				NOT = {
+					has_variable = fae_authority_cooldown
+				}
+			}
+		}
+
+		pass_cost = {
+            prestige = @fae_authority_prestige_cost
+            gold = @fae_authority_gold_cost
+        }
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+
+			# Set regular cooldown.
+			set_variable = {
+				name = fae_authority_cooldown
+				years = @fae_authority_cooldown_years
+			}
+		}
+
+		ai_will_do = {
+			if = {
+				limit = { has_realm_law = fae_authority_1 }
+				value = 1
+			}
+		}
+	}
+	
+	fae_authority_3 = {
+		modifier = {
+			direct_vassal_opinion = -10
+			vassal_limit = -10
+			fae_government_tax_contribution_mult = 0.5
+		}
+		
+		flag = can_designate_heirs
+		
+		can_keep = { realm_law_use_fae_authority = yes }
+
+		can_pass = {
+			custom_description = {
+                text = "has_no_adjacent_fae_authority"
+                has_realm_law = fae_authority_2
+            }
+			custom_description = {
+				subject = root
+				text = "has_fae_authority_cooldown"
+				NOT = {
+					has_variable = fae_authority_cooldown
+				}
+			}
+		}
+		
+		pass_cost = {
+            prestige = @fae_authority_prestige_cost
+            gold = @fae_authority_gold_cost
+        }
+		
+		on_pass = {
+			# Increment cooldown breaker tally, if appropriate.
+			calculate_authority_cooldown_break_effect = yes
+
+			# Set regular cooldown.
+			set_variable = {
+				name = fae_authority_cooldown
+				years = @fae_authority_cooldown_years
+			}
+		}
+
+        ai_will_do = {
+			if = {
+				limit = { has_realm_law = fae_authority_2 }
+				value = 1
+			}
+		}
+	}
+}

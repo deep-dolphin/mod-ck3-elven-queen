@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fae metallurgy tradition
 - Fae professional army tradition
 - Specialized fae men at arms
+- Fae government type
+- Authority realm laws for fae government type
+- Vassal contract for fae government type
 
 ### Changed
 - Elven name lists to be more consistent
