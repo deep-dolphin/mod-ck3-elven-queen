@@ -1,25 +1,54 @@
-fae_queen_return_decision = {
-    picture = "gfx/interface/illustrations/decisions/decision_faewilds.dds"
-    desc = fae_queen_return_decision_desc
+fae_queen_establish_avelywn = {
+    picture = "gfx/interface/illustrations/decisions/decision_avelywn.dds"
+    desc = fae_queen_establish_avelywn_desc
 
     major = yes
 
-    is_shown {
-        is_landed = yes
+    is_shown = {
         has_trait = fae_queen
-        age > 45
+        NOT = { exists = title:e_avelywn.holder }
+        NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_fae_avelywn
+			}
+		}
+        is_independent_ruler = yes
+    }
+
+    is_valid = {
+        has_trait = fae_queen
+        OR = {
+            highest_held_title_tier = tier_empire
+            highest_held_title_tier = tier_kingdom
+        }
+        prestige_level >= high_prestige_level
+    }
+
+    cost = {
+        gold = 1000
+        prestige = 1000
     }
 
     effect = {
-        trigger_event = fae_queen.0001
+        hidden_effect = {
+            add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_fae_avelywn
+			}
+			set_global_variable = {
+				name = flag_formed_fae_avelywn
+				value = root
+			}
+        }
     }
 
-    # Make sure the AI does not pick this decision
-    ai_check_interval = 0
+    # AI behavior with event
+    ai_check_frequency = 36
     ai_potential = {
-        always = no
+        always = yes
     }
     ai_will_do = {
-        base = 0
+        base = 100
     }
 }

@@ -1,7 +1,7 @@
 ﻿l_english:
- fae_queen.return_faewilds.event.title:0 "Return to the Faewilds?"
- fae_queen.return_faewilds.event.desc:0 "Today I have once again contemplated returning to the Faewilds from whence we came. Shall today be the day?"
- fae_queen.return_faewilds.yes:0 "Yes, I shall return tonight."
- fae_queen.return_faewilds.no:0 "No, I shall stay in the mortal realm."
- fae_queen.return_faewilds.vanish_tooltip:0 "You shall return to the Faewilds, never to be seen in the mortal realm again"
- fae_queen.return_faewilds.stay_tooltip:0 "You shall stay in the mortal realm, you can always choose to return another day"
+ fae_life.return_faewilds.event.title:0 "Return to the Faewilds?"
+ fae_life.return_faewilds.event.desc:0 "Today I have once again contemplated returning to the Faewilds from whence we came. Shall today be the day?"
+ fae_life.return_faewilds.yes:0 "Yes, I shall return tonight."
+ fae_life.return_faewilds.no:0 "No, I shall stay in the mortal realm."
+ fae_life.return_faewilds.vanish_tooltip:0 "You shall return to the Faewilds, never to be seen in the mortal realm again"
+ fae_life.return_faewilds.stay_tooltip:0 "You shall stay in the mortal realm, you can always choose to return another day"

@@ -1,0 +1,27 @@
+fae_life_return_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_faewilds.dds"
+    desc = fae_life_return_decision_desc
+
+    major = yes
+
+    is_shown {
+        OR = {
+            has_trait = fae_blood
+            has_trait = fae_queen
+        }
+        age > 45
+    }
+
+    effect = {
+        trigger_event = fae_life.0001
+    }
+
+    # AI behavior with event
+    ai_check_interval = 36
+    ai_potential = {
+        age > 125
+    }
+    ai_will_do = {
+        base = 5
+    }
+}

@@ -6,3 +6,7 @@
  trait_Fae_blood:0 "Fae Blooded"
  trait_Fae_blood_desc:0 "This character has the blood of the fae, much more powerful than an ordinary human."
  trait_Fae_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is a powerful fae."
+
+ trait_Demi_fae_blood:0 "Demi Fae Blooded"
+ trait_Demi_fae_blood_desc:0 "This character has some of the blood of the fae, only slightly more powerful than an ordinary human."
+ trait_Demi_fae_blood_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] is of fae ancestry."

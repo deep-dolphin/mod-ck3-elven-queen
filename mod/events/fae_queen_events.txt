@@ -1,35 +1,5 @@
 namespace = fae_queen
 
-fae_queen.0001 = { # Return to the Faewilds?
-    type = character_event
-    title = fae_queen.return_faewilds.event.title
-    desc = fae_queen.return_faewilds.event.desc
-    theme = death
-
-    right_portrait = {
-        character = root
-        animation = personality_compassionate
-    }
-
-    override_background = {
-        event_background = garden
-    }
-
-    option = {
-        name = fae_queen.return_faewilds.yes
-        custom_tooltip = fae_queen.return_faewilds.vanish_tooltip
-
-        hidden_effect = {
-			root = {
-				death = {
-					death_reason = death_vanished
-				}
-			}
-		}
-    }
-
-    option = {
-        name = fae_queen.return_faewilds.no
-        custom_tooltip = fae_queen.return_faewilds.stay_tooltip
-    }
+fae_queen.0001 = { # Establish Avelywn the Domain of the Fae
+    
 }

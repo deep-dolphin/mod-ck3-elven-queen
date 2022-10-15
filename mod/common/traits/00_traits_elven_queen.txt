@@ -63,8 +63,12 @@ fae_blood = {
 
 	fertility = -0.20
 	health = 0.5
-	inbreeding_chance = -1.0
+	inbreeding_chance = -10.0
 	life_expectancy = 50
+
+	immortal = yes
+	immortal_age = 16
+	no_prowess_loss_from_age = yes
 
     same_opinion = 15
 	attraction_opinion = 15
@@ -88,6 +92,47 @@ fae_blood = {
                 desc = trait_Fae_blood_desc
             }
             desc = trait_Fae_blood_character_desc
+        }
+    }
+}
+
+demi_fae_blood = {
+	name = "Demi Fae Blood"
+	can_have_children = yes
+
+    physical = yes
+	genetic = no
+    good = yes
+	
+	birth = 0
+	random_creation = 0
+
+	fertility = -0.10
+	health = 0.1
+	inbreeding_chance = -1.0
+	life_expectancy = 50
+
+    same_opinion = 10
+	attraction_opinion = 5
+
+	diplomacy = 1
+	stewardship = 1
+	martial = 1
+	intrigue = 1
+	learning = 1
+	
+	shown_in_ruler_designer = yes
+	ruler_designer_cost = 15
+
+    desc = {
+        first_valid = {
+            triggered_desc = {
+                trigger = {
+                    NOT = { exists = this }
+                }
+                desc = trait_Demi_fae_blood_desc
+            }
+            desc = trait_Demi_fae_blood_character_desc
         }
     }
 }

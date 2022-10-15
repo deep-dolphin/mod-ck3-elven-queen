@@ -1,0 +1,43 @@
+namespace = fae_life
+
+fae_life.0001 = { # Return to the Faewilds?
+    type = character_event
+    title = fae_life.return_faewilds.event.title
+    desc = fae_life.return_faewilds.event.desc
+    theme = death
+
+    right_portrait = {
+        character = root
+        animation = personality_compassionate
+    }
+
+    override_background = {
+        event_background = garden
+    }
+
+    option = {
+        name = fae_life.return_faewilds.yes
+        custom_tooltip = fae_life.return_faewilds.vanish_tooltip
+
+        hidden_effect = {
+			root = {
+				death = {
+					death_reason = death_vanished
+				}
+			}
+		}
+        
+        ai_chance = {
+            base = 100
+        }
+    }
+
+    option = {
+        name = fae_life.return_faewilds.no
+        custom_tooltip = fae_life.return_faewilds.stay_tooltip
+
+        ai_chance = {
+            base = 0
+        }
+    }
+}
