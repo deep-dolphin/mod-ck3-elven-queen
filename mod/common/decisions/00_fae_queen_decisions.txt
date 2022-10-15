@@ -31,6 +31,8 @@ fae_queen_establish_avelywn = {
     }
 
     effect = {
+        create_fae_avelywn_effect = yes
+
         hidden_effect = {
             add_to_global_variable_list = {
 				name = unavailable_unique_decisions

@@ -1,7 +1,5 @@
-namespace = fae_queen
-
 #I have founded an Empire
-fae_queen.0001 = {
+fae_decisions.0001 = {
 	type = character_event
 	title = major_decisions.1101.t
 	desc = {
@@ -98,7 +96,7 @@ fae_queen.0001 = {
 }
 
 #My liege has founded an Empire
-fae_queen.0002 = {
+fae_decisions.0002 = {
 	type = character_event
 	title = major_decisions.1101.t
 	desc = {
@@ -155,8 +153,9 @@ fae_queen.0002 = {
 	}
 }
 
+
 #I have lost de jure territory to a new Kingdom
-fae_queen.0003 = {
+fae_decisions.0003 = {
 	type = character_event
 	title = major_decisions.1105.t
 	desc = major_decisions.1105.desc

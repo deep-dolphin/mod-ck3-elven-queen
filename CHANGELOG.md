@@ -14,10 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fae government type
 - Authority realm laws for fae government type
 - Vassal contract for fae government type
+- Demi-fae trait and related inheritance mechanics
+- Decision to change to a fae bureaucratic system of government
 
 ### Changed
 - Elven name lists to be more consistent
 - Fae religion name lists to include god names
+- Elven traits now give better genetic inheritance chances
 
 ## [0.0.1] - 2022-08-22
 ### Added

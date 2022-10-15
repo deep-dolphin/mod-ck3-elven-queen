@@ -7,6 +7,7 @@ convert_to_fae_bureaucracy = {
     is_shown = {
         is_ruler = yes
         is_landed = yes
+        NOT = { has_government = fae_government }
         culture = { has_cultural_pillar = heritage_fae }
     }
 
@@ -14,7 +15,8 @@ convert_to_fae_bureaucracy = {
         culture = { has_cultural_pillar = heritage_fae }
         OR = {
             is_independent_ruler = yes
-            liege = { 
+            liege = {
+                exists = liege
                 NOT = { this = root }
                 has_government = fae_government 
             }
