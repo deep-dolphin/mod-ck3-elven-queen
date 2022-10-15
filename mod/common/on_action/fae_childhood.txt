@@ -1,0 +1,69 @@
+on_3rd_birthday = {
+    trigger = {
+        age = 3
+        OR = {
+            has_trait = fae_queen
+            has_trait = fae_blood
+        }
+    }
+
+    effect = {
+        set_immortal_age = 3
+    }
+}
+
+on_6th_birthday = {
+    trigger = {
+        age = 6
+        OR = {
+            has_trait = fae_queen
+            has_trait = fae_blood
+        }
+    }
+
+    effect = {
+        set_immortal_age = 6
+    }
+}
+
+on_10th_birthday = {
+    trigger = {
+        age = 10
+        OR = {
+            has_trait = fae_queen
+            has_trait = fae_blood
+        }
+    }
+
+    effect = {
+        set_immortal_age = 10
+    }
+}
+
+on_15th_birthday = {
+    trigger = {
+        age = 15
+        OR = {
+            has_trait = fae_queen
+            has_trait = fae_blood
+        }
+    }
+
+    events = {
+        set_immortal_age = 15
+    }
+}
+
+on_16th_birthday = {
+    trigger = {
+        age = 16
+        OR = {
+            has_trait = fae_queen
+            has_trait = fae_blood
+        }
+    }
+
+    effect = {
+        set_immortal_age = 16
+    }
+}
