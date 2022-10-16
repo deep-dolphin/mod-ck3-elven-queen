@@ -1,35 +1,11 @@
 namespace = fae_queen
 
-#I have founded an Empire
+# I have founded Avelwynn
 fae_queen.0001 = {
 	type = character_event
-	title = major_decisions.1101.t
-	desc = {
-		triggered_desc = {
-			trigger = { exists = scope:three_kingdoms }
-			desc = {
-				desc = major_decisions.1103.opening_kingdoms
-				desc = double_line_break
-			}
-		}
-		desc = major_decisions.1103.opening
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					exists = faith.religious_head
-					faith.religious_head = root
-				}
-				desc = major_decisions.1103.i_am_religious_head
-			}
-			triggered_desc = {
-				trigger = {
-					exists = faith.religious_head
-				}
-				desc = major_decisions.1103.blessed_by_religious_head
-			}
-			desc = major_decisions.1103.i_am_religious_head
-		}
-	}
+	title = fae_queen.establish_avelwynn.event.title
+	desc = fae_queen.establish_avelwynn.event.desc
+
 	theme = realm
 	left_portrait = {
 		character = root
@@ -38,61 +14,13 @@ fae_queen.0001 = {
 	
 	immediate = {
 		play_music_cue = "mx_cue_positive_effect"
-		# If Empire is formed from three Kingdoms, specifically shout that out
-		if = {
-			limit = {
-				any_held_title = {
-					tier = tier_kingdom
-					count >= 3
-				}
-			}
-			scope:old_title = { # Carried over from the decision
-				save_scope_as = kingdom_1
-			}
-			random_held_title = {
-				limit = {
-					tier = tier_kingdom
-					NOT = { this = scope:kingdom_1 }
-				}
-				save_scope_as = kingdom_2
-			}
-			random_held_title = {
-				limit = {
-					tier = tier_kingdom
-					NOR = {
-						this = scope:kingdom_1
-						this = scope:kingdom_2
-					}
-				}
-				save_scope_as = kingdom_3
-			}
-			if = { # Safeguarding against loc-breaking here
-				limit = {
-					exists = scope:kingdom_1
-					exists = scope:kingdom_2
-					exists = scope:kingdom_3
-				}
-				save_scope_value_as = {
-					name = three_kingdoms
-					value = yes
-				}
-			}
-		}
-		if = {
-			limit = {
-				exists = faith.religious_head
-			}
-			faith.religious_head = {
-				save_scope_as = religious_figure
-			}
-		}
 		show_as_tooltip = {
 			set_primary_title_to = scope:new_title
 		}
 	}
 
 	option = {
-		name = major_decisions.1103.a
-		custom_tooltip = major_decisions.1101.i_have_become_royal
+		name = fae_queen.establish_avelwynn.event.confirm
+		custom_tooltip = fae_queen.establish_avelwynn.event.confirm.tooltip
 	}
 }

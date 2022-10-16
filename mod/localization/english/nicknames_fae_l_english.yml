@@ -1,6 +1,6 @@
-l_english:
+﻿l_english:
  nick_the_everqueen:0 "the Everqueen"
  nick_the_everqueen_desc:0 "[CHARACTER.GetShortUINameNoTooltip] is the queen of the Fae"
 
  nick_the_protector_of_fae:0 "the Protector of the Fae"
- nick_the_protector_of_fae:0 "[CHARACTER.GetShortUINameNoTooltip] is known as the founder of Avelwynn, the safe haven for all Fae in the mortal realm"
+ nick_the_protector_of_fae_desc:0 "[CHARACTER.GetShortUINameNoTooltip] is known as the founder of Avelwynn, the safe haven for all Fae in the mortal realm"

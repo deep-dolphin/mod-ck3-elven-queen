@@ -5,3 +5,8 @@
  fae_life.return_faewilds.no:0 "No, I shall stay in the mortal realm."
  fae_life.return_faewilds.vanish_tooltip:0 "You shall return to the Faewilds, never to be seen in the mortal realm again"
  fae_life.return_faewilds.stay_tooltip:0 "You shall stay in the mortal realm, you can always choose to return another day"
+
+ fae_queen.establish_avelwynn.event.title:0 "The Dawn of a New Era"
+ fae_queen.establish_avelwynn.event.desc:0 "All my vassals have finally gathered before my throne. I have earned this moment in their eyes and, more importantly, in the eyes of [ROOT.Char.GetFaith.PantheonTerm]."
+ fae_queen.establish_avelwynn.event.confirm:0 "The Era of the Fae has arrived!"
+ fae_queen.establish_avelwynn.event.confirm.tooltip:0 "Long live [new_title.GetNameNoTierNoTooltip], the Everqueen!"

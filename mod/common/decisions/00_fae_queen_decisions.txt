@@ -33,7 +33,7 @@ fae_queen_establish_avelwynn = {
     effect = {
         create_fae_avelwynn_effect = yes
         give_nickname = nick_the_protector_of_fae
-        
+
         hidden_effect = {
             add_to_global_variable_list = {
 				name = unavailable_unique_decisions

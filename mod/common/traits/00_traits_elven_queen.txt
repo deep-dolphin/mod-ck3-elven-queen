@@ -69,7 +69,6 @@ fae_blood = {
 	fertility = -0.25
 	health = 0.5
 	inbreeding_chance = -10.0
-	life_expectancy = 50
 
 	positive_random_genetic_chance = 0.5
 	positive_inactive_inheritance_chance = 0.5

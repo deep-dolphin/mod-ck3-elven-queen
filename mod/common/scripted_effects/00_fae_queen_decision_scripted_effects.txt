@@ -34,13 +34,33 @@ create_fae_avelwynn_effect = {
 
 		title:e_avelwynn = {
 			save_scope_as = new_title
+			add_title_law = fae_succession_law
 			set_capital_county = scope:old_title.title_capital_county
 		}
+
   		merge_all_kingdoms_into_singular_empire = yes
 
 		set_primary_title_to = title:e_avelwynn
 
+		change_government_to_fae_bureaucratic = yes
+
 		trigger_event = fae_queen.0001 # Notification event that you've created avelwynn
+	}
+}
+
+change_government_to_fae_bureaucratic = {
+	change_government = fae_government
+	add_realm_law = fae_authority_0
+
+	every_vassal_or_below = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_fae }
+			}
+
+			change_government = fae_government
+			add_realm_law = fae_authority_0
+		}
 	}
 }
 
