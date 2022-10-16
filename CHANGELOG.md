@@ -16,11 +16,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Vassal contract for fae government type
 - Demi-fae trait and related inheritance mechanics
 - Decision to change to a fae bureaucratic system of government
+- Decision to create a special fae empire
 
 ### Changed
 - Elven name lists to be more consistent
 - Fae religion name lists to include god names
 - Elven traits now give better genetic inheritance chances
+- Advanced inheritance/levels of fae blood (mothers pass it on, fathers weaken it)
 
 ## [0.0.1] - 2022-08-22
 ### Added
