@@ -58,7 +58,7 @@ knights_titania = {
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
 	stack = 50
-	icon = heavy_infantry
+	icon = fae_infantry
 }
 
 pikemen_fae = {
@@ -92,7 +92,7 @@ pikemen_fae = {
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
 	stack = 50
-	icon = pikemen
+	icon = fae_pikemen
 }
 
 archers_fae = {
@@ -126,5 +126,5 @@ archers_fae = {
 	high_maintenance_cost = { gold = heavy_infantry_high_maint_cost }
 	
 	stack = 50
-	icon = bowmen
+	icon = fae_archers
 }
