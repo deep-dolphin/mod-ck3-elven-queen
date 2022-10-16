@@ -28,7 +28,7 @@ fae_religion = {
 
 	#Clerical Functions
 	doctrine = doctrine_clerical_function_alms_and_pacification
-	doctrine = doctrine_clerical_gender_female
+	doctrine = doctrine_clerical_gender_female_only
 	doctrine = doctrine_clerical_marriage_allowed
 	doctrine = doctrine_clerical_succession_temporal_appointment
 
@@ -231,9 +231,9 @@ fae_religion = {
 			holy_site = siauliai_fae
 			holy_site = torda_fae
 
-			doctrine = tenet_divine_marriage
-			doctrine = tenet_mendicant_preachers
-			doctrine = tenet_sanctity_of_nature
+			doctrine = tenet_fae_marriage
+			doctrine = tenet_fae_preachers
+			doctrine = tenet_fae_love_nature
 		}
 	}
 }

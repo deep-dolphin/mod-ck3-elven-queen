@@ -102,4 +102,12 @@
  fae_negative_afterlife_3:0 "$fae_negative_afterlife$"
  
  holy_order_knights_of_the_court:0 "Knights of Queen Titania's Court"
+
+ tenet_fae_marriage_name:0 "Faerie Marriage"
+ tenet_fae_marriage_desc:0 "The blood of the divine runs through the veins of our Faerie queens. Keeping our bloodlines pure is the best way to ensure those who have returned to the Faewilds may have the chance to roam the mortal realms once more."
+
+ tenet_fae_preachers_name:0 "Faerie Preachers"
+ tenet_fae_preachers_desc:0 "Our missionaries travel far and wide to spread the knowledge of the Fae."
  
+ tenet_fae_love_nature_name:0 "Sanctity of the Faewild"
+ tenet_fae_love_nature_desc:0 "The natural mortal world is the reflection of the Faewilds, and we are merely passengers in it. We must respect and honor every tree, every animal, and even the ground itself."

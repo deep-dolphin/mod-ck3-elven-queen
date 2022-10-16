@@ -1,6 +1,11 @@
 fae_fervor_increase = {
     trigger = {
         has_flag = prague_fae_fervor_bonus
+        title:c_praha = {
+            holder = {
+                faith = faith:fae_court
+            }
+        }
     }
 
     value = 10.0

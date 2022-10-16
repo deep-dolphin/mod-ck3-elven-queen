@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Demi-fae trait and related inheritance mechanics
 - Decision to change to a fae bureaucratic system of government
 - Decision to create a special fae empire
+- Fae religious doctrines
 
 ### Changed
 - Elven name lists to be more consistent
