@@ -1,45 +1,46 @@
-fae_queen_establish_avelywn = {
-    picture = "gfx/interface/illustrations/decisions/decision_avelywn.dds"
-    desc = fae_queen_establish_avelywn_desc
+fae_queen_establish_avelwynn = {
+    picture = "gfx/interface/illustrations/decisions/decision_avelwynn.dds"
+    desc = fae_queen_establish_avelwynn_desc
 
     major = yes
 
     is_shown = {
         has_trait = fae_queen
-        NOT = { exists = title:e_avelywn.holder }
+        NOT = { exists = title:e_avelwynn.holder }
         NOT = {  #Can only do it once.
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_formed_fae_avelywn
+				target = flag:flag_formed_fae_avelwynn
 			}
 		}
-        is_independent_ruler = yes
     }
 
     is_valid = {
         has_trait = fae_queen
+        is_independent_ruler = yes
         OR = {
             highest_held_title_tier = tier_empire
             highest_held_title_tier = tier_kingdom
         }
-        prestige_level >= high_prestige_level
+        prestige_level >= max_prestige_level
     }
 
     cost = {
         gold = 1000
-        prestige = 1000
+        prestige = 2500
     }
 
     effect = {
-        create_fae_avelywn_effect = yes
-
+        create_fae_avelwynn_effect = yes
+        give_nickname = nick_the_protector_of_fae
+        
         hidden_effect = {
             add_to_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:flag_formed_fae_avelywn
+				target = flag:flag_formed_fae_avelwynn
 			}
 			set_global_variable = {
-				name = flag_formed_fae_avelywn
+				name = flag_formed_fae_avelwynn
 				value = root
 			}
         }

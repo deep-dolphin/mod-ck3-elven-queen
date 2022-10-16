@@ -4,13 +4,16 @@
  fae_life_return_decision_desc:0 "Time in the mortal realm has passed you by. It has come to you that maybe you should contemplate returning to the Faewilds. Should you decide to return, it is unlikely you will ever be back to the mortal realm again."
  fae_life_return_decision_confirm:0 "Contemplate Returning"
 
- convert_to_fae_bureaucracy:0 "Convert to Bureaucratic"
- convert_to_fae_bureaucracy_tooltip:0 "Convert to a Fae Bureaucratic system of government"
+ convert_to_fae_bureaucracy:0 "Adopt the Bureaucratic System"
+ convert_to_fae_bureaucracy_tooltip:0 "Adopt a Fae Bureaucratic system of government"
  convert_to_fae_bureaucracy_desc:0 "A Fae Bureaucratic system of government is much more efficient and centralized than the typical Feudal system of government. You will earn much higher taxes, but in exchange will earn no levies."
- convert_to_fae_bureaucracy_confirm:0 "Convert"
+ convert_to_fae_bureaucracy_confirm:0 "Adopt"
 
- fae_queen_establish_avelywn:0 "Establish the Grand Domain of the Fae"
- fae_queen_establish_avelywn_tooltip:0 "Establish the Grand Domain of the Fae"
- fae_queen_establish_avelywn_desc:0 "With how large your realm has gotten, you've contemplated proclaiming your realm a safe haven for all Fae."
- fae_queen_establish_avelywn_confirm:0 "Establish Avelywn"
+ fae_queen_establish_avelwynn:0 "Establish the Grand Domain of the Fae"
+ fae_queen_establish_avelwynn_tooltip:0 "Establish the Grand Domain of the Fae"
+ fae_queen_establish_avelwynn_desc:0 "With how large your realm has gotten, you've contemplated proclaiming your realm a safe haven for all Fae."
+ fae_queen_establish_avelwynn_confirm:0 "Establish Avelwynn"
  
+ create_avelwynn:1 "You create a new Empire"
+ create_avelwynn_every_held_kingdom:2 "Every Kingdom title you [hold|E] or [completely_control|E]"
+ create_avelwynn_de_jure_changes:1 "Becomes [de_jure|E] [kingdoms|E] of your new Empire"

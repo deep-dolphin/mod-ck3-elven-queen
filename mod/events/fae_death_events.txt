@@ -18,6 +18,7 @@ fae_death.0001 = {
         primary_heir = {
             remove_trait = fae_blood
             add_trait = fae_queen
+            give_nickname = nick_the_everqueen
         }
 	}
 }

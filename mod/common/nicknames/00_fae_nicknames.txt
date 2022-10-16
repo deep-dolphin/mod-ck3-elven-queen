@@ -1,0 +1,2 @@
+nick_the_everqueen = {}
+nick_the_protector_of_fae = {}

@@ -1,0 +1,5 @@
+e_avelwynn = {
+	color = { 140 200 160 }
+
+	capital = c_praha
+}
