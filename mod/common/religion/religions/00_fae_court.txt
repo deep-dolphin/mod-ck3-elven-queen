@@ -34,7 +34,7 @@ fae_religion = {
 
 	traits = {
 		virtues = { brave gregarious compassionate fae_queen fae_blood }
-		sins = { sadistic callous craven }
+		sins = { sadistic callous craven demi_fae_blood }
 	}
 
 	custom_faith_icons = {
