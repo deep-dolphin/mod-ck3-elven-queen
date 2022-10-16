@@ -6,7 +6,7 @@ fae_birth.0001 = {
 	hidden = yes
 	
 	trigger = {
-		OR = { # Either mother has pure blood or both mother and father has partial blood
+		OR = { # The mother has pure blood
 			AND = {
 				exists = mother
 				mother = {
@@ -15,13 +15,6 @@ fae_birth.0001 = {
 						has_trait = fae_blood
 					}
 				}
-			}
-			AND = {
-				exists = mother
-				mother = { has_trait = demi_fae_blood }
-
-				exists = scope:real_father
-				scope:real_father = { has_trait = demi_fae_blood }
 			}
 		}
 		NOR = {
@@ -42,13 +35,10 @@ fae_birth.0002 = {
 	hidden = yes
 	
 	trigger = {
-		OR = { # Either only mother has partial blood or father has pure blood (if both mother and father has demi then child gets pure blood)
+		OR = { # Either the mother has partial blood or father has pure blood
 			AND = {
 				exists = mother
 				mother = { has_trait = demi_fae_blood }
-
-				exists = scope:real_father
-				scope:real_father = { NOT = { has_trait = demi_fae_blood } }
 			}
 			AND = {
 				exists = scope:real_father
