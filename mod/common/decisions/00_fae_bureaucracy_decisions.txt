@@ -14,10 +14,16 @@ convert_to_fae_bureaucracy = {
     is_valid = {
         culture = { has_cultural_pillar = heritage_fae }
         OR = {
-            is_independent_ruler = yes
+            AND = {
+                is_independent_ruler = yes
+                has_realm_law = crown_authority_3
+            }
             liege = {
-                exists = liege
-                NOT = { this = root }
+                hidden_effect = {
+                    exists = this
+                    NOT = { this = root }
+                }
+                
                 has_government = fae_government 
             }
         }
@@ -25,6 +31,18 @@ convert_to_fae_bureaucracy = {
 
     effect = {
         change_government = fae_government
+        add_realm_law = fae_authority_0
+
+        every_vassal_or_below = {
+            if = {
+                limit = {
+                    culture = { has_cultural_pillar = heritage_fae }
+                }
+
+                change_government = fae_government
+                add_realm_law = fae_authority_0
+            }
+        }
     }
 
     # AI behavior with event
