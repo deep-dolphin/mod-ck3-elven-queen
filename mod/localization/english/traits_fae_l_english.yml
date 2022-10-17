@@ -15,3 +15,4 @@
  fae_blood_unpure_opinion:0 "Partial Fae"
  fae_blood_alien_opinion:0 "Not Human"
  
+ TRAIT_DESC_POSIITIVE_FOR_THEM:0 "$TRAIT_DESC_POSITIVE_FOR_THEM$"
