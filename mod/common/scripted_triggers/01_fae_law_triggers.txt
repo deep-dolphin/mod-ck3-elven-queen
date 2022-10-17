@@ -8,3 +8,32 @@ realm_law_use_crown_authority = {
 realm_law_use_fae_authority = {
     has_government = fae_government
 }
+
+can_keep_fae_single_heir_succession_law_trigger = {
+    trigger_if = {
+        limit = {
+            has_realm_law = fae_single_heir_succession_law
+        }
+
+        can_have_fae_single_heir_succession_law_trigger = yes
+    }
+}
+
+can_have_fae_single_heir_succession_law_trigger = {
+    has_government = fae_government
+    has_realm_law = fae_authority_3
+}
+
+can_keep_fae_partition_succession_law_trigger = {
+    trigger_if = {
+        limit = {
+            has_realm_law = fae_partition_succession_law
+        }
+
+        can_have_fae_partition_succession_law_trigger = yes
+    }
+}
+
+can_have_fae_partition_succession_law_trigger = {
+    has_government = fae_government
+}

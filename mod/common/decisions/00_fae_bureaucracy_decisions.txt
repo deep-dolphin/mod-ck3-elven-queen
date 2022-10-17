@@ -18,13 +18,15 @@ convert_to_fae_bureaucracy = {
                 is_independent_ruler = yes
                 has_realm_law = crown_authority_3
             }
-            liege = {
-                hidden_effect = {
-                    exists = this
-                    NOT = { this = root }
+            trigger_if = {
+                limit = {
+                    exists = liege
+                    NOT = { liege = root }
                 }
-                
-                has_government = fae_government 
+
+                liege = {
+                    has_government = fae_government 
+                }
             }
         }
     }

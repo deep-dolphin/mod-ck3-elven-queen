@@ -1,0 +1,98 @@
+fae_succession_order_laws = {
+	default = fae_partition_succession_law
+    flag = succession_order_laws
+ 
+    fae_partition_succession_law = {
+        can_keep = {
+			can_keep_fae_partition_succession_law_trigger = yes
+		}
+
+		can_pass = {
+			can_change_partition_succession_law_trigger = yes
+		}
+
+		can_have = {
+			can_have_fae_partition_succession_law_trigger = yes
+		}
+
+		should_start_with = {
+            has_government = fae_government
+		}
+
+		succession = {
+			order_of_succession = inheritance
+
+			traversal_order = children
+			rank = youngest
+
+			title_division = partition
+			primary_heir_minimum_share = 0.5
+		}
+
+		flag = partition_succession_law
+		modifier = {
+			direct_vassal_opinion = 5
+			player_heir_opinion = 15
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+    }
+
+    fae_single_heir_succession_law = {
+        can_keep = {
+			can_keep_fae_single_heir_succession_law_trigger = yes
+
+			# Vassal Contract allows it
+			custom_description = {
+				text = succession_laws_must_not_be_forced_partition
+				NAND = {
+					is_independent_ruler = no
+					vassal_contract_has_flag = locked_to_partition
+				}
+			}
+		}
+
+		can_have = {
+			can_have_fae_single_heir_succession_law_trigger = yes
+		}
+
+		can_pass = {
+			can_change_succession_law_trigger = yes
+		}
+
+		succession = {
+			order_of_succession = inheritance
+
+			traversal_order = children
+			rank = youngest
+
+			title_division = single_heir
+		}
+		
+		flag = advanced_succession_law
+		modifier = {
+			player_heir_opinion = 20
+			eligible_child_except_player_heir_opinion = -5
+		}
+
+		pass_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+		revoke_cost = {
+			prestige = change_succession_law_prestige_cost
+		}
+
+        ai_will_do = {
+			if = {
+				limit = {
+                    has_realm_law = fae_partition_succession_law
+				}
+
+				value = 1
+			}
+		}
+    }
+}
