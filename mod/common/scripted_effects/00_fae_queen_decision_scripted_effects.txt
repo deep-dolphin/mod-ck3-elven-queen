@@ -31,21 +31,24 @@ create_fae_avelwynn_effect = {
 
 		resolve_title_and_vassal_change = scope:change
 
-
 		title:e_avelwynn = {
 			save_scope_as = new_title
-			add_title_law = fae_succession_law	
 			set_capital_county = scope:old_title.title_capital_county
 		}
 
-		#add_realm_law_skip_effects = single_heir_succession_law_youngest
+		change_government_to_fae_bureaucratic = yes
+
+		add_realm_law_skip_effects = fae_authority_3
+		add_realm_law_skip_effects = fae_single_heir_succession_law
 		add_realm_law_skip_effects = female_only_law
 
   		merge_all_kingdoms_into_singular_empire = yes
 
-		set_primary_title_to = title:e_avelwynn
+		title:e_avelwynn = {
+			add_title_law = fae_succession_law	
+		}
 
-		change_government_to_fae_bureaucratic = yes
+		set_primary_title_to = title:e_avelwynn
 
 		trigger_event = fae_queen.0001 # Notification event that you've created avelwynn
 	}
@@ -63,6 +66,7 @@ change_government_to_fae_bureaucratic = {
 
 			change_government = fae_government
 			add_realm_law_skip_effects = fae_authority_0
+			add_realm_law_skip_effects = fae_partition_succession_law
 		}
 	}
 }
