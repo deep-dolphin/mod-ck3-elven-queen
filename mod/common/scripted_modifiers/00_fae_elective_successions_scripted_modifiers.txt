@@ -25,5 +25,6 @@ elector_voting_pattern_circumstances_fae_elective_modifier = {
                 }
             }
         }
+        add = 100
     }
 }
