@@ -1,6 +1,31 @@
 on_birth_child = {
-	events = {
-		fae_birth.0001
-		fae_birth.0002
+	on_actions = {
+		on_fae_birth_child
+	}
+}
+
+on_fae_birth_child = {
+	effect = {
+		if = { # Adds traits based on lineage
+			limit = {
+				is_born_pure_fae = yes
+			}
+
+			add_trait = fae_blood
+		}
+		else_if = {
+			limit = {
+				is_born_demi_fae = yes
+			}
+
+			add_trait = demi_fae_blood
+		}
+		else_if = {
+			limit = {
+				is_born_fae_house = yes
+			}
+
+			add_trait = disinherited
+		}
 	}
 }

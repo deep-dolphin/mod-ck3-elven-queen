@@ -1,0 +1,56 @@
+is_born_pure_fae = {
+    AND = { # Mother has pure blood
+        exists = scope:mother
+        scope:mother = {
+            OR = {
+                has_trait = fae_queen
+                has_trait = fae_blood
+            }
+        }
+    }
+}
+
+is_born_demi_fae = {
+    OR = { # Either the mother has partial blood or father has pure blood
+        AND = {
+            exists = scope:mother
+            scope:mother = { has_trait = demi_fae_blood }
+        }
+        AND = {
+            exists = scope:real_father
+            scope:real_father = {
+                OR = {
+                    has_trait = fae_queen
+                    has_trait = fae_blood
+                }
+            }
+        }
+    }
+}
+
+is_born_fae_house = {
+    OR = { # The parent the child is a house of is a fae
+        AND = {
+            exists = scope:mother
+            scope:mother = {
+                house = scope:child.house
+                is_fae = yes
+            }
+        }
+        AND = {
+            exists = scope:father
+            scope:father = {
+                house = scope:child.house
+                is_fae = yes
+            }
+        }
+    }
+}
+
+is_fae = {
+    OR = {
+        has_trait = fae_queen
+        has_trait = fae_blood
+        has_trait = demi_fae_blood
+    }
+}

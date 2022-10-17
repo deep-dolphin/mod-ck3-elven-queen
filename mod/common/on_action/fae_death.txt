@@ -1,5 +1,25 @@
 on_death = {
-    events = {
-        fae_death.0001
+    on_actions = {
+        on_fae_queen_death
+    }
+}
+
+on_fae_queen_death = {
+    trigger = {
+        AND = {
+            exists = primary_heir
+            primary_heir = {
+                has_trait = fae_blood
+            }
+            has_trait = fae_queen
+        }
+    }
+
+    effect = {
+        primary_heir = {
+            remove_trait = fae_blood
+            add_trait = fae_queen
+            give_nickname = nick_the_everqueen
+        }
     }
 }
