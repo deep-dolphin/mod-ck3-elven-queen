@@ -4,12 +4,22 @@ elector_voting_pattern_circumstances_fae_elective_modifier = {
 		scope:candidate = { 
            has_trait = fae_blood
         }
+        scope:holder = {
+            faith = {
+                has_doctrine_parameter = fae_blood_purity
+            }
+        }
 		add = 50
 	}
     modifier = {
         desc = tooltip_fae_elector_vote_fae_queen
         scope:candidate = {
             has_trait = fae_queen
+        }
+        scope:holder = {
+            faith = {
+                has_doctrine_parameter = fae_blood_purity
+            }
         }
         add = 1000
     }
@@ -23,6 +33,11 @@ elector_voting_pattern_circumstances_fae_elective_modifier = {
                 mother = {
                     has_trait = fae_queen
                 }
+            }
+        }
+        scope:holder = {
+            faith = {
+                has_doctrine_parameter = fae_blood_purity
             }
         }
         add = 100
