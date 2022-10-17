@@ -1,7 +1,7 @@
 title_succession_laws = {
     fae_succession_law = {
 		can_have = {
-			#has_government = feudal_government
+			has_government = fae_government
 			highest_held_title_tier >= tier_kingdom
 		}
 
@@ -20,7 +20,7 @@ title_succession_laws = {
 		}
 
 		flag = elective_succession_law
-		title_allegiance_opinion = 10
+		title_allegiance_opinion = 25
 
 		revoke_cost = {
 			prestige = change_title_succession_law_prestige_cost
