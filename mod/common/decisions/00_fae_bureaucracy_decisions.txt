@@ -44,3 +44,36 @@ convert_to_fae_bureaucracy = {
         base = 100
     }
 }
+
+convert_holdings_to_cities = {
+    picture = "gfx/interface/illustrations/decisions/decision_fae_bureaucracy.dds"
+    desc = convert_holdings_to_cities_desc
+
+    major = yes
+
+    is_shown = {
+        is_ruler = yes
+        is_landed = yes
+        has_government = fae_government
+        culture = { has_cultural_pillar = heritage_fae }
+    }
+
+    is_valid = {
+        culture = { has_cultural_pillar = heritage_fae }
+        has_government = fae_government
+        highest_held_title_tier > tier_barony
+    }
+
+    effect = {
+        change_all_holdings_to_cities = yes
+    }
+
+    # AI behavior with event
+    ai_check_frequency = 36
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+}

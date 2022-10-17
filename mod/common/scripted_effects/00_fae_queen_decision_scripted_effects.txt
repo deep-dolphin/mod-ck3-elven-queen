@@ -54,23 +54,6 @@ create_fae_avelwynn_effect = {
 	}
 }
 
-change_government_to_fae_bureaucratic = {
-	change_government = fae_government
-	add_realm_law_skip_effects = fae_authority_0
-
-	every_vassal_or_below = {
-		if = {
-			limit = {
-				culture = { has_cultural_pillar = heritage_fae }
-			}
-
-			change_government = fae_government
-			add_realm_law_skip_effects = fae_authority_0
-			add_realm_law_skip_effects = fae_partition_succession_law
-		}
-	}
-}
-
 merge_all_kingdoms_into_singular_empire = {
 	every_held_title = { # Merges all owned kingdoms into the new empire title
 		limit = {

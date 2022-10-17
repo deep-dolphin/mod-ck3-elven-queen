@@ -9,11 +9,16 @@
  convert_to_fae_bureaucracy_desc:0 "A Fae Bureaucratic system of government is much more efficient and centralized than the typical Feudal system of government. You will earn much higher taxes, but in exchange will earn no levies."
  convert_to_fae_bureaucracy_confirm:0 "Adopt"
 
+ convert_holdings_to_cities:0 "Convert Holdings to Cities"
+ convert_holdings_to_cities_tooltip:0 "Convert all your castle holdings to cities"
+ convert_holdings_to_cities_desc:0 "With little need for your castles, you can have the decision made to convert your castles into dwellings made for more of your populace."
+ convert_holdings_to_cities_confirm:0 "Tear Down Those Walls"
+
  fae_queen_establish_avelwynn:0 "Establish the Grand Domain of the Fae"
  fae_queen_establish_avelwynn_tooltip:0 "Establish the Grand Domain of the Fae"
  fae_queen_establish_avelwynn_desc:0 "With how large your realm has gotten, you've contemplated proclaiming your realm a safe haven for all Fae."
  fae_queen_establish_avelwynn_confirm:0 "Establish Avelwynn"
  
- create_avelwynn:1 "You create a new Empire"
- create_avelwynn_every_held_kingdom:2 "Every Kingdom title you [hold|E] or [completely_control|E]"
- create_avelwynn_de_jure_changes:1 "Becomes [de_jure|E] [kingdoms|E] of your new Empire"
+ create_avelwynn:0 "You create a new Empire"
+ create_avelwynn_every_held_kingdom:0 "Every Kingdom title you [hold|E] or [completely_control|E]"
+ create_avelwynn_de_jure_changes:0 "Becomes [de_jure|E] [kingdoms|E] of your new Empire"

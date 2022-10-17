@@ -1,0 +1,39 @@
+change_government_to_fae_bureaucratic = {
+	change_government = fae_government
+	add_realm_law_skip_effects = fae_authority_0
+
+	every_vassal_or_below = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_fae }
+			}
+
+			change_government = fae_government
+			add_realm_law_skip_effects = fae_authority_0
+			add_realm_law_skip_effects = fae_partition_succession_law
+		}
+	}
+}
+
+change_all_holdings_to_cities = {
+    save_scope_as = founder
+
+    every_held_title = {
+        if = {
+            limit = {
+                tier = tier_county
+            }
+
+            every_county_province = {
+                if = {
+                    limit = {
+                        barony_controller = province_owner
+                        has_holding_type = castle_holding
+                    }
+
+                    set_holding_type = city_holding
+                }
+            }
+        }
+    }
+}
