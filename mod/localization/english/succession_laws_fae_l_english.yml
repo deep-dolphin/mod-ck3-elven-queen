@@ -1,0 +1,11 @@
+﻿l_english:
+ fae_succession_order_laws:0 "Fae [succession_laws|E]"
+ fae_succession_order_laws_singular:0 "Fae [succession_law|E]"
+
+ fae_partition_succession_law:0 "Fae Partition"
+ fae_partition_succession_law_subname:0 "All Children Inherit"
+ fae_partition_succession_law_effects:0 "\n#V Under $fae_partition_succession_law$ [succession], the lion's share of [titles] will go to your [player_heir] – the rest will be divided between your children.#!\n\n#weak $partition_base_desc$\nThe Player Heir will #emp always#! inherit at least half of the late Ruler's Titles.\n#!"
+
+ fae_single_heir_succession_law:0 "Fae Ultimogeniture"
+ fae_single_heir_succession_law_subname:0 "Youngest Child Inherits"
+ fae_single_heir_succession_law_effects:0 "\n#V Under $fae_single_heir_succession_law$ [succession], your youngest child inherits all your [titles].#!\n\n#weak Upon succession, all of the late Ruler's [titles|e] will be given to the [player_heir|E], which is their youngest [eligible_child|E]. Older children will receive nothing.\n#!"
