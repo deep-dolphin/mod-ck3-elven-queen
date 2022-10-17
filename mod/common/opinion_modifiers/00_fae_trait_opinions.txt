@@ -1,0 +1,14 @@
+fae_blood_pure_opinion = {
+    opinion = 25
+}
+
+fae_blood_unpure_opinion = {
+    opinion = -50
+}
+
+fae_blood_alien_opinion = {
+    opinion = -100
+    imprisonment_reaon = yes
+    banish_reason = yes
+    execute_reason = yes
+}

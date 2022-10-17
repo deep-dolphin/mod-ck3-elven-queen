@@ -3107,6 +3107,8 @@ doctrine_core_tenets = {
 
 			reincarnation_resistance_to_conversion = yes
 			reincarnation_events_active = yes
+
+			fae_blood_purity = yes
 		}
 	}
 

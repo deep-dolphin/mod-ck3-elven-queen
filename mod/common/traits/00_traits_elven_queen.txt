@@ -2,6 +2,11 @@ fae_queen = {
 	name = "Queen of the Fae"
 	can_have_children = yes
 
+	opposites = {
+		fae_blood
+		demi_fae_blood
+	}
+
 	physical = yes
 	genetic = no
 	good = yes
@@ -20,7 +25,6 @@ fae_queen = {
 	negative_inactive_inheritance_chance = -1.0
 	
 	immortal = yes
-	immortal_age = 16
 	no_prowess_loss_from_age = yes
 	
 	diplomacy = 10
@@ -34,9 +38,21 @@ fae_queen = {
 	monthly_prestige = 2
 	monthly_piety = 2
 
+	triggered_opinion = {
+		parameter = fae_blood_purity
+		opinion_modifier = fae_blood_pure_opinion
+	}
+
+	triggered_opinion = {
+		parameter = fae_blood_purity
+		check_missing = yes
+		opinion_modifier = fae_blood_alien_opinion
+	}
+
 	same_faith_opinion = 15
-	attraction_opinion = 25
-	different_faith_opinion = -50
+	different_faith_opinion = -15
+
+	attraction_opinion = 50
     dread_baseline_add = 50
 	
 	shown_in_ruler_designer = yes
@@ -59,6 +75,11 @@ fae_blood = {
 	name = "Fae Blood"
 	can_have_children = yes
 
+	opposites = {
+		fae_queen
+		demi_fae_blood
+	}
+
     physical = yes
 	genetic = no
     good = yes
@@ -70,16 +91,25 @@ fae_blood = {
 	health = 0.5
 	inbreeding_chance = -10.0
 
-	positive_random_genetic_chance = 0.5
-	positive_inactive_inheritance_chance = 0.5
-	negative_random_genetic_chance = -1.0
-	negative_inactive_inheritance_chance = -1.0
+	positive_random_genetic_chance = 0.25
+	positive_inactive_inheritance_chance = 0.25
+	negative_random_genetic_chance = -0.5
+	negative_inactive_inheritance_chance = -0.5
 
 	immortal = yes
-	immortal_age = 16
 	no_prowess_loss_from_age = yes
 
-    same_opinion = 15
+	triggered_opinion = {
+		parameter = fae_blood_purity
+		opinion_modifier = fae_blood_pure_opinion
+	}
+
+	triggered_opinion = {
+		parameter = fae_blood_purity
+		check_missing = yes
+		opinion_modifier = fae_blood_alien_opinion
+	}
+
 	attraction_opinion = 15
 	
 	diplomacy = 5
@@ -109,6 +139,11 @@ demi_fae_blood = {
 	name = "Demi Fae Blood"
 	can_have_children = yes
 
+	opposites = {
+		fae_queen
+		fae_blood
+	}
+
     physical = yes
 	genetic = no
     good = yes
@@ -121,10 +156,20 @@ demi_fae_blood = {
 	inbreeding_chance = -1.0
 	life_expectancy = 25
 
-	negative_random_genetic_chance = -0.5
-	negative_inactive_inheritance_chance = -0.5
+	negative_random_genetic_chance = -0.25
+	negative_inactive_inheritance_chance = -0.25
 
-    same_opinion = 10
+	triggered_opinion = {
+		parameter = fae_blood_purity
+		opinion_modifier = fae_blood_unpure_opinion
+	}
+
+	triggered_opinion = {
+		parameter = fae_blood_purity
+		check_missing = yes
+		opinion_modifier = fae_blood_alien_opinion
+	}
+
 	attraction_opinion = 5
 
 	diplomacy = 1
