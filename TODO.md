@@ -7,6 +7,5 @@ All notable actionable items to be done on this project will be listed here.
 - Balance via pushback by human coalitions against the encroaching fae
 - Longer chain for return event
 - Chain for becoming fae queen when human player
-- Custom head of faith title
 
 ## Next Release

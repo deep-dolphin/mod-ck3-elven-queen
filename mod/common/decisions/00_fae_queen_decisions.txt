@@ -32,7 +32,7 @@ fae_queen_establish_avelwynn = {
 
     effect = {
         create_fae_avelwynn_effect = yes
-        give_nickname = nick_the_protector_of_fae
+        give_nickname = nick_the_everqueen
 
         hidden_effect = {
             add_to_global_variable_list = {
@@ -44,6 +44,43 @@ fae_queen_establish_avelwynn = {
 				value = root
 			}
         }
+    }
+
+    # AI behavior with event
+    ai_check_frequency = 36
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+}
+
+fae_queen_restore_fae_court = {
+    picture = "gfx/interface/illustrations/decisions/decision_restore_fae_court.dds"
+    desc = fae_queen_restore_fae_court_desc
+
+    major = yes
+
+    is_shown = {
+        has_trait = fae_queen
+        NOT = { exists = title:k_fae_court.holder }
+    }
+
+    is_valid = {
+        has_trait = fae_queen
+        is_independent_ruler = yes
+        piety_level >= high_piety_level
+    }
+
+    cost = {
+        gold = 500
+        piety = 2500
+    }
+
+    effect = {
+        restore_fae_court_effect = yes
+        give_nickname = nick_the_protector_of_fae
     }
 
     # AI behavior with event

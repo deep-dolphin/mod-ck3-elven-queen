@@ -22,3 +22,12 @@
  create_avelwynn:0 "You create a new Empire"
  create_avelwynn_every_held_kingdom:0 "Every Kingdom title you [hold|E] or [completely_control|E]"
  create_avelwynn_de_jure_changes:0 "Becomes [de_jure|E] [kingdoms|E] of your new Empire"
+
+ fae_queen_restore_fae_court:0 "Restore the Faerie Court"
+ fae_queen_restore_fae_court_tooltip:0 "Restore the Faerie Court and become the head of faith"
+ fae_queen_restore_fae_court_desc:0 "Restore the title of the Faerie Court to provide a safehaven for all those prosecuted for following the teachings of the Fae."
+ fae_queen_restore_fae_court_confirm:0 "Restore Court"
+
+ restore_fae_court:0 "You restore the Faerie Court"
+ restore_fae_court_every_held_kingdom:0 "Every Duchy title you [hold|E] or [completely_control|E]"
+ restore_fae_court_de_jure_changes:0 "Becomes [de_jure|E] [duchies|E] of your new Kingdom"

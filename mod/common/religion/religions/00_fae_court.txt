@@ -223,6 +223,7 @@ fae_religion = {
 	faiths = {
 		fae_court = {
 			color = green_light
+			religious_head = k_fae_court
 			icon = fae_court
 			
 			holy_site = prague_fae

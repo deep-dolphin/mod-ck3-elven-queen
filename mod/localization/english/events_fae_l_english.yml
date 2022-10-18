@@ -10,3 +10,8 @@
  fae_queen.establish_avelwynn.event.desc:0 "All my vassals have finally gathered before my throne. I have earned this moment in their eyes and, more importantly, in the eyes of [ROOT.Char.GetFaith.PantheonTerm]."
  fae_queen.establish_avelwynn.event.confirm:0 "The Era of the Fae has arrived!"
  fae_queen.establish_avelwynn.event.confirm.tooltip:0 "Long live [new_title.GetNameNoTierNoTooltip], the Everqueen!"
+
+ fae_queen.restore_fae_court.event.title:0 "The Restoration of the Faerie Court"
+ fae_queen.restore_fae_court.event.desc:0 "Today is the day that Fae no longer have to worry about being prosecuted for their faith. I shall be proclaimed the leader of all Fae in the eyes of [ROOT.Char.GetFaith.PantheonTerm]."
+ fae_queen.restore_fae_court.event.confirm:0 "May the Faerie Court prosper forevermore!"
+ fae_queen.restore_fae_court.event.confirm.tooltip:0 "Long live [new_title.GetNameNoTierNoTooltip], the Everqueen!"

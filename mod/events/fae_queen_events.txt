@@ -24,3 +24,28 @@ fae_queen.0001 = {
 		custom_tooltip = fae_queen.establish_avelwynn.event.confirm.tooltip
 	}
 }
+
+# I have restored the Fae Court
+fae_queen.0002 = {
+	type = character_event
+	title = fae_queen.restore_fae_court.event.title
+	desc = fae_queen.restore_fae_court.event.desc
+
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_greedy
+	}
+	
+	immediate = {
+		play_music_cue = "mx_cue_positive_effect"
+		show_as_tooltip = {
+			set_primary_title_to = scope:new_title
+		}
+	}
+
+	option = {
+		name = fae_queen.restore_fae_court.event.confirm
+		custom_tooltip = fae_queen.restore_fae_court.event.confirm.tooltip
+	}
+}

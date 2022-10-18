@@ -3,3 +3,15 @@ e_avelwynn = {
 
 	capital = c_praha
 }
+
+k_fae_court = {
+	color = { 140 200 160 }
+	definite_form = yes
+	ruler_uses_title_name = no
+
+	capital = c_praha
+
+	destroy_if_invalid_heir = yes
+	no_automatic_claims = yes
+	always_follows_primary_heir = yes
+}
