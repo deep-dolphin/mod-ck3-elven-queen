@@ -31,6 +31,11 @@ convert_to_fae_bureaucracy = {
         }
     }
 
+    cost = {
+        gold = 100
+        prestige = 500
+    }
+
     effect = {
         change_government_to_fae_bureaucratic = yes
     }
@@ -62,6 +67,10 @@ convert_holdings_to_cities = {
         culture = { has_cultural_pillar = heritage_fae }
         has_government = fae_government
         highest_held_title_tier > tier_barony
+    }
+
+    cost = {
+        gold = 250
     }
 
     effect = {
