@@ -110,6 +110,8 @@ restore_fae_court_effect = {
 
   		merge_all_duchies_into_singular_kingdom = yes
 
+		convert_all_counties_into_fae = yes
+
 		set_primary_title_to = title:k_fae_court
 
 		trigger_event = fae_queen.0002 # Notification event that you've created avelwynn
