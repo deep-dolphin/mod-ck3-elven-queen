@@ -1,0 +1,42 @@
+convert_to_fae_bureaucracy_cost = {
+    value = 1000
+
+    if = {
+        limit = {
+            is_ai = yes
+        }
+
+        add = -900
+    }
+}
+
+convert_holdings_to_cities_cost = {
+    value = 250
+
+    every_held_title = {
+        if = {
+            limit = {
+                tier = tier_county
+            }
+
+            every_county_province = {
+                if = {
+                    limit = {
+                        barony_controller = province_owner
+                        has_holding_type = castle_holding
+                    }
+
+                    add = 50
+                }
+            }
+        }
+    }
+
+    if = {
+        limit = {
+            is_ai = yes
+        }
+
+        divide = 5
+    }
+}

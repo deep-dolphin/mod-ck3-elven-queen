@@ -32,7 +32,9 @@ convert_to_fae_bureaucracy = {
     }
 
     cost = {
-        gold = 100
+        gold = {
+            value = convert_to_fae_bureaucracy_cost
+        }
         prestige = 500
     }
 
@@ -70,7 +72,9 @@ convert_holdings_to_cities = {
     }
 
     cost = {
-        gold = 250
+        gold = {
+            value = convert_holdings_to_cities_cost
+        }   
     }
 
     effect = {
