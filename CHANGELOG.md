@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Birthday event for Fae blooded to gain some skill or focus progress
 - Fae elective voting modifiers based on fae queen/blood
 - Custom head of faith title and a decision to create it
+- Decision to reduce stress to help regulate stress during an immortal life
 
 ### Changed
 - Elven name lists to be more consistent
