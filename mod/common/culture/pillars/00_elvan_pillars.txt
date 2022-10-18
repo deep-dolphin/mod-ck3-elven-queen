@@ -18,5 +18,5 @@ language_elvish = {
 		}	
 	}
 	
-	color = ashkenazi
+	color = { 70 150 90 }
 }
