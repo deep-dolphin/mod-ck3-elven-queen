@@ -119,12 +119,12 @@ restore_fae_court_effect = {
 				if = {
 					limit = { NOT = { has_holding = yes } }
 
-					begin_create_holding = temple_holding
+					begin_create_holding = church_holding
 				}
 				else_if = {
-					limit = { NOT = { has_holding_type = temple_holding } }
+					limit = { NOT = { has_holding_type = church_holding } }
 
-					set_holding_type = temple_holding
+					set_holding_type = church_holding
 				}
 			}
 		}		
