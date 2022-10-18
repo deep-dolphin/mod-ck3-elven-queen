@@ -4,7 +4,7 @@ fae_life_return_decision = {
 
     major = yes
 
-    is_shown {
+    is_shown = {
         OR = {
             has_trait = fae_blood
             has_trait = fae_queen
@@ -23,5 +23,37 @@ fae_life_return_decision = {
     }
     ai_will_do = {
         base = 5
+    }
+}
+
+fae_bathe_moonlight_decision = {
+    picture = "gfx/interface/illustrations/decisions/decision_bathe_moonlight.dds"
+    desc = fae_bathe_moonlight_decision_desc
+
+    is_shown = {
+        OR = {
+            has_trait = fae_blood
+            has_trait = fae_queen
+        }
+    }
+
+    cooldown = { days = 365 }
+
+    cost = {
+        gold = 50
+        piety = 250
+    }
+
+    effect = {
+        add_stress = major_stress_loss
+    }
+
+    # AI behavior with event
+    ai_check_interval = 12
+    ai_potential = {
+        stress > 50
+    }
+    ai_will_do = {
+        base = 100
     }
 }

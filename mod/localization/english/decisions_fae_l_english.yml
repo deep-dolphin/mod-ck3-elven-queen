@@ -4,6 +4,11 @@
  fae_life_return_decision_desc:0 "Time in the mortal realm has passed you by. It has come to you that maybe you should contemplate returning to the Faewilds. Should you decide to return, it is unlikely you will ever be back to the mortal realm again."
  fae_life_return_decision_confirm:0 "Contemplate Returning"
 
+ fae_bathe_moonlight_decision:0 "Bathe in the Moonlight"
+ fae_bathe_moonlight_decision_tooltip:0 "Take some time during the night to bathe in the moonlight"
+ fae_bathe_moonlight_decision_desc:0 "Bathing in the moonlight is one thing any Fae can claim to enjoy doing the most. Not only does it help you relax but it also allows you to attune your the magic in your blood to the phases of the moon."
+ fae_bathe_moonlight_decision_confirm:0 "Bathe"
+
  convert_to_fae_bureaucracy:0 "Adopt the Bureaucratic System"
  convert_to_fae_bureaucracy_tooltip:0 "Adopt a Fae Bureaucratic system of government"
  convert_to_fae_bureaucracy_desc:0 "A Fae Bureaucratic system of government is much more efficient and centralized than the typical Feudal system of government. You will earn much higher taxes, but in exchange will earn no levies."
