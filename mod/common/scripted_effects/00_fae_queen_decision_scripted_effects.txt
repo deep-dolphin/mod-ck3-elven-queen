@@ -71,6 +71,7 @@ restore_fae_court_effect = {
 			custom_tooltip = restore_fae_court_de_jure_changes
 		}
 	}
+	custom_tooltip = restore_fae_court_faith_culture_changes
 
 	hidden_effect = {
 		save_scope_as = founder
@@ -208,5 +209,12 @@ merge_all_duchies_into_singular_kingdom = {
 				add_to_list = additional_de_jure_duchies
 			}
 		}
+	}
+}
+
+convert_all_counties_into_fae = {
+	every_sub_realm_county = {
+		set_county_culture = culture:sylvan
+		set_county_faith = faith:fae_court
 	}
 }

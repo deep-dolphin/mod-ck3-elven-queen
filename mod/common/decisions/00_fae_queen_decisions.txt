@@ -69,8 +69,10 @@ fae_queen_restore_fae_court = {
 
     is_valid = {
         has_trait = fae_queen
+        has_faith = faith:fae_court
         is_independent_ruler = yes
         piety_level >= high_piety_level
+        completely_controls = title:c_praha
     }
 
     cost = {

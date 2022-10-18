@@ -29,5 +29,6 @@
  fae_queen_restore_fae_court_confirm:0 "Restore Court"
 
  restore_fae_court:0 "You restore the Faerie Court"
- restore_fae_court_every_held_kingdom:0 "Every Duchy title you [hold|E] or [completely_control|E]"
+ restore_fae_court_every_held_duchy:0 "Every Duchy title you [hold|E] or [completely_control|E]"
  restore_fae_court_de_jure_changes:0 "Becomes [de_jure|E] [duchies|E] of your new Kingdom"
+ restore_fae_court_faith_culture_changes:0 "Every county in your realm becomes Fae"
