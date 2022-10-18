@@ -54,6 +54,10 @@ fae_queen = {
 
 	attraction_opinion = 50
     dread_baseline_add = 50
+
+	domain_limit = 5
+
+	monthly_lifestyle_xp_gain_mult = -0.9
 	
 	shown_in_ruler_designer = yes
 	ruler_designer_cost = 200
@@ -90,6 +94,8 @@ fae_blood = {
 	fertility = -0.25
 	health = 0.5
 	inbreeding_chance = -10.0
+
+	monthly_lifestyle_xp_gain_mult = -0.5
 
 	positive_random_genetic_chance = 0.25
 	positive_inactive_inheritance_chance = 0.25
@@ -155,6 +161,8 @@ demi_fae_blood = {
 	health = 0.1
 	inbreeding_chance = -1.0
 	life_expectancy = 25
+
+	monthly_lifestyle_xp_gain_mult = -0.2
 
 	negative_random_genetic_chance = -0.25
 	negative_inactive_inheritance_chance = -0.25

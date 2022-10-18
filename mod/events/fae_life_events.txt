@@ -41,3 +41,61 @@ fae_life.0001 = { # Return to the Faewilds?
         }
     }
 }
+
+fae_life.0002 = {
+    hidden = yes
+
+    immediate = {
+        random_list = {
+            1 = {
+				send_interface_toast = {
+					title = fae_aging_message_title
+					left_icon = root
+					add_diplomacy_skill = 1
+				}
+			}
+			1 = {
+				send_interface_toast = {
+					title = fae_aging_message_title
+					left_icon = root
+					add_martial_skill = 1
+				}
+			}
+			1 = {
+				send_interface_toast = {
+					title = fae_aging_message_title
+					left_icon = root
+					add_intrigue_skill = 1
+				}
+			}
+			1 = {
+				send_interface_toast = {
+					title = fae_aging_message_title
+					left_icon = root
+					add_stewardship_skill = 1
+				}
+			}
+			1 = {
+				send_interface_toast = {
+					title = fae_aging_message_title
+					left_icon = root
+					add_learning_skill = 1
+				}
+			}
+            2 = {
+                send_interface_toast = {
+					title = fae_aging_message_title
+					left_icon = root
+					add_prowess_skill = 1
+				}
+            }
+            5 = {
+                send_interface_toast = {
+					title = fae_aging_message_title
+					left_icon = root
+					add_focus_progress = 50
+				}
+            }
+        }
+    }
+}

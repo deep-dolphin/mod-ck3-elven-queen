@@ -19,6 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Decision to create a special fae empire
 - Fae religious doctrines
 - Succession laws for fae government type
+- Decision to convert all castle holdings into city holdings
+- Birthday event for Fae blooded to gain some skill or focus progress
 
 ### Changed
 - Elven name lists to be more consistent
