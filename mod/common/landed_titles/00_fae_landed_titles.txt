@@ -1,11 +1,11 @@
 e_avelwynn = {
-	color = { 140 200 160 }
+	color = { 50 150 55 }
 
 	capital = c_praha
 }
 
 k_fae_court = {
-	color = { 140 200 160 }
+	color = { 87 144 50 }
 	definite_form = yes
 	ruler_uses_title_name = no
 
