@@ -114,6 +114,21 @@ restore_fae_court_effect = {
 
 		set_primary_title_to = title:k_fae_court
 
+		title:b_beroun = { # Creates temple or converts holding to temple in Beroun holy site
+			title_province = {
+				if = {
+					limit = { NOT = { has_holding = yes } }
+
+					begin_create_holding = temple_holding
+				}
+				else_if = {
+					limit = { NOT = { has_holding_type = temple_holding } }
+
+					set_holding_type = temple_holding
+				}
+			}
+		}		
+
 		trigger_event = fae_queen.0002 # Notification event that you've created avelwynn
 	}
 }
