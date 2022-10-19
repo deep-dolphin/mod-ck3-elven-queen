@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fae elective voting modifiers based on fae queen/blood
 - Custom head of faith title and a decision to create it
 - Decision to reduce stress to help regulate stress during an immortal life
+- Unique banner artifact upon creating Avelwynn
 
 ### Changed
 - Elven name lists to be more consistent
