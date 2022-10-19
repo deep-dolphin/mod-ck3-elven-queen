@@ -6,7 +6,7 @@ convert_to_fae_bureaucracy_cost = {
             is_ai = yes
         }
 
-        add = -900
+        add = -1000
     }
 }
 
