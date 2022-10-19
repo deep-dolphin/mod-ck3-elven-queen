@@ -291,9 +291,9 @@ tradition_fae_army = {
     character_modifier = {
 		levy_size = -10.0
 		men_at_arms_recruitment_cost = 1.0
-		men_at_arms_maintenance = -0.5
-		men_at_arms_cap = 10
-		men_at_arms_limit = 20
+		men_at_arms_maintenance = -0.25
+		men_at_arms_cap = 5
+		men_at_arms_limit = 15
 		knight_effectiveness_mult = 1.0
 		knight_limit = 25
 	}
