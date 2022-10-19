@@ -3,6 +3,10 @@ fae_government = {
     valid_holdings = { church_holding castle_holding }
     required_county_holdings = { church_holding city_holding }
 
+	can_get_government = {
+		culture = { has_cultural_pillar = heritage_fae }
+	}
+
     primary_heritages = { heritage_fae }
     preferred_religions = { fae_religion }
 
