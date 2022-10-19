@@ -4,12 +4,14 @@ on_birthday_childhood = {
     }
 }
 
+on_16th_birthday = {
+    on_actions = {
+        on_fae_birthday_childhood
+    }
+}
+
 on_fae_birthday_childhood = {
     trigger = {
-        OR = {
-            is_adult = no
-            age = 16
-        }
         OR = {
             has_trait = fae_queen
             has_trait = fae_blood

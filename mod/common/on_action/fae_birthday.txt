@@ -6,7 +6,6 @@ on_birthday_adulthood = {
 
 on_fae_birthday_adulthood = {
     trigger = {
-        is_adult = yes
         OR = {
             has_trait = fae_queen
             has_trait = fae_blood
