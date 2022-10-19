@@ -36,13 +36,7 @@ create_fae_avelwynn_effect = {
 			set_capital_county = scope:old_title.title_capital_county
 		}
 
-		if = {
-			limit = {
-				NOT = { has_government = fae_government }
-			}
-
-			change_government_to_fae_bureaucratic = yes
-		}
+		change_government_to_fae_bureaucratic = yes
 		
 		add_realm_law_skip_effects = fae_authority_3
 		add_realm_law_skip_effects = fae_single_heir_succession_law
@@ -100,13 +94,7 @@ restore_fae_court_effect = {
 			save_scope_as = new_title
 		}
 
-		if = {
-			limit = {
-				NOT = { has_government = fae_government }
-			}
-
-			change_government_to_fae_bureaucratic = yes
-		}
+		change_government_to_fae_bureaucratic = yes
 		
 		add_realm_law_skip_effects = female_only_law
 

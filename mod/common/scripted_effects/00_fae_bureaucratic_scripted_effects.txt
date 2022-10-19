@@ -1,18 +1,38 @@
 change_government_to_fae_bureaucratic = {
-	change_government = fae_government
-	add_realm_law_skip_effects = fae_authority_0
+    custom_tooltip = change_government_to_fae_bureaucratic_tooltip
 
-	every_vassal_or_below = {
-		if = {
-			limit = {
-				culture = { has_cultural_pillar = heritage_fae }
-			}
+    hidden_effect = {
+        if = {
+            limit = { NOT = { has_government = fae_government } }
 
-			change_government = fae_government
-			add_realm_law_skip_effects = fae_authority_0
-			add_realm_law_skip_effects = fae_partition_succession_law
-		}
-	}
+            change_government = fae_government
+
+            reset_realm_laws_fae_bureaucratic = yes
+
+            every_vassal_or_below = {
+                limit = {
+                    culture = { has_cultural_pillar = heritage_fae }
+                }
+
+                change_government = fae_government
+
+                reset_realm_laws_fae_bureaucratic = yes
+            }
+        }
+    }
+}
+
+reset_realm_laws_fae_bureaucratic = {
+    add_realm_law_skip_effects = fae_authority_0
+	add_realm_law_skip_effects = fae_partition_succession_law
+
+    if = {
+        limit = {
+            has_realm_law = confederate_partition_succession_law
+        }
+
+        remove_realm_law = confederate_partition_succession_law
+    }
 }
 
 change_all_holdings_to_cities = {

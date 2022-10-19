@@ -14,6 +14,8 @@
  convert_to_fae_bureaucracy_desc:0 "A Fae Bureaucratic system of government is much more efficient and centralized than the typical Feudal system of government. You will earn much higher taxes, but in exchange will earn no levies."
  convert_to_fae_bureaucracy_confirm:0 "Adopt"
 
+ change_government_to_fae_bureaucratic_tooltip:0 "Adopt the Fae Bureaucratic government type"
+
  convert_holdings_to_cities:0 "Convert Holdings to Cities"
  convert_holdings_to_cities_tooltip:0 "Convert all your castle holdings to cities"
  convert_holdings_to_cities_desc:0 "With little need for your castles, you can have the decision made to convert your castles into dwellings made for more of your populace."
