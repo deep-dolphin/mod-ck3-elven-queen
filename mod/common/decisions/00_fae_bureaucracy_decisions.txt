@@ -63,6 +63,7 @@ convert_holdings_to_cities = {
         is_landed = yes
         has_government = fae_government
         culture = { has_cultural_pillar = heritage_fae }
+        any_valid_holding_to_convert = yes
     }
 
     is_valid = {
