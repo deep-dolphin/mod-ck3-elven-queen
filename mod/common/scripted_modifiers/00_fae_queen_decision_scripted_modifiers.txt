@@ -1,0 +1,8 @@
+artifact_wall_banner_avelwynn_modifier = {
+    development_growth = 0.5
+    men_at_arms_maintenance = 1.0
+    domain_limit = 5
+    vassal_limit = 25
+    men_at_arms_limit = 25
+    men_at_arms_cap = 5
+}

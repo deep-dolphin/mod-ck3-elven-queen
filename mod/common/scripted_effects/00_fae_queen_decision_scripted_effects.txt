@@ -235,3 +235,19 @@ convert_all_counties_into_fae = {
 		set_county_faith = faith:fae_court
 	}
 }
+
+create_artifacts_avelwynn = {
+	set_artifact_rarity_illustrious = yes
+
+	create_artifact = {
+		name = artifact_wall_banner_avelwynn_name
+		description = artifact_wall_banner_avelwynn_description
+		visuals = banner
+		visuals_source = title:e_avelwynn
+		type = wall_big
+		modifier = artifact_wall_banner_avelwynn_modifier
+		wealth = scope:wealth
+		quality = scope:quality
+		decaying = no
+	}
+}
