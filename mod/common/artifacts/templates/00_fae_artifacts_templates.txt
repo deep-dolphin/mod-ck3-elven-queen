@@ -1,0 +1,18 @@
+banner_avelwynn_template = {
+    can_equip = {
+        always = yes
+    }
+
+    can_benefit = {
+        root = {
+            has_title = title:e_avelwynn
+            has_trait = fae_queen
+        }
+    }
+
+    fallback = {
+        court_grandeur_baseline_add = 10
+    }
+
+    is_unique = yes
+}

@@ -1,3 +1,3 @@
-l_english:
- artifact_wall_banner_avelwynn_name:0 "Imperial Banner of [target.GetNameNoTooltip]"
- artifact_wall_banner_avelwynn_description:0 "This is the banner of [target.GetNameNoTooltip], made to honor the tenure of [target.GetHolder.GetTitledFirstNameRegnal]."
+﻿l_english:
+ artifact_wall_banner_avelwynn_name:0 "Imperial Banner of [target.GetAdjectiveNoTooltip]"
+ artifact_wall_banner_avelwynn_description:0 "This is the banner of [target.GetNameNoTooltip], an symbol of the authority and power of [target.GetHolder.GetTitledFirstNameRegnal]."

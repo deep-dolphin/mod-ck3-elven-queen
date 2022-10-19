@@ -56,6 +56,8 @@ create_fae_avelwynn_effect = {
 
 		set_primary_title_to = title:e_avelwynn
 
+		create_artifacts_avelwynn = yes
+
 		trigger_event = fae_queen.0001 # Notification event that you've created avelwynn
 	}
 }
@@ -237,17 +239,33 @@ convert_all_counties_into_fae = {
 }
 
 create_artifacts_avelwynn = {
+	scope:founder = {
+		save_scope_as = owner
+		save_scope_as = creator
+	}
+	title:e_avelwynn = {
+		save_scope_as = target
+	}
+
 	set_artifact_rarity_illustrious = yes
 
 	create_artifact = {
 		name = artifact_wall_banner_avelwynn_name
+		creator = scope:creator
 		description = artifact_wall_banner_avelwynn_description
 		visuals = banner
-		visuals_source = title:e_avelwynn
+		visuals_source = scope:target
 		type = wall_big
-		modifier = artifact_wall_banner_avelwynn_modifier
+		template = banner_avelwynn_template
+		modifier = artifact_placeholder_modifier
+		save_scope_as = newly_created_artifact
 		wealth = scope:wealth
 		quality = scope:quality
 		decaying = no
+	}
+
+	scope:newly_created_artifact = {
+		add_artifact_modifier = artifact_wall_banner_avelwynn_modifier
+		remove_artifact_modifier = artifact_placeholder_modifier
 	}
 }

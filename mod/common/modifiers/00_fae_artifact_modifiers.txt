@@ -5,4 +5,6 @@ artifact_wall_banner_avelwynn_modifier = {
     vassal_limit = 25
     men_at_arms_limit = 25
     men_at_arms_cap = 5
+    knight_effectiveness_mult = 1.0
+	knight_limit = 10
 }
