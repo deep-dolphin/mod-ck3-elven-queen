@@ -1,27 +1,27 @@
 # Cultural title flavor
-baron_feudal_male_roman = {
+baron_feudal_male_sylvan = {
 	type = character
 	gender = male
 	special = holder
 	tier = barony
 	priority = 7
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
-baron_feudal_female_roman = {
+baron_feudal_female_sylvan = {
 	type = character
 	gender = female
 	special = holder
 	tier = barony
 	priority = 7
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
-barony_feudal_roman = {
+barony_feudal_sylvan = {
 	type = title
 	tier = barony
 	priority = 7
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
 
@@ -31,7 +31,7 @@ count_feudal_male_sylvan = {
 	special = holder
 	tier = county
 	priority = 18
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
 count_feudal_female_sylvan = {
@@ -40,14 +40,14 @@ count_feudal_female_sylvan = {
 	special = holder
 	tier = county
 	priority = 18
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
 county_feudal_sylvan = {
 	type = title
 	tier = county
 	priority = 18
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
 
@@ -57,7 +57,7 @@ duke_feudal_male_sylvan = {
 	special = holder
 	tier = duchy
 	priority = 27
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
 duke_feudal_female_sylvan = {
@@ -66,14 +66,14 @@ duke_feudal_female_sylvan = {
 	special = holder
 	tier = duchy
 	priority = 27
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
 	heritages = { heritage_fae }
 }
 duchy_feudal_sylvan = {
 	type = title
 	tier = duchy
 	priority = 27
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
 	heritages = { heritage_fae }
 }
 
@@ -83,7 +83,7 @@ king_feudal_male_sylvan = {
 	special = holder
 	tier = kingdom
 	priority = 47
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
     heritages = { heritage_fae }
 }
 king_feudal_female_sylvan = {
@@ -92,14 +92,14 @@ king_feudal_female_sylvan = {
 	special = holder
 	tier = kingdom
 	priority = 47
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
 	heritages = { heritage_fae }
 }
 kingdom_feudal_sylvan = {
 	type = title
 	tier = kingdom
 	priority = 47
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
 	heritages = { heritage_fae }
 }
 
@@ -109,7 +109,7 @@ emperor_feudal_male_sylvan = {
 	special = holder
 	tier = empire
 	priority = 102
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
 	heritages = { heritage_fae }
 }
 emperor_feudal_female_sylvan = {
@@ -118,14 +118,14 @@ emperor_feudal_female_sylvan = {
 	special = holder
 	tier = empire
 	priority = 102
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
 	heritages = { heritage_fae }
 }
 empire_feudal_sylvan = {
 	type = title
 	tier = empire
 	priority = 102
-	governments = { feudal_government clan_government }
+	governments = { feudal_government clan_government fae_government }
 	heritages = { heritage_fae }
 }
 
