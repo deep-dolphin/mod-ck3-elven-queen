@@ -294,7 +294,7 @@ tradition_fae_army = {
 		men_at_arms_maintenance = 0.5
 		men_at_arms_cap = 5
 		men_at_arms_limit = 15
-		knight_effectiveness_mult = 1.0
+		knight_effectiveness_mult = 10.0
 		knight_limit = 10
 	}
 

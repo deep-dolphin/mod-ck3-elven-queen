@@ -1,17 +1,17 @@
 knights_holy_titania = {
 	type = heavy_infantry
 	
-	damage = 200
+	damage = 125
 	toughness = 125
-	pursuit = 15
-	screen = 30
+	pursuit = 0
+	screen = 0
 	
 	can_recruit = { always = no }
 	
 	terrain_bonus = {
-		hills = { toughness = 25 }
-		forest = { damage = 75 toughness = 50 }
-		taiga = { damage = 75 toughness = 50 }
+		hills = { toughness = 100 }
+		forest = { damage = 500 toughness = 250 pursuit = 50 screen = 45 }
+		taiga = { damage = 500 toughness = 250 pursuit = 50 screen = 45 }
 	}
 	
 	counters = {
@@ -32,19 +32,19 @@ knights_holy_titania = {
 knights_titania = {
 	type = heavy_infantry
 	
-	damage = 80
-	toughness = 45
+	damage = 125
+	toughness = 125
 	pursuit = 0
-	screen = 15
+	screen = 0
 	
 	can_recruit = { 
 		culture = { has_cultural_parameter = unlock_maa_knights_fae }
 	}
 	
 	terrain_bonus = {
-		hills = { damage = 10 toughness = 10 }
-		forest = { damage = 35 toughness = 40 }
-		taiga = { damage = 35 toughness = 40 }
+		hills = { toughness = 25 }
+		forest = { damage = 150 toughness = 75 pursuit = 25 screen = 45 }
+		taiga = { damage = 150 toughness = 75 pursuit = 25 screen = 45 }
 	}
 	
 	counters = {
@@ -64,8 +64,8 @@ knights_titania = {
 pikemen_fae = {
 	type = pikemen
 	
-	damage = 50
-	toughness = 75
+	damage = 100
+	toughness = 150
 	pursuit = 0
 	screen = 0
 	
@@ -74,9 +74,9 @@ pikemen_fae = {
 	}
 	
 	terrain_bonus = {
-		hills = { toughness = 35 }
-		forest = { damage = 25 toughness = 50 }
-		taiga = { damage = 25 toughness = 50 }
+		hills = { toughness = 25 }
+		forest = { damage = 150 toughness = 75 pursuit = 15 screen = 75 }
+		taiga = { damage = 150 toughness = 75 pursuit = 15 screen = 75 }
 	}
 	
 	counters = {
@@ -98,9 +98,9 @@ pikemen_fae = {
 archers_fae = {
 	type = archers
 	
-	damage = 125
-	toughness = 25
-	pursuit = 25
+	damage = 150
+	toughness = 50
+	pursuit = 50
 	screen = 0
 	
 	can_recruit = { 
@@ -108,9 +108,9 @@ archers_fae = {
 	}
 	
 	terrain_bonus = {
-		hills = { damage = 25 toughness = 10 }
-		forest = { damage = 50 toughness = 25 }
-		taiga = { damage = 50 toughness = 25 }
+		hills = { damage = 50 toughness = 25 }
+		forest = { damage = 250 toughness = 25 pursuit = 100 screen = 45 }
+		taiga = { damage = 250 toughness = 25 pursuit = 100 screen = 45 }
 	}
 	
 	counters = {
