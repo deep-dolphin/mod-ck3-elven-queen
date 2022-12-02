@@ -26,12 +26,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Decision to reduce stress to help regulate stress during an immortal life
 - Unique banner artifact upon creating Avelwynn
 - Marriage restrictions for fae court AI
+- Instructions in README for overwritten files to update when base game updates
 
 ### Changed
 - Elven name lists to be more consistent
 - Fae religion name lists to include god names
 - Elven traits now give better genetic inheritance chances
 - Advanced inheritance/levels of fae blood (mothers pass it on, fathers weaken it)
+
+### Fixed
+- Compatability with 1.8.0
 
 ### Known Bugs
 - can_change_succession_law_trigger does not supply the right tooltip when fae_authority is too low (presumes crown_authority)
