@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Custom head of faith title and a decision to create it
 - Decision to reduce stress to help regulate stress during an immortal life
 - Unique banner artifact upon creating Avelwynn
+- Marriage restrictions for fae court AI
 
 ### Changed
 - Elven name lists to be more consistent

@@ -1,0 +1,22 @@
+is_pure_fae = {
+    has_trait = fae_queen
+    has_trait = fae_blood
+}
+
+can_have_pure_fae_children = {
+    AND = {
+        is_female = yes
+        is_pure_fae = yes
+    }
+}
+
+couple_result_in_fae_children = {
+    OR = {
+        scope:secondary_actor = {
+            can_have_pure_fae_children = yes
+        }
+        scope:secondary_recipient = {
+            can_have_pure_fae_children = yes
+        }
+    }
+}

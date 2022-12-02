@@ -1,0 +1,1190 @@
+# Edited rows: 510, 991
+
+arrange_marriage_interaction = {
+	icon = icon_marriage
+	category = interaction_category_diplomacy
+	common_interaction = yes
+
+	special_interaction = arrange_marriage_interaction
+	interface = marriage
+	use_diplomatic_range = {
+		trigger_if = {
+			limit = { exists = scope:secondary_actor.betrothed }
+			NOT = {
+				scope:secondary_actor = {
+					betrothed = scope:secondary_recipient
+				}
+			}
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:actor = scope:recipient
+				}
+				desc = arrange_marriage_interaction_desc_ruler_at_own_court
+			}
+			triggered_desc = {
+				trigger = {
+					scope:actor = {
+						can_marry_character_trigger = {
+							CHARACTER = scope:recipient
+						}
+					}
+					scope:recipient = { is_ruler = yes }
+				}
+				desc = arrange_marriage_interaction_desc_both_rulers_can_marry
+			}
+			triggered_desc = {
+				trigger = {
+					scope:recipient = {
+						is_ruler = yes
+						can_marry_trigger = yes
+					}
+				}
+				desc = arrange_marriage_interaction_desc_both_rulers_recipient_only_can_marry
+			}
+			triggered_desc = {
+				trigger = {
+					scope:recipient = {
+						is_ruler = yes
+					}
+				}
+				desc = arrange_marriage_interaction_desc_both_rulers_recipient_neither_can_marry
+			}
+			triggered_desc = {
+				trigger = {
+					scope:actor = {
+						can_marry_character_trigger = {
+							CHARACTER = scope:recipient
+						}
+					}
+				}
+				desc = arrange_marriage_interaction_desc_one_ruler_can_marry
+			}
+			desc = arrange_marriage_interaction_desc_recipient_one_ruler_cannot_marry
+		}
+	}
+	
+	redirect = {
+		# If the define MARRIAGE_OWNER_IS_MATCHMAKER is set to yes, the actor must end up as the "matchmaker" link for courtiers
+		scope:actor = {
+			if = {
+				limit = {
+					exists = matchmaker
+					NOT = { this = matchmaker }
+				}
+				save_scope_as = secondary_actor
+				matchmaker = {
+					save_scope_as = actor
+				}
+			}
+			if = {
+				limit = {
+					is_betrothed = yes
+					betrothed = scope:recipient
+				}
+
+				save_scope_as = secondary_actor
+			}
+		}
+
+		scope:recipient = {
+			if = {
+				limit = {
+					is_betrothed = yes
+					betrothed.matchmaker = scope:actor
+					is_adult = yes
+					betrothed = {
+						is_adult = yes
+					}
+				}
+
+				save_scope_as = secondary_recipient
+				matchmaker = {
+					save_scope_as = recipient
+				}
+				betrothed = {
+					save_scope_as = secondary_actor
+				}
+			}
+			if = {
+				limit = {
+					exists = matchmaker
+					NOT = { this = matchmaker }
+				}
+				save_scope_as = secondary_recipient
+				matchmaker = {
+					save_scope_as = recipient
+				}
+			}
+		}
+	}
+
+	populate_actor_list = {
+		scope:actor = {
+			add_to_list = characters
+			every_courtier = {
+				limit = {
+					trigger_if = {
+						limit = {
+							is_concubine = yes
+						}
+						is_concubine_of = scope:actor
+						can_marry_character_trigger = { CHARACTER = scope:actor }
+					}
+				}
+				add_to_list = characters
+			}
+			every_courtier_away = {
+				limit = {
+					trigger_if = {
+						limit = {
+							is_concubine = yes
+						}
+						is_concubine_of = scope:actor
+						can_marry_character_trigger = { CHARACTER = scope:actor }
+					}
+				}
+				add_to_list = characters
+			}
+			every_child = {
+				even_if_dead = yes
+				if = {
+					limit = {
+						is_alive = yes
+						NOT = { is_in_list = characters }
+						trigger_if = {
+							limit = {
+								is_concubine = yes
+							}
+							is_concubine_of = scope:actor
+							can_marry_character_trigger = { CHARACTER = scope:actor }
+						}
+					}
+					add_to_list = characters
+				}
+				every_child = {
+					even_if_dead = yes
+					if = {
+						limit = {
+							is_alive = yes
+							NOT = { is_in_list = characters }
+							trigger_if = {
+								limit = {
+									is_concubine = yes
+								}
+								is_concubine_of = scope:actor
+								can_marry_character_trigger = { CHARACTER = scope:actor }
+							}
+						}
+						add_to_list = characters
+					}
+					every_child = {
+						if = {
+							limit = {
+								is_alive = yes
+								NOT = { is_in_list = characters }
+								trigger_if = {
+									limit = {
+										is_concubine = yes
+									}
+									is_concubine_of = scope:actor
+									can_marry_character_trigger = { CHARACTER = scope:actor }
+								}
+							}
+							add_to_list = characters
+						}
+					}
+				}
+			}
+		}
+	}
+
+	populate_recipient_list = {
+		scope:recipient = {
+			add_to_list = characters
+			every_courtier = {
+				add_to_list = characters
+			}
+			every_courtier_away = {
+				add_to_list = characters
+			}
+			every_child = {
+				limit = {
+					NOT = { is_in_list = characters }
+				}
+				add_to_list = characters
+			}
+		}
+	}
+
+	interface_priority = 60
+
+	cost = {
+		prestige = {
+			value = 0
+			if = {
+				limit = {
+					exists = scope:actor
+					exists = scope:recipient
+					exists = scope:secondary_recipient
+					exists = scope:secondary_actor
+					scope:secondary_actor = { is_close_family_of = scope:actor }
+					scope:recipient = {
+						OR = {
+							AND = {
+								vassal_contract_has_flag = vassal_contract_marriage_favor
+								is_allied_to = scope:actor
+							}
+							NOT = { vassal_contract_has_flag = vassal_contract_marriage_favor}
+						}
+					}
+				}
+				add = {
+					scope:actor = {
+						every_vassal = {
+							limit = {
+								vassal_contract_has_flag = vassal_contract_marriage_favor
+								NOT = { is_allied_to = scope:actor }
+								NOR = {
+									this = scope:recipient
+									this = scope:secondary_recipient
+								}
+							}
+							add = medium_prestige_value
+						}
+					}
+					desc = VASSAL_WITH_MARRIAGE_FAVOR
+				}
+			}
+
+		}
+	}
+
+	# actor, recipient ... characters arranging the marriage
+	# secondary_actor, secondary_recipient ... characters that should marry
+
+	is_shown = {
+		scope:actor = {
+			OR = {
+				is_landed = yes #Can arrange marriages for others
+				#You're just a courtier? Only use the interaction on characters you can marry
+				can_marry_character_trigger = { CHARACTER = scope:recipient }
+			}
+		}
+		#If you're interacting with someone who isn't their own matchmaker, only show the interaction if they can get married. (If someone isn't their own matchmaker, they will be set as secondary_recipient by code and their matchmaker becomes recipient)
+		trigger_if = {
+			limit = { exists = scope:secondary_recipient }
+			scope:secondary_recipient = {
+				OR = {
+					marriage_interaction_can_be_picked_trigger = yes #Can marry anyone
+					AND = {
+						ready_to_marry_betrothed_trigger = yes
+						OR = {
+							betrothed = scope:secondary_actor
+							trigger_if = {
+								limit = { exists = betrothed.liege }
+								betrothed.liege = scope:actor
+							}
+						}
+					}
+				}
+				#To account for a person marrying their concubines
+				trigger_if = {
+					limit = {
+						is_concubine = yes
+					}
+					is_concubine_of = scope:actor
+					can_marry_character_trigger = { CHARACTER = scope:actor }
+				}
+			}
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		#If we're opening this interaction through the interaction menu (i.e. not all scopes exist yet)
+		#This was giving double-warnings about a marry-able character existing so it's commented out for now
+		#custom_description = {
+		#	text = character_to_marry_exists
+		#	object = scope:recipient
+		#	scope:recipient = {
+		#		OR = {
+		#			any_courtier = {
+		#				is_at_home = yes
+		#				marriage_interaction_can_be_picked_trigger= yes
+		#			}
+		#			any_child = {
+		#				marriage_interaction_can_be_picked_trigger= yes
+		#			}
+		#		}
+		#	}
+		#}
+		trigger_if = {
+			limit = {
+				NAND = {
+					exists = scope:secondary_actor
+					exists = scope:secondary_recipient
+				}
+			}
+			#There is an available marriage
+			custom_description = {
+				text = "basic_can_marry_check_recipient"
+				subject = scope:actor
+				object = scope:recipient
+				scope:recipient = {
+					OR = {
+						AND = {
+							#Recipient can marry
+							can_marry_trigger = yes
+							#To account for a person marrying their concubines
+							trigger_if = {
+								limit = {
+									is_concubine = yes
+								}
+								is_concubine_of = scope:actor
+								can_marry_character_trigger = { CHARACTER = scope:actor }
+							}
+						}
+						AND = {
+							is_ruler = yes #(Following are only for rulers)
+							OR = {
+								any_child = {
+									matchmaker = scope:actor
+									OR = {
+										#Any of recipient's children can marry
+										AND = {
+											can_marry_trigger = yes
+											#To account for a person marrying their concubines
+											trigger_if = {
+												limit = {
+													is_concubine = yes
+												}
+												is_concubine_of = scope:actor
+											}
+										}
+										#Any of recipient's children are ready to marry their betrothed
+										AND = {
+											ready_to_marry_betrothed_trigger = yes
+											betrothed.matchmaker = scope:actor
+										}
+									}
+								}
+								any_courtier = {
+									OR = {
+										#Any of recipient's courtiers can marry
+										AND = {
+											can_marry_trigger = yes
+											#To account for a person marrying their concubines
+											trigger_if = {
+												limit = {
+													is_concubine = yes
+												}
+												is_concubine_of = scope:actor
+											}
+										}
+										#Any of recipient's courtiers are ready to marry their betrothed
+										AND = {
+											ready_to_marry_betrothed_trigger = yes
+											betrothed.matchmaker = scope:actor
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		#Diplomatic availability & prison
+		scope:recipient = {
+			is_busy_in_events_localised = yes
+			is_imprisoned = no
+		}
+		NOT = {
+			scope:actor = {
+				is_at_war_with = scope:recipient
+			}
+		}
+		trigger_if = { #(must be here because secondary_recipient can be set at the start)
+			limit = {
+				exists = scope:secondary_recipient
+				NOT = { scope:secondary_recipient = scope:recipient }
+			}
+			scope:secondary_recipient = {
+				is_busy_in_events_localised = yes
+				is_imprisoned = no
+			}
+		}
+		trigger_if = { #(must be here because secondary_recipient can be set at the start)
+			limit = {
+				exists = scope:secondary_actor
+				NOT = { scope:secondary_actor = scope:actor }
+			}
+			scope:secondary_actor = {
+				is_busy_in_events_localised = yes
+				is_imprisoned = no
+			}
+		}
+	}
+	
+	# whether a character can be picked for the interaction, interface only (e.g. picking the first character in the marriage interaction)
+	# in character scope, actor and recipient event targets can be used, but not the secondary characters (because none exist yet)
+	can_be_picked = {
+		OR = {
+			marriage_interaction_can_be_picked_trigger = yes
+			AND = {
+				exists = scope:secondary_actor
+				exists = scope:secondary_recipient
+				scope:secondary_actor.betrothed = scope:secondary_recipient
+			}
+		}
+	}
+
+	#Is evaluated only after secondary_recipient and secondary_actor are both chosen
+	has_valid_target_showing_failures_only = {
+		marriage_interaction_valid_target_trigger = yes  #Checks marriage status, betrothed, gender, consanguinity, faith hostility etc.
+
+		#Blocks AI from marrying player guests
+		scope:secondary_recipient = {
+			trigger_if = {
+				limit = {
+					is_pool_guest = yes
+					host = {
+						is_ai = no
+						NOT = { this = scope:actor }
+					}
+				}
+				NOT = { is_pool_guest_of = host }
+			}
+		}
+		
+		#Blocks most AI's from marrying Evil faiths
+		trigger_if = {
+			limit = {
+				scope:actor = {
+					is_ai = yes
+					NOT = { has_trait = cynical }
+					#AI should honor betrothal even if faiths change
+					NOT = { scope:secondary_actor.betrothed = scope:secondary_recipient }
+				}
+			}
+			scope:recipient.faith = {
+				faith_hostility_level = {
+					target = scope:actor.faith
+					value < faith_hostility_prevents_marriage_level
+				}
+			}
+		}
+
+		#Blocks AI from marrying single mayors in their area unless they are also mayors
+		trigger_if = {
+			limit = {
+				scope:actor = {
+					is_ai = yes
+					NOT = { has_government = republic_government }
+				}
+			}
+			NOT = {
+				scope:recipient = { has_government = republic_government }
+			}
+		}
+		
+		trigger_if = { # Cultural Traditions, for AI
+			limit = {
+				scope:actor = {
+					is_ai = yes
+					culture = {
+						has_cultural_parameter = dislikes_marrying_outside_of_culture
+					}
+				}
+			}
+			OR = {
+				scope:actor.culture = scope:recipient.culture
+				scope:actor.culture = scope:secondary_recipient.culture
+			}
+		}
+
+		#Blocks AI from creating marriages that will result in non-pure fae offspring if they care about fae purity
+		trigger_if = {
+			limit = {
+				scope:actor = {
+					is_ai = yes
+					faith = {
+						has_doctrine_parameter = fae_blood_purity
+					}
+				}
+				scope:secondary_actor = {
+					is_fae = yes
+				}
+			}
+
+			couple_result_in_fae_children = yes
+		}
+	}
+
+	pre_auto_accept = {
+		if = {
+			limit = {
+				NOT = { scope:recipient = scope:actor }
+			}
+			scope:recipient = {
+				if = {
+					limit = { scope:secondary_actor.betrothed = scope:secondary_recipient }
+					send_interface_toast = {
+						type = msg_betrothal_fulfilled
+						left_icon = scope:secondary_actor
+						right_icon = scope:secondary_recipient
+					}
+				}
+				else = {
+					send_interface_toast = {
+						type = msg_marriage_forced
+						left_icon = scope:secondary_actor
+						right_icon = scope:secondary_recipient
+					}
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		marriage_interaction_on_accept_effect = yes		
+	}
+
+	on_decline = {
+		scope:actor = {
+			if = {	
+				limit = { NOT = { this = scope:recipient } }
+				trigger_event = marriage_interaction.0011	
+			}
+		}
+	}
+
+	auto_accept = {
+		marriage_interaction_auto_accept_trigger = yes #Strong hook conditions
+	}
+
+	ai_accept = {
+		base = 0
+
+		marriage_ai_accept_modifier = yes
+	}
+
+	send_option = {
+		flag = matrilineal
+		localization = MATRILINEAL_OFFER
+		is_shown = {
+			OR = {
+				NOT = { exists = scope:secondary_actor }
+				NOT = { exists = scope:secondary_recipient }
+				scope:secondary_actor = { sex_opposite_of = scope:secondary_recipient }
+			}
+		}
+		current_description = {
+			triggered_desc = {
+				trigger = {
+					exists = scope:secondary_actor
+					scope:secondary_actor = {
+						betrothed = scope:secondary_recipient
+						matrilinear_betrothal = yes
+					}
+				}
+				desc = "MATRILINEAL_OFFER_BETROTHAL_INFO"
+			}
+		}
+		can_be_changed = {
+			trigger_if = {
+				limit = {
+					exists = scope:secondary_actor
+				}
+				scope:secondary_actor = {
+					NOT = {
+						betrothed = scope:secondary_recipient
+					}
+				}
+			}
+		}
+		starts_enabled = {
+			trigger_if = {
+				limit = {
+					exists = scope:secondary_actor
+					scope:secondary_actor = {
+						betrothed = scope:secondary_recipient
+					}
+				}
+				scope:secondary_actor = {
+					matrilinear_betrothal = yes
+				}
+			}
+			trigger_else_if = {
+				limit = {
+					exists = scope:secondary_actor
+					scope:actor = scope:secondary_actor
+					is_female = yes
+					is_ai = no
+				}
+				always = yes
+			}
+			trigger_else = {
+				scope:actor = {
+					OR= {
+						faith = {
+							has_doctrine = doctrine_gender_female_dominated
+						}
+						AND = {
+							this = scope:recipient
+							exists = scope:secondary_recipient
+							scope:secondary_recipient = {
+								is_female = yes
+							}
+							faith = { has_doctrine = doctrine_gender_equal }
+						}
+						AND = {
+							exists = scope:secondary_actor
+							scope:actor = scope:secondary_actor
+							is_female = yes
+							is_ai = no
+						}
+					}
+				}
+			}
+		}
+	}	
+
+	send_option = {
+		is_shown = {
+			scope:secondary_actor = {
+				NOT = {
+					betrothed = scope:secondary_recipient
+				}
+			}
+		}
+		is_valid = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+			}
+		}
+		flag = marriage_hook
+		localization = MARRIAGE_HOOK
+	}
+
+	should_use_extra_icon = {
+		scope:actor = { has_usable_hook = scope:recipient }
+	}
+	extra_icon = "gfx/interface/icons/character_interactions/hook_icon.dds"
+	
+	send_options_exclusive = no
+	
+	show_effects_in_notification = no
+	greeting = positive
+	
+	notification_text = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:secondary_actor = {
+						is_adult = yes
+					}
+					scope:secondary_recipient = {
+						is_adult = yes
+					}
+				}
+				desc = {
+					first_valid = {	
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+								scope:secondary_actor = scope:actor
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_BOTH_PERSONAL_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+								scope:secondary_actor = scope:actor
+							}
+							desc = MARRIAGE_NOTIFICATION_ACTOR_PERSONAL_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_RECIPIENT_PERSONAL_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+							}
+							desc = MARRIAGE_NOTIFICATION_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:secondary_actor = scope:actor
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_BOTH_PERSONAL
+						}
+						triggered_desc = {
+							trigger = {
+								scope:secondary_actor = scope:actor
+							}
+							desc = MARRIAGE_NOTIFICATION_ACTOR_PERSONAL
+						}
+						triggered_desc = {
+							trigger = {
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_RECIPIENT_PERSONAL
+						}
+						desc = MARRIAGE_NOTIFICATION
+					}
+				}
+			}
+			desc = {
+				first_valid = {	
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+							scope:secondary_actor = scope:actor
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_BOTH_PERSONAL_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+							scope:secondary_actor = scope:actor
+						}
+						desc = BETROTHAL_NOTIFICATION_ACTOR_PERSONAL_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_RECIPIENT_PERSONAL_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+						}
+						desc = BETROTHAL_NOTIFICATION_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:secondary_actor = scope:actor
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_BOTH_PERSONAL
+					}
+					triggered_desc = {
+						trigger = {
+							scope:secondary_actor = scope:actor
+						}
+						desc = BETROTHAL_NOTIFICATION_ACTOR_PERSONAL
+					}
+					triggered_desc = {
+						trigger = {
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_RECIPIENT_PERSONAL
+					}
+					desc = BETROTHAL_NOTIFICATION
+				}
+			}
+		}
+	}
+}
+
+#This interaction is referenced in code! If it's renamed you have to ping a coder
+marry_off_interaction = {
+	icon = icon_marriage
+	category = interaction_category_diplomacy
+	common_interaction = yes
+
+	desc = marry_off_interaction_desc
+	
+	send_name = marry_off_send
+	needs_recipient_to_open = no
+	special_interaction = arrange_marriage_interaction
+	interface = marriage
+	redirect = {
+		if = {
+			limit = {
+				exists = scope:secondary_actor
+			}
+			scope:recipient = {
+				save_scope_as = secondary_recipient
+				matchmaker = {
+					save_scope_as = recipient
+				}
+			}
+
+		}
+		else_if = {
+			scope:recipient = {
+				save_scope_as = secondary_actor
+			}
+			clear_saved_scope = recipient
+		}
+	}
+
+	populate_recipient_list = {
+		scope:secondary_actor = {
+			if = {
+				limit = {
+					allowed_to_marry_same_sex_trigger = yes
+				}
+				every_opposite_sex_spouse_candidate = {
+					limit = {
+						NAND = {
+							is_landless_ruler = yes
+							faith.religious_head = this
+							NOT = { scope:secondary_actor.faith = faith }
+						}
+					}
+					add_to_list = characters
+				}
+				every_same_sex_spouse_candidate = {
+					limit = {
+						NAND = {
+							is_landless_ruler = yes
+							faith.religious_head = this
+							NOT = { scope:secondary_actor.faith = faith }
+						}
+					}
+					add_to_list = characters
+				}
+			}
+			else = {
+				every_opposite_sex_spouse_candidate = {
+					limit = {
+						NAND = {
+							is_landless_ruler = yes
+							faith.religious_head = this
+							NOT = { scope:secondary_actor.faith = faith }
+						}
+					}
+					add_to_list = characters
+				}
+			}
+		}
+	}
+
+	cost = {
+		prestige = {
+			value = 0
+			if = {
+				limit = {
+					exists = scope:actor
+					exists = scope:recipient
+					exists = scope:secondary_recipient
+					scope:recipient = {
+						OR = {
+							AND = {
+								vassal_contract_has_flag = vassal_contract_marriage_favor
+								is_allied_to = scope:actor
+							}
+							NOT = { vassal_contract_has_flag = vassal_contract_marriage_favor}
+						}
+					}
+				}
+				add = {
+					scope:actor = {
+						every_vassal = {
+							limit = {
+								vassal_contract_has_flag = vassal_contract_marriage_favor
+								NOT = { is_allied_to = scope:actor }
+								NOR = {
+									this = scope:recipient
+									this = scope:secondary_recipient
+								}
+							}
+							add = medium_prestige_value
+						}
+					}
+					desc = VASSAL_WITH_MARRIAGE_FAVOR
+				}
+			}
+
+		}
+	}
+
+	interface_priority = 60
+
+	# actor, recipient ... characters arranging the marriage
+	# secondary_actor, secondary_recipient ... characters that should marry
+
+	is_shown = {
+		scope:secondary_actor = {
+			#Is this someone I can marry off?
+			OR = {
+				is_courtier_of = scope:actor
+				AND = {
+					is_child_of = scope:actor
+					target_is_liege_or_above = scope:actor
+				}
+				scope:actor = this
+			}
+			#They can be married
+			can_marry_trigger = yes
+			#To account for a person marrying their concubines
+			trigger_if = {
+				limit = {
+					is_concubine = yes
+				}
+				is_concubine_of = scope:actor
+				can_marry_character_trigger = { CHARACTER = scope:actor }
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		#Diplomatic availability & prison
+		scope:secondary_actor = {
+			is_busy_in_events_localised = yes
+			is_imprisoned = no
+		}
+	}
+
+	has_valid_target_showing_failures_only = {
+		marriage_interaction_valid_target_trigger = yes  #Checks marriage status, betrothed, gender, consanguinity, faith hostility etc.
+
+		#Diplomatic availability & prison (located here because these will never be set at the start)
+		scope:recipient = {
+			is_busy_in_events_localised = yes
+			is_imprisoned = no
+		}
+		NOT = {
+			scope:actor = {
+				is_at_war_with = scope:recipient
+			}
+		}
+		trigger_if = {
+			limit = { NOT = { scope:recipient = scope:secondary_recipient } }
+			scope:secondary_recipient = {
+				is_busy_in_events_localised = yes
+				is_imprisoned = no
+			}
+		}
+		#secondary_actor is checked above because they are always available
+
+		#Blocks AI from marrying player guests
+		scope:secondary_recipient = {
+			trigger_if = {
+				limit = {
+					is_pool_guest = yes
+					host = {
+						is_ai = no
+						NOT = { this = scope:actor }
+					}
+				}
+				NOT = { is_pool_guest_of = host }
+			}
+		}
+
+		#Blocks AI from creating marriages that will result in non-pure fae offspring if they care about fae purity
+		trigger_if = {
+			limit = {
+				scope:actor = {
+					is_ai = yes
+					faith = {
+						has_doctrine_parameter = fae_blood_purity
+					}
+				}
+				scope:secondary_actor = {
+					is_fae = yes
+				}
+			}
+
+			couple_result_in_fae_children = yes
+		}
+	}
+
+	on_accept = {
+		marriage_interaction_on_accept_effect = yes
+	}
+
+	on_decline = {
+		scope:actor = {
+			if = {	
+				limit = { NOT = { this = scope:recipient } }
+				trigger_event = marriage_interaction.0011	
+			}
+		}
+	}
+
+	auto_accept = {
+		marriage_interaction_auto_accept_trigger = yes #Strong hook conditions
+	}
+	
+	ai_accept = {
+		base = 0 # Should be 0 for all interactions
+		
+		marriage_ai_accept_modifier = yes
+	}
+	
+	send_option = {
+		flag = matrilineal
+		localization = "MATRILINEAL_OFFER"
+		starts_enabled = {
+			scope:actor = {
+				OR= {
+					faith = {
+						has_doctrine = doctrine_gender_female_dominated
+					}
+					AND = {
+						scope:secondary_actor = { is_female = yes }
+						faith = { has_doctrine = doctrine_gender_equal }
+					}
+					AND = {
+						exists = scope:secondary_actor
+						scope:actor = scope:secondary_actor
+						is_female = yes
+						is_ai = no
+					}
+				}
+			}
+		}
+	}
+	
+	send_option = {
+		is_valid = {
+			scope:actor = {
+				has_usable_hook = scope:recipient
+			}
+		}
+		flag = marriage_hook
+		localization = MARRIAGE_HOOK
+	}
+	#This option cannot be linked with the hook icon, because recipient isn't known in the right-click menu
+	
+	send_options_exclusive = no
+	
+	show_effects_in_notification = no
+	greeting = positive
+	
+	notification_text = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					scope:secondary_actor = {
+						is_adult = yes
+					}
+					scope:secondary_recipient = {
+						is_adult = yes
+					}
+				}
+				desc = {
+					first_valid = {	
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+								scope:secondary_actor = scope:actor
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_BOTH_PERSONAL_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+								scope:secondary_actor = scope:actor
+							}
+							desc = MARRIAGE_NOTIFICATION_ACTOR_PERSONAL_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_RECIPIENT_PERSONAL_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:matrilineal = yes
+							}
+							desc = MARRIAGE_NOTIFICATION_MATRI
+						}
+						triggered_desc = {
+							trigger = {
+								scope:secondary_actor = scope:actor
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_BOTH_PERSONAL
+						}
+						triggered_desc = {
+							trigger = {
+								scope:secondary_actor = scope:actor
+							}
+							desc = MARRIAGE_NOTIFICATION_ACTOR_PERSONAL
+						}
+						triggered_desc = {
+							trigger = {
+								scope:secondary_recipient = scope:recipient
+							}
+							desc = MARRIAGE_NOTIFICATION_RECIPIENT_PERSONAL
+						}
+						desc = MARRIAGE_NOTIFICATION
+					}
+				}
+			}
+			desc = {
+				first_valid = {	
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+							scope:secondary_actor = scope:actor
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_BOTH_PERSONAL_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+							scope:secondary_actor = scope:actor
+						}
+						desc = BETROTHAL_NOTIFICATION_ACTOR_PERSONAL_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_RECIPIENT_PERSONAL_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:matrilineal = yes
+						}
+						desc = BETROTHAL_NOTIFICATION_MATRI
+					}
+					triggered_desc = {
+						trigger = {
+							scope:secondary_actor = scope:actor
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_BOTH_PERSONAL
+					}
+					triggered_desc = {
+						trigger = {
+							scope:secondary_actor = scope:actor
+						}
+						desc = BETROTHAL_NOTIFICATION_ACTOR_PERSONAL
+					}
+					triggered_desc = {
+						trigger = {
+							scope:secondary_recipient = scope:recipient
+						}
+						desc = BETROTHAL_NOTIFICATION_RECIPIENT_PERSONAL
+					}
+					desc = BETROTHAL_NOTIFICATION
+				}
+			}
+		}
+	}
+}
