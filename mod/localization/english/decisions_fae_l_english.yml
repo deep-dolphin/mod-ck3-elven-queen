@@ -39,3 +39,19 @@
  restore_fae_court_every_held_duchy:0 "Every Duchy title you [hold|E] or [completely_control|E]"
  restore_fae_court_de_jure_changes:0 "Becomes [de_jure|E] [duchies|E] of your new Kingdom"
  restore_fae_court_faith_culture_changes:0 "Every county in your realm becomes Fae"
+
+ fae_queen_purge_unworthy:0 "Purge the Unworthy"
+ fae_queen_purge_unworthy_tooltip:0 "Purge those who are not of your religion and/or culture"
+ fae_queen_purge_unworthy_desc:0 "Purge those who are not part of your religion and/or culture throughout your realm."
+ fae_queen_purge_unworthy_confirm:0 "Start Purge"
+
+ fae_queen_cancel_purge_unworthy:0 "Cancel the Purge of the Unworthy"
+ fae_queen_cancel_purge_unworthy_tooltip:0 "Stop purging of those who are not of your religion and/or culture"
+ fae_queen_cancel_purge_unworthy_desc:0 "Stop purging of those who are not part of your religion and/or culture throughout your realm."
+ fae_queen_cancel_purge_unworthy_confirm:0 "Stop Purge"
+
+ purge_unworthy_culture_complete_title:0 "Completed Purge of Unworthy Culture"
+ purge_unworthy_culture_complete_desc:0 "Completed the purge of an unworthy culture in one of your provinces."
+
+ purge_unworthy_religion_complete_title:0 "Completed Purge of Unworthy Religion"
+ purge_unworthy_religion_complete_desc:0 "Completed the purge of an unworthy religion in one of your provinces."

@@ -1,0 +1,8 @@
+﻿l_english:
+ county_purge_religion_modifier:0 "Purging Religion"
+ county_purge_religion_modifier_desc:0 "Purging any local inhabitants who do not follow the realm religion."
+ county_purge_culture_modifier:0 "Purging Culture"
+ county_purge_culture_modifier_desc:0 "Purging any local inhabitants who are not of the realm culture."
+
+ commiting_purge_modifier:0 "Purging the Unworthy"
+ commiting_purge_modifier_desc:0 "Purging those who are unworthy within the realm."

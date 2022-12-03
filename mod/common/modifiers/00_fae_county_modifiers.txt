@@ -1,0 +1,21 @@
+county_purge_religion_modifier = {
+    icon = piety_negative
+
+    tax_mult = -0.45
+    levy_size = -0.45
+    garrison_size = -0.45
+    county_opinion_add = -50
+    development_growth_factor = -5
+	monthly_county_control_change_factor = -5
+}
+
+county_purge_culture_modifier = {
+    icon = family_negative
+
+    tax_mult = -0.45
+    levy_size = -0.45
+    garrison_size = -0.45
+    county_opinion_add = -50
+    development_growth_factor = -5
+	monthly_county_control_change_factor = -5
+}

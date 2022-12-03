@@ -100,8 +100,6 @@ restore_fae_court_effect = {
 
   		merge_all_duchies_into_singular_kingdom = yes
 
-		convert_all_counties_into_fae = yes
-
 		set_primary_title_to = title:k_fae_court
 
 		title:b_beroun = { # Creates temple or converts holding to temple in Beroun holy site
@@ -219,10 +217,127 @@ merge_all_duchies_into_singular_kingdom = {
 	}
 }
 
-convert_all_counties_into_fae = {
+start_purge_all_counties_religion = {
+	add_character_flag = purge_unworthy_religion
 	every_sub_realm_county = {
-		set_county_culture = culture:sylvan
-		set_county_faith = faith:fae_court
+		start_convert_county_faith = yes
+	}
+}
+
+stop_purge_all_counties_religion = {
+	remove_character_flag = purge_unworthy_religion
+	every_sub_realm_county = {
+		cancel_convert_county_faith = yes
+	}
+}
+
+start_convert_county_faith = {
+	if = {
+		limit = {
+			NOR = {
+				faith = ROOT.faith
+				has_county_modifier = county_purge_religion_modifier
+			}
+			
+		}
+
+		add_county_modifier = county_purge_religion_modifier
+	}
+}
+
+cancel_convert_county_faith = {
+	if = {
+		limit = {
+			has_county_modifier = county_purge_religion_modifier
+		}
+
+		remove_county_modifier = county_purge_religion_modifier
+	}
+}
+
+finish_convert_county_faith = {
+	if = {
+		limit = {
+			has_county_modifier = county_purge_religion_modifier
+		}
+
+		set_county_faith = ROOT.faith
+		remove_county_modifier = county_purge_religion_modifier
+
+		save_scope_as = county_converted
+
+		ROOT = {
+			send_interface_message = {
+				type = event_generic_good_text
+				left_icon = ROOT
+				right_icon = scope:county_converted
+				goto = scope:county_converted
+				title = purge_unworthy_religion_complete_title
+				desc = purge_unworthy_religion_complete_desc
+			}
+		}
+	}
+}
+
+start_purge_all_counties_culture = {
+	add_character_flag = purge_unworthy_culture
+	every_sub_realm_county = {
+		start_convert_county_culture = yes
+	}
+}
+
+stop_purge_all_counties_culture = {
+	remove_character_flag = purge_unworthy_culture
+	every_sub_realm_county = {
+		cancel_convert_county_culture = yes
+	}
+}
+
+start_convert_county_culture = {
+	if = {
+		limit = {
+			NOR = {
+				culture = ROOT.culture
+				has_county_modifier = county_purge_culture_modifier
+			}
+			
+		}
+
+		add_county_modifier = county_purge_culture_modifier
+	}
+}
+
+cancel_convert_county_culture = {
+	if = {
+		limit = {
+			has_county_modifier = county_purge_culture_modifier
+		}
+
+		remove_county_modifier = county_purge_culture_modifier
+	}
+}
+
+finish_convert_county_culture = {
+	if = {
+		limit = {
+			has_county_modifier = county_purge_culture_modifier
+		}
+
+		set_county_culture = ROOT.culture
+		remove_county_modifier = county_purge_culture_modifier
+
+		save_scope_as = county_converted
+
+		ROOT = {
+			send_interface_message = {
+				type = event_generic_good_text
+				left_icon = ROOT
+				right_icon = scope:county_converted
+				goto = scope:county_converted
+				title = purge_unworthy_culture_complete_title
+				desc = purge_unworthy_culture_complete_desc
+			}
+		}
 	}
 }
 

@@ -1,0 +1,40 @@
+
+
+random_yearly_playable_pulse = {
+    on_actions = {
+        delay = { 10 360 }
+        on_yearly_purge_complete
+    }
+}
+
+on_yearly_purge_complete = {
+    effect = {
+        if = {
+            limit = {
+                has_character_flag = purge_unworthy_religion
+            }
+
+            every_sub_realm_county = {
+                random = {
+                    chance = 10
+
+                    finish_convert_county_faith = yes
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                has_character_flag = purge_unworthy_culture
+            }
+
+            every_sub_realm_county = {
+                random = {
+                    chance = 10
+
+                    finish_convert_county_culture = yes
+                }
+            }
+        }
+    }
+}

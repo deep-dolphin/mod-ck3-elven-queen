@@ -1,0 +1,6 @@
+commiting_purge_modifier = {
+    icon = letter_negative
+
+    different_faith_opinion = -50
+    different_culture_opinion = -50
+}

@@ -94,3 +94,71 @@ fae_queen_restore_fae_court = {
         base = 100
     }
 }
+
+fae_queen_purge_unworthy = {
+    picture = "gfx/interface/illustrations/decisions/decision_purge_unworthy.dds"
+    desc = fae_queen_purge_unworthy_desc
+
+    major = yes
+
+    is_shown = {
+        has_trait = fae_queen
+        NOT = { has_character_modifier = commiting_purge_modifier }
+    }
+
+    is_valid = {
+        has_trait = fae_queen
+        can_start_purge_unworthy = yes
+    }
+
+    cost = {
+        piety = 2000
+    }
+
+    effect = {
+        start_purge_all_counties_religion = yes
+        start_purge_all_counties_culture = yes
+        add_character_modifier = commiting_purge_modifier
+    }
+
+    # AI behavior with event
+    ai_check_frequency = 36
+    ai_potential = {
+        always = yes
+    }
+    ai_will_do = {
+        base = 100
+    }
+}
+
+fae_queen_cancel_purge_unworthy = {
+    picture = "gfx/interface/illustrations/decisions/decision_purge_unworthy.dds"
+    desc = fae_queen_cancel_purge_unworthy_desc
+
+    major = yes
+
+    is_shown = {
+        has_trait = fae_queen
+        has_character_modifier = commiting_purge_modifier
+    }
+
+    is_valid = {
+        has_trait = fae_queen
+        can_stop_purge_unworthy = yes
+    }
+
+    cost = {
+        piety = 2000
+    }
+
+    effect = {
+        stop_purge_all_counties_religion = yes
+        stop_purge_all_counties_culture = yes
+        remove_character_modifier = commiting_purge_modifier
+    }
+
+    # AI behavior with event
+    ai_potential = {
+        always = no
+    }
+}

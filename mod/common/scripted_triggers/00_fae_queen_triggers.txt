@@ -1,0 +1,21 @@
+can_start_purge_unworthy = {
+    has_faith = faith:fae_court
+    is_independent_ruler = yes
+    title:k_fae_court.holder = ROOT
+    piety_level >= high_piety_level
+}
+
+can_stop_purge_unworthy = {
+    always = yes
+}
+
+#Needs FLAG
+is_purging_unworthy = {
+    OR = {
+        has_character_flag = $FLAG$
+
+        any_liege_or_above = {
+            has_character_flag = $FLAG$
+        }
+    }
+}

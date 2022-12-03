@@ -1,0 +1,45 @@
+on_title_gain = {
+    on_actions = {
+        on_title_gain_purge_update
+    }
+}
+
+on_title_gain_purge_update = {
+    trigger = {
+        scope:title = {
+            tier = tier_county
+        }
+    }
+
+    effect = {
+        if = {
+            limit = {
+                is_purging_unworthy = { FLAG = purge_unworthy_religion }
+            }
+
+            scope:title = {
+                start_convert_county_faith = yes
+            }
+        }
+        else = {
+            scope:title = {
+                cancel_convert_county_faith = yes
+            }
+        }
+
+        if = {
+            limit = {
+                is_purging_unworthy = { FLAG = purge_unworthy_culture }
+            }
+
+            scope:title = {
+                start_convert_county_culture = yes
+            }
+        }
+        else = {
+            scope:title = {
+                cancel_convert_county_culture = yes
+            }
+        }
+    }
+}
